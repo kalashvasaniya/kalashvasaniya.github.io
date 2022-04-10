@@ -32,3 +32,9 @@ form.addEventListener("submit", handleSubmit)
 
 // ------------------------
 
+// Back to top
+const backtotop = document.querySelector('#backtotop');
+backtotop.addEventListener('click', (e) => {
+    e.preventDefault();
+    window.scroll({top: 0, left: 0, behavior: 'smooth'});
+});
