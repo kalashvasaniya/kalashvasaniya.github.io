@@ -127,3 +127,16 @@ html, body {
         animation: bottomtotop 4s;
     }
 }
+
+/* Scroll Bar */
+/* ::-webkit-scrollbar {
+    width: .5em;
+}
+
+::-webkit-scrollbar-track {
+    background: rgb(0, 0, 0);
+}
+
+::-webkit-scrollbar-thumb {
+    background: #3f3fff;
+} */
