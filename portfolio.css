@@ -129,7 +129,7 @@ html, body {
 }
 
 /* Scroll Bar */
-@media (min-width: 1000px) {
+/* @media (min-width: 1000px) {
 
     ::-webkit-scrollbar {
         width: .5em;
@@ -144,4 +144,4 @@ html, body {
         background: #3f3fff;
         border-radius: 50px;
     }
-}
+} */
