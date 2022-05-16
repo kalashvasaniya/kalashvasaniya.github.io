@@ -145,3 +145,11 @@ html, body {
         border-radius: 50px;
     }
 } */
+
+
+
+@media (min-width: 1000px) {
+    .tawk-mobile {
+        display: visible;
+    }
+}
