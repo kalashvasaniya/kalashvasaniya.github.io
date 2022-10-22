@@ -41,4 +41,13 @@ backtotop.addEventListener('click', (e) => {
 
 // ------------------------
 
+// alert in responsive web
+document
+    .getElementById("confirmClickActionElementId")
+    .addEventListener("click", function( e ){ //e => event
+        alert('Under Construction :)');
+    });
+
+// ------------------------
+
 // Mobile navbar responsive
