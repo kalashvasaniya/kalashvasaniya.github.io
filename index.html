@@ -27,6 +27,7 @@
         crossorigin="anonymous"></script>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="portfolio.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.3/flowbite.min.css" rel="stylesheet" />
     <link rel="shortcut icon" type="icon" href="/img/kalashlogo.png">
     <title>Kalash vasaniya | Portfolio</title>
 </head>
@@ -59,14 +60,50 @@
             <div class="md:hidden">
                 <button>
                     <a id="confirmClickActionElementId">
-                        <svg width="26" height="18" viewBox="0 0 26 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M13 17.5H0.25V14.6667H13V17.5ZM25.75 10.4167H0.25V7.58333H25.75V10.4167ZM25.75 3.33333H13V0.5H25.75V3.33333Z"
-                                fill="white" />
-                        </svg>
+
+                        <button id="dropdownDelayButton" data-dropdown-toggle="dropdownDelay"
+                            data-dropdown-trigger="click"
+                            class="text-white font-medium rounded-lg text-sm px-4 py-2.5 text-center inline-flex items-center"
+                            type="button"><svg width="26" height="18" viewBox="0 0 26 18" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M13 17.5H0.25V14.6667H13V17.5ZM25.75 10.4167H0.25V7.58333H25.75V10.4167ZM25.75 3.33333H13V0.5H25.75V3.33333Z"
+                                    fill="white" />
+                            </svg></button>
+                        <!-- Dropdown menu -->
+                        <div id="dropdownDelay"
+                            class="z-10 hidden bg-white divide-y rounded-lg shadow w-full dark:bg-black">
+                            <ul class="py-2 text-sm text-gray-700 dark:text-gray-200"
+                                aria-labelledby="dropdownDelayButton">
+                                <li>
+                                    <a href="#"
+                                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">HOME</a>
+                                </li>
+                                <li>
+                                    <a href="#about"
+                                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">ABOUT</a>
+                                </li>
+                                <li>
+                                    <a href="#project"
+                                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">PROJECT</a>
+                                </li>
+                                <li>
+                                    <a href="#Experience"
+                                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">EXPERIENCE</a>
+                                </li>
+                                <li>
+                                    <a href="#hire"
+                                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">HIRE
+                                        ME</a>
+                                </li>
+                            </ul>
+                        </div>
                     </a>
                 </button>
             </div>
+
+
+
 
         </div>
     </nav>
@@ -594,6 +631,7 @@
         </footer>
     </div>
     <script src="/portfolio.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.3/flowbite.min.js"></script>
 </body>
 
 </html>
