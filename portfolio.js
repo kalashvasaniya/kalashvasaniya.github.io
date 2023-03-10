@@ -49,5 +49,3 @@ backtotop.addEventListener('click', (e) => {
 //     });
 
 // ------------------------
-
-// Mobile navbar responsive
