@@ -39,6 +39,32 @@ backtotop.addEventListener('click', (e) => {
     window.scroll({ top: 0, left: 0, behavior: 'smooth' });
 });
 
+function refreshNavigationDots() {
+    // Remove the specified class from all navigation dots
+    document.getElementById('navDot1').classList.remove('bg-[#3f3fff]');
+    document.getElementById('navDot2').classList.remove('bg-[#3f3fff]');
+    document.getElementById('navDot3').classList.remove('bg-[#3f3fff]');
+    document.getElementById('navDot4').classList.remove('bg-[#3f3fff]');
+    document.getElementById('navDot5').classList.remove('bg-[#3f3fff]');
+
+    // Check the current URL and add the specified class to the corresponding navigation dot
+    if (window.location.href === 'https://kalashvasaniya.com/#' || window.location.href === 'https://kalashvasaniya.com') {
+        document.getElementById('navDot1').classList.add('bg-[#3f3fff]');
+    } else if (window.location.href === 'https://kalashvasaniya.com/#about') {
+        document.getElementById('navDot2').classList.add('bg-[#3f3fff]');
+    } else if (window.location.href === 'https://kalashvasaniya.com/#project') {
+        document.getElementById('navDot3').classList.add('bg-[#3f3fff]');
+    } else if (window.location.href === 'https://kalashvasaniya.com/#Experience') {
+        document.getElementById('navDot4').classList.add('bg-[#3f3fff]');
+    } else if (window.location.href === 'https://kalashvasaniya.com/#hire') {
+        document.getElementById('navDot5').classList.add('bg-[#3f3fff]');
+    }
+}
+
+// Refresh the script every second
+setInterval(refreshNavigationDots, 1);
+
+
 // ------------------------
 
 // alert in responsive web
