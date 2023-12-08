@@ -48,7 +48,7 @@ function refreshNavigationDots() {
     document.getElementById('navDot5').classList.remove('bg-[#3f3fff]');
 
     // Check the current URL and add the specified class to the corresponding navigation dot
-    if (window.location.href === 'https://kalashvasaniya.com/#' || window.location.href === 'https://kalashvasaniya.com') {
+    if (window.location.href === 'https://kalashvasaniya.com' || window.location.href === 'https://kalashvasaniya.com/#') {
         document.getElementById('navDot1').classList.add('bg-[#3f3fff]');
     } else if (window.location.href === 'https://kalashvasaniya.com/#about') {
         document.getElementById('navDot2').classList.add('bg-[#3f3fff]');
