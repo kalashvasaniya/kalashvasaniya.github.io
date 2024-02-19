@@ -24,7 +24,7 @@ async function handleSubmit(event) {
                 }
             })
         }
-    }).catch(error => {
+    }).catch(() => {
         status.innerHTML = "Oops! There was a problem submitting your form"
     });
 }
