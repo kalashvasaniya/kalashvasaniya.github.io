@@ -1,0 +1,5 @@
+Contact: mailto:admin@kalashvasaniya.com
+Expires: 2025-12-31T23:59:59.000Z
+Preferred-Languages: en
+Canonical: https://kalashvasaniya.com/.well-known/security.txt
+Policy: https://kalashvasaniya.com/security-policy 

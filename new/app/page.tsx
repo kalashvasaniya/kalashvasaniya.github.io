@@ -38,20 +38,20 @@ export default function Home() {
           </p>
           
           <p>
-            most recently, i was the founder of <a href="#" className="text-blue-600 underline">buildspace</a> — it was the largest school in the world for people working on their own ideas from youtube videos to edm music to companies.
+            most recently, i'm the founder of <a href="https://www.superfa.st/" target="_blank" className="text-blue-600 underline">superfast</a> — a next.js boilerplate that helps developers go from idea to revenue in just days.
           </p>
           
           <p>
-            during the company we scaled <a href="#" className="text-blue-600 underline">nights & weekends</a> online to over 100,000 students, <a href="#" className="text-blue-600 underline">raised from a16z/yc</a>, constructed a <a href="#" className="text-blue-600 underline">physical campus</a> in sf for those that wanted to go full-time on their ideas, grew <a href="#" className="text-blue-600 underline">content</a> to millions, and built an ai social product to help people find others like themselves trying to build stuff.
+            superfast gives you everything you need to launch quickly. no complex setup, no endless configuration, just powerful tools that work out of the box. focus on your business while we handle the technical heavy lifting.
           </p>
           
           <p>
-            worked on the co for five years. but, i ended up closing it down. here's a letter i wrote about it.
+            we've built a complete nextjs boilerplate with 90% setup done, 20+ pre-built ui components ready to use, integrated authentication, payments & database, built-in seo optimization & performance, and ai-generated legal documents included.
           </p>
           
           <p>
-            buildspace was special. really special.
-            if you were a fan. thank you. you changed our lives.
+            superfast is special. really special.
+            if you're a developer looking to launch faster, check us out.
           </p>
           
           <p>
@@ -73,7 +73,7 @@ export default function Home() {
           </p>
           
           <p className="mt-8">
-            p.s: if you wanna contact me ping farza@humansongs.so, i generally respond to every single email under 300 characters with a clear ask.
+            p.s: if you wanna contact me, i generally respond to every single email under 300 characters with a clear ask.
           </p>
         </div>
       </main>
