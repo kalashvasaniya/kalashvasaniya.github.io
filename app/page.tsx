@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-white text-gray-800 font-sans p-4">
+    <div className="min-h-screen bg-white text-gray-800 font-sans p-0 md:p-3">
       {/* Navigation */}
       <nav className="pt-8 pl-8">
         <div className="flex gap-6 text-base">
