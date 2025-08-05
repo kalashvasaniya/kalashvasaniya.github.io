@@ -13,15 +13,31 @@ export default function Blog() {
 
     setIsLoading(true);
     
-    // Simulate API call - you can replace this with your actual email service
     try {
-      // For now, we'll just simulate a successful subscription
-      // You can integrate with services like Mailchimp, ConvertKit, or your own backend
-      await new Promise(resolve => setTimeout(resolve, 1000));
-      setIsSubscribed(true);
-      setEmail("");
+      const response = await fetch('/api/subscribe', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ email }),
+      });
+
+      const data = await response.json();
+
+      if (response.ok) {
+        setIsSubscribed(true);
+        setEmail("");
+      } else {
+        // Handle specific error cases
+        if (response.status === 409) {
+          alert('This email is already subscribed!');
+        } else {
+          alert(data.error || 'Failed to subscribe. Please try again.');
+        }
+      }
     } catch (error) {
       console.error("Failed to subscribe:", error);
+      alert('Failed to subscribe. Please try again.');
     } finally {
       setIsLoading(false);
     }
