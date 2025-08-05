@@ -7,7 +7,7 @@ export default function BucketList() {
       <nav className="pt-8 pl-8">
         <div className="flex gap-6 text-xl leading-relaxed">
           <a href="/" className="text-blue-600 underline">home</a>
-          <a target="_blank" href="https://bento.me/kalashvasaniya" className="text-blue-600 underline">find me</a>
+          <a href="/blog" className="text-blue-600 underline">blog</a>
           <a href="/portfolio" className="text-blue-600 underline">portfolio</a>
         </div>
       </nav>

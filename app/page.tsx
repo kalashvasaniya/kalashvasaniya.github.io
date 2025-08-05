@@ -21,7 +21,7 @@ export default function Home() {
       <nav className="pt-8 pl-8">
         <div className="flex gap-6 text-xl leading-relaxed">
           <a href="/" className="text-blue-600 underline">home</a>
-          <a target="_blank" href="https://bento.me/kalashvasaniya" className="text-blue-600 underline">find me</a>
+          <a href="/blog" className="text-blue-600 underline">blog</a>
           <a href="/portfolio" className="text-blue-600 underline">portfolio</a>
         </div>
       </nav>
@@ -36,7 +36,7 @@ export default function Home() {
         {/* Body Content */}
         <div className="space-y-6 text-xl leading-relaxed">
           <p>
-            i'm just a guy who builds stuff.
+            i'm just a guy who builds stuff. <a target="_blank" href="https://bento.me/kalashvasaniya" className="text-blue-600 underline">find me</a>.
           </p>
 
           <p>
@@ -79,7 +79,7 @@ export default function Home() {
           </p>
 
           <p>
-            i always wanted to build a product that helps people. solo, no team, because at the same time i want to travel the world. like a nomad. check my  <a href="/bucketlist" target="_blank" className="text-blue-600 underline">bucket list</a>.
+            i always wanted to build a product that helps people. solo, no team, because at the same time i want to travel the world. like a nomad. check my  <a href="/bucketlist" className="text-blue-600 underline">bucket list</a>.
           </p>
 
           <p>

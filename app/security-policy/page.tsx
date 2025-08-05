@@ -16,41 +16,43 @@ export default function SecurityPolicy() {
       <nav className="pt-8 pl-8">
         <div className="flex gap-6 text-xl leading-relaxed">
           <a href="/" className="text-blue-600 underline">home</a>
-          <a target="_blank" href="https://bento.me/kalashvasaniya" className="text-blue-600 underline">find me</a>
+          <a href="/blog" className="text-blue-600 underline">blog</a>
           <a href="/portfolio" className="text-blue-600 underline">portfolio</a>
         </div>
       </nav>
 
       {/* Main Content */}
-      <main className="pt-8 pl-8 pr-8 max-w-4xl">
-        <h1 className="text-4xl font-bold text-black mb-8">Security Policy</h1>
+      <main className="pt-8 pl-8 pr-8 max-w-2xl">
+        <h1 className="text-5xl sm:text-5xl md:text-6xl font-bold text-black mb-8">
+          security policy.
+        </h1>
         
-        <div className="space-y-6 text-lg leading-relaxed">
+        <div className="space-y-6 text-xl leading-relaxed">
           <p>
-            If you discover a security vulnerability on this website, please report it responsibly.
+            found a bug? cool! just don't break my stuff. we're all friends here.
           </p>
           
-          <h2 className="text-2xl font-bold mt-8">How to Report</h2>
+          <h2 className="text-2xl font-bold mt-8">how to report</h2>
           <p>
-            Please email security issues to: <a href="mailto:admin@kalashvasaniya.com" className="text-blue-600 underline">admin@kalashvasaniya.com</a>
+            shoot me an email: <a href="mailto:admin@kalashvasaniya.com" className="text-blue-600 underline">admin@kalashvasaniya.com</a>
           </p>
           
-          <h2 className="text-2xl font-bold mt-8">What to Include</h2>
+          <h2 className="text-2xl font-bold mt-8">what to include</h2>
           <ul className="list-disc pl-6 space-y-2">
-            <li>A clear description of the vulnerability</li>
-            <li>Steps to reproduce the issue</li>
-            <li>Potential impact assessment</li>
-            <li>Your contact information</li>
+            <li>what's broken (in plain english, please)</li>
+            <li>how to make it break again</li>
+            <li>how bad is it? (1-10 scale)</li>
+            <li>your name (so i can thank you properly)</li>
           </ul>
           
-          <h2 className="text-2xl font-bold mt-8">Response</h2>
+          <h2 className="text-2xl font-bold mt-8">response time</h2>
           <p>
-            I will acknowledge receipt within 48 hours and provide updates on the resolution timeline.
+            i'll get back to you within 48 hours. promise!
           </p>
           
-          <h2 className="text-2xl font-bold mt-8">Scope</h2>
-          <p>
-            This policy applies to the main website at kalashvasaniya.com and its subdomains.
+          <h2 className="text-2xl font-bold mt-8">scope</h2>
+          <p className="pb-8">
+            this covers kalashvasaniya.com and all its little subdomains.
           </p>
         </div>
       </main>
