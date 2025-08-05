@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Kalash Vasaniya | Portfolio",
+  title: "Portfolio - Kalash Vasaniya",
   description: "Explore my portfolio of projects, startups, and creations. From SuperFast to innovative solutions that impact millions of users worldwide.",
   keywords: ["portfolio", "projects", "SuperFast", "startups", "entrepreneur", "Kalash Vasaniya", "technology", "innovation"],
   authors: [{ name: "Kalash Vasaniya" }],
@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     canonical: '/portfolio',
   },
   openGraph: {
-    title: "Kalash Vasaniya | Portfolio",
+    title: "Portfolio - Kalash Vasaniya",
     description: "Explore my portfolio of projects, startups, and creations. From SuperFast to innovative solutions that impact millions of users worldwide.",
     url: 'https://kalashvasaniya.com/portfolio',
     siteName: 'Kalash Vasaniya',
@@ -34,7 +34,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: "Kalash Vasaniya | Portfolio",
+    title: "Portfolio - Kalash Vasaniya",
     description: "Explore my portfolio of projects, startups, and creations. From SuperFast to innovative solutions that impact millions of users worldwide.",
     images: ['https://res.cloudinary.com/dwb211sw5/image/upload/v1754392328/linko/frdzbk94fqxbjsxupinc.jpg'],
   },

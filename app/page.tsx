@@ -1,11 +1,25 @@
+"use client";
+
 import Image from "next/image";
+import { useState } from "react";
 
 export default function Home() {
+  const [showVideo, setShowVideo] = useState(false);
+
+  const handlePromoClick = (e: React.MouseEvent) => {
+    e.preventDefault();
+    setShowVideo(true);
+  };
+
+  const closeVideo = () => {
+    setShowVideo(false);
+  };
+
   return (
     <div className="min-h-screen bg-white text-gray-800 font-sans p-0 md:p-3">
       {/* Navigation */}
       <nav className="pt-8 pl-8">
-        <div className="flex gap-6 text-base">
+        <div className="flex gap-6 text-xl leading-relaxed">
           <a href="/" className="text-blue-600 underline">home</a>
           <a target="_blank" href="https://bento.me/kalashvasaniya" className="text-blue-600 underline">find me</a>
           <a href="/portfolio" className="text-blue-600 underline">portfolio</a>
@@ -26,7 +40,7 @@ export default function Home() {
           </p>
 
           <p>
-            when i was 17, i had a crazy idea to build a social media platform for college students. it was completely anonymous, so i built <a href="https://www.thepairup.in/" target="_blank" className="text-blue-600 underline">thepairup</a>.
+            when i was 17, i had an idea to build a social media platform for college students. i wanted it anonymous, so i built <a href="https://www.thepairup.in/" target="_blank" className="text-blue-600 underline">thepairup</a>.
           </p>
 
           <p>
@@ -37,10 +51,11 @@ export default function Home() {
             <a href="https://www.thepairup.in/" target="_blank" className="text-blue-600 underline">thepairup</a> brutally failed. i thought i was the next mark zuckerberg. went all in for 3 months, coding 12–14 hours a day. and i was the only one who signed up.
           </p>
 
-
           <p>
             back to the present, i'm the founder of <a href="https://www.superfa.st/" target="_blank" className="text-blue-600 underline">superfast</a>, a next.js boilerplate that helps developers go from idea to revenue in just days.
           </p>
+
+          <p>check out the <a href="#" onClick={handlePromoClick} className="text-blue-600 underline cursor-pointer">promo</a>.</p>
 
           <p>
             superfast gives you everything you need to launch fast. no complex setup, no endless config, just powerful tools that work out of the box. focus on your product while we handle the heavy lifting. learn more <a href="https://www.superfa.st/about" target="_blank" className="text-blue-600 underline">here</a>.
@@ -57,29 +72,59 @@ export default function Home() {
 
           <img src="/img/0708A321-F5BA-4C89-AD06-8C8D9C4681E0_1_105_c.jpeg" alt="first sale screenshot" className="mt-4 rounded-lg shadow-md" />
 
+          <p>2025 is my year.</p>
+
           <p>
-            i did a bunch of stuff before.
+            all started in feb when i found out about <a href="https://x.com/marc_louvion" target="_blank" className="text-blue-600 underline">marc lou</a>, the legend.
           </p>
 
           <p>
-            founded an online elementary school called zipschool focused on homeschoolers and grew it to 150,000 kiddos, trained a real time cv model that would coach you in overwatch named visor (we got really big actually, then, blizzard banned us oops), was cto at kanga where we built our own models to recommend gamers content they'd enjoy, trained my own open-source deep learning models for esports analytics, built random products for league of legends that got to 1m+ users, built a dumb ar menu app that got no where, and built a bunch of other random stupid shit that was meaningless but fun (lol).
+            i always wanted to build a product that helps people. solo, no team, because at the same time i want to travel the world. like a nomad. check my  <a href="/bucketlist" target="_blank" className="text-blue-600 underline">bucket list</a>.
           </p>
+
+          <p>
+            i was like, "i can do this too".
+          </p>
+
 
           <p>
             some stuff above worked out.
             most of it didn't.
-            but, i learned a lot.
+            but i learned a lot.
           </p>
 
           <p>
-            sometimes i write about my fuck ups building stuff or of when things went really right! if you want me to hyu when i write. drop your email below.
+            sometimes i write about my fuck ups building stuff, or those rare times when things actually went right. if you want me to hit you up when i write, follow me on <a href="https://x.com/amikalash" target="_blank" className="text-blue-600 underline">twitter</a>.
           </p>
 
-          <p className="mt-8">
-            p.s: if you wanna contact me, i generally respond to every single email under 300 characters with a clear ask.
+          <p className="pb-8">
+            p.s. if you wanna contact me, i usually reply to every email under 300 characters with a clear ask. <a href="mailto:kalashvasaniya@gmail.com" target="_blank" className="text-blue-600 underline">email</a>
           </p>
+
+
         </div>
       </main>
+
+      {/* Video Popup */}
+      {showVideo && (
+        <div className="fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-50 w-full max-w-md md:max-w-lg lg:max-w-xl bg-white rounded-lg shadow-2xl px-4 md:px-0">
+          <button
+            onClick={closeVideo}
+            className="absolute -top-2 right-2 md:-top-3 md:-right-3 bg-red-500 text-white rounded-full w-7 h-7 md:w-8 md:h-8 flex items-center justify-center text-xs md:text-sm font-bold hover:bg-red-600 z-10"
+          >
+            ✕
+          </button>
+          <div className="aspect-video">
+            <iframe
+              src="https://www.youtube.com/embed/24O-ncDicHk?autoplay=1"
+              title="SuperFast Demo"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+              className="w-full h-full rounded-lg"
+            />
+          </div>
+        </div>
+      )}
     </div>
   );
 }

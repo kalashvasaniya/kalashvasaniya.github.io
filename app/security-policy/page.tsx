@@ -11,10 +11,10 @@ export const metadata: Metadata = {
 
 export default function SecurityPolicy() {
   return (
-    <div className="min-h-screen bg-white text-gray-800 font-sans p-4">
+    <div className="min-h-screen bg-white text-gray-800 font-sans p-0 md:p-3">
       {/* Navigation */}
       <nav className="pt-8 pl-8">
-        <div className="flex gap-6 text-base">
+        <div className="flex gap-6 text-xl leading-relaxed">
           <a href="/" className="text-blue-600 underline">home</a>
           <a target="_blank" href="https://bento.me/kalashvasaniya" className="text-blue-600 underline">find me</a>
           <a href="/portfolio" className="text-blue-600 underline">portfolio</a>
