@@ -69,19 +69,11 @@ export const metadata: Metadata = {
     icon: [
       { url: '/favicon_io_white/favicon-16x16.png', sizes: '16x16', type: 'image/png' },
       { url: '/favicon_io_white/favicon-32x32.png', sizes: '32x32', type: 'image/png' },
+      { url: '/favicon_io_white/android-chrome-192x192.png', sizes: '192x192', type: 'image/png' },
+      { url: '/favicon_io_white/android-chrome-512x512.png', sizes: '512x512', type: 'image/png' },
     ],
     shortcut: '/favicon_io_white/favicon.ico',
     apple: '/favicon_io_white/apple-touch-icon.png',
-    other: [
-      {
-        rel: 'android-chrome-192x192',
-        url: '/favicon_io_white/android-chrome-192x192.png',
-      },
-      {
-        rel: 'android-chrome-512x512',
-        url: '/favicon_io_white/android-chrome-512x512.png',
-      },
-    ],
   },
   manifest: '/favicon_io_white/site.webmanifest',
 };
@@ -115,6 +107,10 @@ export default function RootLayout({
         <link rel="icon" type="image/png" sizes="512x512" href="/favicon_io_black/android-chrome-512x512.png" media="(prefers-color-scheme: light)" />
         <link rel="icon" type="image/png" sizes="192x192" href="/favicon_io_white/android-chrome-192x192.png" media="(prefers-color-scheme: dark)" />
         <link rel="icon" type="image/png" sizes="512x512" href="/favicon_io_white/android-chrome-512x512.png" media="(prefers-color-scheme: dark)" />
+        
+        {/* Additional icon sizes for better compatibility */}
+        <link rel="icon" type="image/png" sizes="192x192" href="/favicon_io_black/android-chrome-192x192.png" />
+        <link rel="icon" type="image/png" sizes="512x512" href="/favicon_io_black/android-chrome-512x512.png" />
         
         {/* Web manifest */}
         <link rel="manifest" href="/favicon_io_white/site.webmanifest" />
