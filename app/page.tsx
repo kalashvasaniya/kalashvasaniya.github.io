@@ -1,20 +1,6 @@
 "use client";
 
-import Image from "next/image";
-import { useState } from "react";
-
 export default function Home() {
-  const [showVideo, setShowVideo] = useState(false);
-
-  const handlePromoClick = (e: React.MouseEvent) => {
-    e.preventDefault();
-    setShowVideo(true);
-  };
-
-  const closeVideo = () => {
-    setShowVideo(false);
-  };
-
   return (
     <div className="min-h-screen bg-white text-gray-800 font-sans p-0 md:p-3">
       {/* Navigation */}
@@ -55,7 +41,7 @@ export default function Home() {
             back to the present, i'm the founder of <a href="https://www.superfa.st/" target="_blank" className="text-blue-600 underline">superfast</a>, a next.js boilerplate that helps developers go from idea to revenue in just days.
           </p>
 
-          <p>check out the <a href="#" onClick={handlePromoClick} className="text-blue-600 underline cursor-pointer">promo</a>.</p>
+          <p>check out the <a href="https://youtu.be/24O-ncDicHk?si=lwPjYdYBdTIjCGuv" target="_blank" className="text-blue-600 underline">promo</a>.</p>
 
           <p>
             superfast gives you everything you need to launch fast. no complex setup, no endless config, just powerful tools that work out of the box. focus on your product while we handle the heavy lifting. learn more <a href="https://www.superfa.st/about" target="_blank" className="text-blue-600 underline">here</a>.
@@ -104,27 +90,6 @@ export default function Home() {
 
         </div>
       </main>
-
-      {/* Video Popup */}
-      {showVideo && (
-        <div className="fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-50 w-full max-w-md md:max-w-lg lg:max-w-xl bg-white rounded-lg shadow-2xl px-4 md:px-0">
-          <button
-            onClick={closeVideo}
-            className="absolute -top-2 right-2 md:-top-3 md:-right-3 bg-red-500 text-white rounded-full w-7 h-7 md:w-8 md:h-8 flex items-center justify-center text-xs md:text-sm font-bold hover:bg-red-600 z-10"
-          >
-            ✕
-          </button>
-          <div className="aspect-video">
-            <iframe
-              src="https://www.youtube.com/embed/24O-ncDicHk?autoplay=1"
-              title="SuperFast Demo"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
-              className="w-full h-full rounded-lg"
-            />
-          </div>
-        </div>
-      )}
     </div>
   );
 }
