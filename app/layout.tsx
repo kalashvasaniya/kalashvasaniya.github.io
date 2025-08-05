@@ -36,10 +36,10 @@ export const metadata: Metadata = {
     siteName: 'Kalash Vasaniya',
     images: [
       {
-        url: '/favicon_io_black/android-chrome-512x512.png',
-        width: 512,
-        height: 512,
-        alt: 'Kalash Vasaniya',
+        url: 'https://res.cloudinary.com/dwb211sw5/image/upload/v1754392328/linko/frdzbk94fqxbjsxupinc.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'Kalash Vasaniya - Founder of SuperFast, Entrepreneur, and Creator',
       },
     ],
     locale: 'en_US',
@@ -49,7 +49,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: "Kalash Vasaniya",
     description: "Hi, I'm Kalash. I love creating things for others. Founder of SuperFast, entrepreneur, and creator.",
-    images: ['/favicon_io_black/android-chrome-512x512.png'],
+    images: ['https://res.cloudinary.com/dwb211sw5/image/upload/v1754392328/linko/frdzbk94fqxbjsxupinc.jpg'],
   },
   robots: {
     index: true,
