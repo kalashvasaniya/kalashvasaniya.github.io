@@ -67,23 +67,23 @@ export const metadata: Metadata = {
   },
   icons: {
     icon: [
-      { url: '/favicon_io_black/favicon-16x16.png', sizes: '16x16', type: 'image/png' },
-      { url: '/favicon_io_black/favicon-32x32.png', sizes: '32x32', type: 'image/png' },
+      { url: '/favicon_io_white/favicon-16x16.png', sizes: '16x16', type: 'image/png' },
+      { url: '/favicon_io_white/favicon-32x32.png', sizes: '32x32', type: 'image/png' },
     ],
-    shortcut: '/favicon_io_black/favicon.ico',
-    apple: '/favicon_io_black/apple-touch-icon.png',
+    shortcut: '/favicon_io_white/favicon.ico',
+    apple: '/favicon_io_white/apple-touch-icon.png',
     other: [
       {
         rel: 'android-chrome-192x192',
-        url: '/favicon_io_black/android-chrome-192x192.png',
+        url: '/favicon_io_white/android-chrome-192x192.png',
       },
       {
         rel: 'android-chrome-512x512',
-        url: '/favicon_io_black/android-chrome-512x512.png',
+        url: '/favicon_io_white/android-chrome-512x512.png',
       },
     ],
   },
-  manifest: '/favicon_io_black/site.webmanifest',
+  manifest: '/favicon_io_white/site.webmanifest',
 };
 
 export default function RootLayout({
@@ -94,16 +94,18 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        {/* Dark mode favicon support */}
-        <link rel="icon" href="/favicon_io_black/favicon.ico" media="(prefers-color-scheme: light)" />
-        <link rel="icon" href="/favicon_io_white/favicon.ico" media="(prefers-color-scheme: dark)" />
+        {/* Default favicon (white) */}
+        <link rel="icon" href="/favicon_io_white/favicon.ico" />
         
-        {/* Additional favicon formats for light mode */}
+        {/* Light mode favicon support (black) */}
+        <link rel="icon" href="/favicon_io_black/favicon.ico" media="(prefers-color-scheme: light)" />
+        
+        {/* Additional favicon formats for light mode (black) */}
         <link rel="icon" type="image/png" sizes="16x16" href="/favicon_io_black/favicon-16x16.png" media="(prefers-color-scheme: light)" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon_io_black/favicon-32x32.png" media="(prefers-color-scheme: light)" />
         <link rel="apple-touch-icon" href="/favicon_io_black/apple-touch-icon.png" media="(prefers-color-scheme: light)" />
         
-        {/* Additional favicon formats for dark mode */}
+        {/* Additional favicon formats for dark mode (white) */}
         <link rel="icon" type="image/png" sizes="16x16" href="/favicon_io_white/favicon-16x16.png" media="(prefers-color-scheme: dark)" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon_io_white/favicon-32x32.png" media="(prefers-color-scheme: dark)" />
         <link rel="apple-touch-icon" href="/favicon_io_white/apple-touch-icon.png" media="(prefers-color-scheme: dark)" />
@@ -115,7 +117,7 @@ export default function RootLayout({
         <link rel="icon" type="image/png" sizes="512x512" href="/favicon_io_white/android-chrome-512x512.png" media="(prefers-color-scheme: dark)" />
         
         {/* Web manifest */}
-        <link rel="manifest" href="/favicon_io_black/site.webmanifest" />
+        <link rel="manifest" href="/favicon_io_white/site.webmanifest" />
         
         {/* JSON-LD Structured Data */}
         <JsonLd />
