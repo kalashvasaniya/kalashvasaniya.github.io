@@ -14,12 +14,13 @@ async function getPost(slug: string) {
 }
 
 type Props = {
-  params: { slug: string };
+  params: Promise<{ slug: string }>;
 };
 
 export async function generateMetadata(props: Props): Promise<Metadata> {
-  const { params } = await props;
-  const post = await getPost((await params).slug);
+  const { params } = props;
+  const { slug } = await params;
+  const post = await getPost(slug);
   if (!post) {
     return {
       title: "Post Not Found",
@@ -100,8 +101,9 @@ export async function generateMetadata(props: Props): Promise<Metadata> {
 }
 
 export default async function BlogPost(props: Props) {
-  const { params } = await props;
-  const post = await getPost((await params).slug);
+  const { params } = props;
+  const { slug } = await params;
+  const post = await getPost(slug);
   if (!post) {
     notFound();
   }
