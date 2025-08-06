@@ -1,18 +1,23 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Portfolio - Kalash Vasaniya",
-  description: "Explore my portfolio of projects, startups, and creations. From SuperFast to innovative solutions that impact millions of users worldwide.",
-  keywords: ["portfolio", "projects", "SuperFast", "startups", "entrepreneur", "Kalash Vasaniya", "technology", "innovation"],
-  authors: [{ name: "Kalash Vasaniya" }],
-  creator: "Kalash Vasaniya",
-  publisher: "Kalash Vasaniya",
-  formatDetection: {
-    email: false,
-    address: false,
-    telephone: false,
-  },
-  metadataBase: new URL('https://kalashvasaniya.com'),
+  title: "Portfolio",
+  description: "Explore my portfolio of projects, startups, and creations. From SuperFast to innovative solutions that impact millions of users worldwide. See how I've built products from Dragon Ball Z games to enterprise boilerplates.",
+  keywords: [
+    "portfolio", 
+    "projects", 
+    "SuperFast", 
+    "startups", 
+    "entrepreneur", 
+    "technology", 
+    "innovation",
+    "web development",
+    "product development",
+    "software engineering",
+    "Next.js projects",
+    "React applications",
+    "tech entrepreneur portfolio"
+  ],
   alternates: {
     canonical: '/portfolio',
   },
@@ -26,7 +31,8 @@ export const metadata: Metadata = {
         url: 'https://res.cloudinary.com/dwb211sw5/image/upload/v1754392328/linko/frdzbk94fqxbjsxupinc.jpg',
         width: 1200,
         height: 630,
-        alt: 'Kalash Vasaniya Portfolio - Projects and Startups',
+        alt: 'Kalash Vasaniya Portfolio - Projects, Startups, and Innovations',
+        type: 'image/jpeg',
       },
     ],
     locale: 'en_US',
@@ -36,7 +42,10 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: "Portfolio - Kalash Vasaniya",
     description: "Explore my portfolio of projects, startups, and creations. From SuperFast to innovative solutions that impact millions of users worldwide.",
-    images: ['https://res.cloudinary.com/dwb211sw5/image/upload/v1754392328/linko/frdzbk94fqxbjsxupinc.jpg'],
+    images: [{
+      url: 'https://res.cloudinary.com/dwb211sw5/image/upload/v1754392328/linko/frdzbk94fqxbjsxupinc.jpg',
+      alt: 'Kalash Vasaniya Portfolio - Projects, Startups, and Innovations',
+    }],
   },
   robots: {
     index: true,
@@ -48,9 +57,6 @@ export const metadata: Metadata = {
       'max-image-preview': 'large',
       'max-snippet': -1,
     },
-  },
-  verification: {
-    google: 'your-google-verification-code', // Replace with actual verification code
   },
 };
 

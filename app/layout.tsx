@@ -14,12 +14,33 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Kalash Vasaniya",
-  description: "Hi, I'm Kalash. I love creating things for others. Founder of SuperFast, entrepreneur, and creator. From selling Dragon Ball Z games at 13 to building companies that impact millions.",
-  keywords: ["Kalash Vasaniya", "SuperFast", "entrepreneur", "founder", "creator", "startup", "technology", "Next.js", "boilerplate"],
-  authors: [{ name: "Kalash Vasaniya" }],
+  title: {
+    default: "Kalash Vasaniya - Entrepreneur, Founder & Creator",
+    template: "%s | Kalash Vasaniya"
+  },
+  description: "Hi, I'm Kalash. I love creating things for others. Founder of SuperFast, entrepreneur, and creator. From selling Dragon Ball Z games at 13 to building companies that impact millions of users worldwide.",
+  keywords: [
+    "Kalash Vasaniya", 
+    "SuperFast", 
+    "entrepreneur", 
+    "founder", 
+    "creator", 
+    "startup", 
+    "technology", 
+    "Next.js", 
+    "boilerplate",
+    "digital nomad",
+    "product development",
+    "software engineer",
+    "innovation",
+    "tech entrepreneur"
+  ],
+  authors: [{ name: "Kalash Vasaniya", url: "https://kalashvasaniya.com" }],
   creator: "Kalash Vasaniya",
   publisher: "Kalash Vasaniya",
+  applicationName: "Kalash Vasaniya Portfolio",
+  category: "Technology",
+  classification: "Personal Website",
   formatDetection: {
     email: false,
     address: false,
@@ -28,10 +49,13 @@ export const metadata: Metadata = {
   metadataBase: new URL('https://kalashvasaniya.com'),
   alternates: {
     canonical: '/',
+    languages: {
+      'en-US': '/',
+    },
   },
   openGraph: {
-    title: "Kalash Vasaniya",
-    description: "Hi, I'm Kalash. I love creating things for others. Founder of SuperFast, entrepreneur, and creator.",
+    title: "Kalash Vasaniya - Entrepreneur, Founder & Creator",
+    description: "Hi, I'm Kalash. I love creating things for others. Founder of SuperFast, entrepreneur, and creator. From selling Dragon Ball Z games at 13 to building companies that impact millions of users worldwide.",
     url: 'https://kalashvasaniya.com',
     siteName: 'Kalash Vasaniya',
     images: [
@@ -40,6 +64,7 @@ export const metadata: Metadata = {
         width: 1200,
         height: 630,
         alt: 'Kalash Vasaniya - Founder of SuperFast, Entrepreneur, and Creator',
+        type: 'image/jpeg',
       },
     ],
     locale: 'en_US',
@@ -47,23 +72,30 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: "Kalash Vasaniya",
-    description: "Hi, I'm Kalash. I love creating things for others. Founder of SuperFast, entrepreneur, and creator.",
-    images: ['https://res.cloudinary.com/dwb211sw5/image/upload/v1754392328/linko/frdzbk94fqxbjsxupinc.jpg'],
+    title: "Kalash Vasaniya - Entrepreneur, Founder & Creator",
+    description: "Hi, I'm Kalash. I love creating things for others. Founder of SuperFast, entrepreneur, and creator. From selling Dragon Ball Z games at 13 to building companies that impact millions of users worldwide.",
+    images: [{
+      url: 'https://res.cloudinary.com/dwb211sw5/image/upload/v1754392328/linko/frdzbk94fqxbjsxupinc.jpg',
+      alt: 'Kalash Vasaniya - Founder of SuperFast, Entrepreneur, and Creator',
+    }],
+    creator: '@kalashvasaniya',
+    site: '@kalashvasaniya',
   },
   robots: {
     index: true,
     follow: true,
+    nocache: false,
     googleBot: {
       index: true,
       follow: true,
+      noimageindex: false,
       'max-video-preview': -1,
       'max-image-preview': 'large',
       'max-snippet': -1,
     },
   },
   verification: {
-    google: 'your-google-verification-code', // Replace with actual verification code
+    google: 'your-google-verification-code', // Replace with actual verification code when available
   },
   icons: {
     icon: [
@@ -76,6 +108,10 @@ export const metadata: Metadata = {
     apple: '/favicon_io_white/apple-touch-icon.png',
   },
   manifest: '/favicon_io_white/site.webmanifest',
+  other: {
+    'theme-color': '#ffffff',
+    'color-scheme': 'light dark',
+  },
 };
 
 export default function RootLayout({
