@@ -79,6 +79,37 @@ export default function JsonLd() {
           "@id": "https://kalashvasaniya.com/#person"
         },
         "url": "https://superfast.dev"
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://kalashvasaniya.com/#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://kalashvasaniya.com"
+          }
+        ]
+      },
+      {
+        "@type": "CollectionPage",
+        "@id": "https://kalashvasaniya.com/blog/#collection",
+        "name": "Blog",
+        "description": "Thoughts on technology, travel, entrepreneurship, and building products as a digital nomad",
+        "url": "https://kalashvasaniya.com/blog",
+        "mainEntity": {
+          "@type": "Blog",
+          "@id": "https://kalashvasaniya.com/blog/#blog",
+          "name": "Kalash Vasaniya's Blog",
+          "description": "Insights from founding SuperFast and creating impactful solutions",
+          "author": {
+            "@id": "https://kalashvasaniya.com/#person"
+          },
+          "publisher": {
+            "@id": "https://kalashvasaniya.com/#person"
+          }
+        }
       }
     ]
   };

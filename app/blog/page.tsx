@@ -6,6 +6,7 @@ export default function Blog() {
   const [email, setEmail] = useState("");
   const [isSubscribed, setIsSubscribed] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
+  const [showAllPosts, setShowAllPosts] = useState(false);
 
   const handleSubscribe = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -62,44 +63,79 @@ export default function Blog() {
         </h1>
 
         {/* Body Content */}
-        <div className="space-y-6 text-xl leading-relaxed">
-          <p>
+        <div className="text-xl leading-relaxed">
+          <p className="text-gray-700">
             i'm working on something special here. a place where i'll share my thoughts on technology, 
             travel experiences, and the journey of building products.
           </p>
 
-          <p>
-            coming soon.
-          </p>
+          {/* Blog Posts List */}
+          <div className="space-y-12 my-16">
+            {[
+              {
+                title: "i reached 5 million views on twitter in a week",
+                description: "accidentally went viral and learned about social media algorithms, content creation, and authentic storytelling.",
+                date: "august 6, 2025",
+                readTime: "3 min read",
+                slug: "i-reached-5-million-views-on-twitter-in-a-week"
+              }
+            ].slice(0, showAllPosts ? undefined : 2).map((post, index) => (
+              <article key={index} className="border-l-4 border-gray-300 pl-8 py-4 hover:border-gray-400 transition-colors">
+                <h2 className="text-3xl font-semibold mb-4 leading-tight">
+                  <a href={`/blog/${post.slug}`} className="text-blue-600 underline hover:text-blue-800 transition-colors">
+                    {post.title}
+                  </a>
+                </h2>
+                <p className="text-gray-600 mb-4 text-lg leading-relaxed">
+                  {post.description}
+                </p>
+                <div className="flex items-center gap-4 text-sm text-gray-500 font-medium">
+                  <span>{post.date}</span>
+                  <span className="text-gray-400">•</span>
+                  <span>{post.readTime}</span>
+                </div>
+              </article>
+            ))}
+            {!showAllPosts && (
+              <div className="pt-8">
+                <button
+                  onClick={() => setShowAllPosts(true)}
+                  className="px-8 py-4 bg-gray-100 text-gray-800 hover:bg-gray-200 transition-colors font-medium text-lg border border-gray-200 hover:border-gray-300"
+                >
+                  show more posts
+                </button>
+              </div>
+            )}
+          </div>
 
           {/* Email Subscription Section */}
-          <div className="space-y-4">
-            <h2 className="text-2xl font-semibold">get notified</h2>
-            <p>
-              want to be the first to know when i start posting? drop your email below and i'll 
+          <div className="space-y-6 py-8 border-t border-gray-200">
+            <h2 className="text-3xl font-semibold text-black">get notified</h2>
+            <p className="text-gray-700">
+              want to be the first to know when i post? drop your email below and i'll 
               let you know when the blog goes live.
             </p>
             
             {isSubscribed ? (
-              <div className="text-gray-600">
+              <div className="text-green-600 text-lg font-medium">
                 thanks! you'll be notified when the blog launches.
               </div>
             ) : (
-              <form onSubmit={handleSubscribe} className="space-y-4">
+              <form onSubmit={handleSubscribe} className="space-y-6">
                 <div>
                   <input
                     type="email"
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
                     placeholder="your email address"
-                    className="w-full px-4 py-3 border border-gray-300 rounded focus:outline-none focus:border-gray-600"
+                    className="w-full px-6 py-4 border-2 border-gray-300 focus:outline-none focus:border-gray-600 text-lg font-medium transition-colors"
                     required
                   />
                 </div>
                 <button
                   type="submit"
                   disabled={isLoading || !email}
-                  className="px-6 py-3 bg-black text-white rounded hover:bg-gray-800 disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
+                  className="px-8 py-4 bg-black text-white hover:bg-gray-800 disabled:opacity-50 disabled:cursor-not-allowed transition-colors font-medium text-lg border-2 border-black hover:border-gray-800"
                 >
                   {isLoading ? "subscribing..." : "notify me"}
                 </button>
@@ -107,9 +143,9 @@ export default function Blog() {
             )}
           </div>
 
-          <p className="pb-8">
-            <a href="/" className="text-blue-600 underline">← back home</a>
-          </p>
+          <div className="pb-8">
+            <a href="/" className="text-blue-600 underline text-lg">← back home</a>
+          </div>
         </div>
       </main>
     </div>

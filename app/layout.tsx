@@ -111,6 +111,13 @@ export const metadata: Metadata = {
   other: {
     'theme-color': '#ffffff',
     'color-scheme': 'light dark',
+    'mobile-web-app-capable': 'yes',
+    'apple-mobile-web-app-capable': 'yes',
+    'apple-mobile-web-app-status-bar-style': 'default',
+    'apple-mobile-web-app-title': 'Kalash Vasaniya',
+    'application-name': 'Kalash Vasaniya',
+    'msapplication-TileColor': '#ffffff',
+    'msapplication-config': '/favicon_io_white/browserconfig.xml',
   },
 };
 
