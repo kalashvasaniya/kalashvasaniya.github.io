@@ -11,19 +11,22 @@ export default function JsonLd() {
         "image": "https://res.cloudinary.com/dwb211sw5/image/upload/v1754392328/linko/frdzbk94fqxbjsxupinc.jpg",
         "sameAs": [
           "https://bento.me/kalashvasaniya",
-          "https://twitter.com/kalashvasaniya",
+          "https://twitter.com/amikalash",
           "https://github.com/kalashvasaniya",
-          "https://linkedin.com/in/kalashvasaniya"
+          "https://linkedin.com/in/kalashvasaniya",
+          "https://medium.com/@kalashvasaniya1"
         ],
         "jobTitle": "Founder & Creator",
         "worksFor": {
           "@type": "Organization",
           "name": "SuperFast",
-          "description": "Next.js boilerplate that helps developers go from idea to revenue in just days"
+          "description": "Next.js boilerplate that helps developers go from idea to revenue in just days",
+          "url": "https://superfa.st"
         },
         "founder": {
           "@type": "Organization",
-          "name": "SuperFast"
+          "name": "SuperFast",
+          "url": "https://superfa.st"
         },
         "knowsAbout": [
           "Entrepreneurship",
@@ -37,7 +40,9 @@ export default function JsonLd() {
           "SaaS",
           "Digital Nomad Lifestyle",
           "Travel",
-          "Innovation"
+          "Innovation",
+          "Social Media Marketing",
+          "Content Creation"
         ],
         "hasOccupation": [
           {
@@ -50,10 +55,19 @@ export default function JsonLd() {
             "@type": "Occupation", 
             "name": "Entrepreneur",
             "description": "Started first company at 13, grew to $100K revenue by high school. Building products that impact millions of users worldwide."
+          },
+          {
+            "@type": "Occupation",
+            "name": "Content Creator",
+            "description": "Viral content creator with 5M+ views on social media. Sharing insights on entrepreneurship, technology, and building in public."
           }
         ],
         "nationality": "Indian",
-        "birthPlace": "India"
+        "birthPlace": "India",
+        "alumniOf": {
+          "@type": "EducationalOrganization",
+          "name": "Computer Science Student"
+        }
       },
       {
         "@type": "WebSite",
@@ -68,7 +82,9 @@ export default function JsonLd() {
           "@type": "SearchAction",
           "target": "https://kalashvasaniya.com/search?q={search_term_string}",
           "query-input": "required name=search_term_string"
-        }
+        },
+        "datePublished": "2025-08-07",
+        "dateModified": "2025-08-07"
       },
       {
         "@type": "Organization",
@@ -78,7 +94,10 @@ export default function JsonLd() {
         "founder": {
           "@id": "https://kalashvasaniya.com/#person"
         },
-        "url": "https://superfast.dev"
+        "url": "https://superfa.st",
+        "foundingDate": "2025",
+        "industry": "Software Development",
+        "numberOfEmployees": "1-10"
       },
       {
         "@type": "BreadcrumbList",
@@ -108,7 +127,30 @@ export default function JsonLd() {
           },
           "publisher": {
             "@id": "https://kalashvasaniya.com/#person"
-          }
+          },
+          "blogPost": [
+            {
+              "@type": "BlogPosting",
+              "headline": "I got 5m views in a week just by tweeting",
+              "description": "Accidentally went viral and learned about social media algorithms, content creation, and authentic storytelling.",
+              "author": {
+                "@id": "https://kalashvasaniya.com/#person"
+              },
+              "publisher": {
+                "@id": "https://kalashvasaniya.com/#person"
+              },
+              "datePublished": "2025-08-06",
+              "dateModified": "2025-08-06",
+              "url": "https://kalashvasaniya.com/blog/i-got-5m-views-in-a-week-just-by-tweeting",
+              "mainEntityOfPage": {
+                "@type": "WebPage",
+                "@id": "https://kalashvasaniya.com/blog/i-got-5m-views-in-a-week-just-by-tweeting"
+              },
+              "image": "https://kalashvasaniya.com/blog/1_z43IuIWFOXqOnWeiV_GRNA.png",
+              "articleSection": "Social Media",
+              "keywords": ["viral tweet", "social media", "content creation", "twitter", "growth", "authenticity"]
+            }
+          ]
         }
       }
     ]

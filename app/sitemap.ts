@@ -18,7 +18,7 @@ async function getBlogPosts() {
           if (mod && mod.post) {
             posts.push({
               slug,
-              lastModified: mod.post.date ? new Date(mod.post.date) : new Date('2024-01-15'),
+              lastModified: mod.post.date ? new Date(mod.post.date) : new Date('2025-08-06'),
             })
           }
         } catch (e) {
@@ -32,8 +32,8 @@ async function getBlogPosts() {
     // Fallback to hardcoded posts if directory reading fails
     return [
       {
-        slug: 'i-reached-5-million-views-on-twitter-in-a-week',
-        lastModified: new Date('2024-01-15'),
+        slug: 'i-got-5m-views-in-a-week-just-by-tweeting',
+        lastModified: new Date('2025-08-06'),
       }
     ]
   }
@@ -64,7 +64,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       url: `${baseUrl}/blog`,
       lastModified: currentDate,
       changeFrequency: 'weekly' as const,
-      priority: 0.8,
+      priority: 0.9,
     },
     {
       url: `${baseUrl}/bucketlist`,

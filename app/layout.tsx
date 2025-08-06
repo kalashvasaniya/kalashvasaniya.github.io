@@ -6,11 +6,13 @@ import JsonLd from "./components/JsonLd";
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
+  display: "swap",
 });
 
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
+  display: "swap",
 });
 
 export const metadata: Metadata = {
@@ -33,7 +35,11 @@ export const metadata: Metadata = {
     "product development",
     "software engineer",
     "innovation",
-    "tech entrepreneur"
+    "tech entrepreneur",
+    "social media",
+    "content creator",
+    "viral content",
+    "building in public"
   ],
   authors: [{ name: "Kalash Vasaniya", url: "https://kalashvasaniya.com" }],
   creator: "Kalash Vasaniya",
@@ -78,8 +84,8 @@ export const metadata: Metadata = {
       url: 'https://res.cloudinary.com/dwb211sw5/image/upload/v1754392328/linko/frdzbk94fqxbjsxupinc.jpg',
       alt: 'Kalash Vasaniya - Founder of SuperFast, Entrepreneur, and Creator',
     }],
-    creator: '@kalashvasaniya',
-    site: '@kalashvasaniya',
+    creator: '@amikalash',
+    site: '@amikalash',
   },
   robots: {
     index: true,
@@ -118,6 +124,9 @@ export const metadata: Metadata = {
     'application-name': 'Kalash Vasaniya',
     'msapplication-TileColor': '#ffffff',
     'msapplication-config': '/favicon_io_white/browserconfig.xml',
+    'viewport': 'width=device-width, initial-scale=1, maximum-scale=5',
+    'referrer': 'origin-when-cross-origin',
+    'X-UA-Compatible': 'IE=edge',
   },
 };
 
@@ -129,6 +138,22 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+        {/* Performance optimization meta tags */}
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
+        <meta name="referrer" content="origin-when-cross-origin" />
+        <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
+        
+        {/* Preload critical resources */}
+        <link rel="preload" href="/favicon_io_white/favicon.ico" as="image" />
+        <link rel="preload" href="/favicon_io_black/favicon.ico" as="image" />
+        
+        {/* DNS prefetch for external domains */}
+        <link rel="dns-prefetch" href="//res.cloudinary.com" />
+        <link rel="dns-prefetch" href="//twitter.com" />
+        <link rel="dns-prefetch" href="//github.com" />
+        <link rel="dns-prefetch" href="//linkedin.com" />
+        <link rel="dns-prefetch" href="//medium.com" />
+        
         {/* Default favicon (white) */}
         <link rel="icon" href="/favicon_io_white/favicon.ico" />
         

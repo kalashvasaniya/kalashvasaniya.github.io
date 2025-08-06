@@ -15,7 +15,9 @@ export default function robots(): MetadataRoute.Robots {
           '/tmp/',
           '/cache/',
           '/_vercel/',
-          '/node_modules/'
+          '/node_modules/',
+          '/.env',
+          '/.git'
         ],
         crawlDelay: 1,
       },
@@ -56,9 +58,31 @@ export default function robots(): MetadataRoute.Robots {
         allow: '/',
         disallow: ['/private/', '/admin/', '/api/'],
       },
-      // Block bad bots
       {
-        userAgent: ['AhrefsBot', 'SemrushBot', 'MJ12bot', 'DotBot'],
+        userAgent: 'Discordbot',
+        allow: '/',
+        disallow: ['/private/', '/admin/', '/api/'],
+      },
+      {
+        userAgent: 'TelegramBot',
+        allow: '/',
+        disallow: ['/private/', '/admin/', '/api/'],
+      },
+      // Block bad bots and scrapers
+      {
+        userAgent: [
+          'AhrefsBot', 
+          'SemrushBot', 
+          'MJ12bot', 
+          'DotBot',
+          'rogerbot',
+          'Exabot',
+          'ia_archiver',
+          'archive.org_bot',
+          'Baiduspider',
+          'YandexBot',
+          'DuckDuckBot'
+        ],
         disallow: '/',
       }
     ],
