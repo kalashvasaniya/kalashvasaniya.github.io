@@ -56,7 +56,7 @@ export default function Home() {
             and i finally made money out of it. first sale is always special.
           </p>
 
-          <img src="/img/0708A321-F5BA-4C89-AD06-8C8D9C4681E0_1_105_c.jpeg" alt="first sale screenshot" className="mt-4 rounded-lg shadow-md" />
+          <img src="/img/0708A321-F5BA-4C89-AD06-8C8D9C4681E0_1_105_c.jpeg" alt="first sale screenshot" className="mt-4" />
 
           <p>2025 is my year.</p>
 
@@ -72,7 +72,6 @@ export default function Home() {
             i was like, "i can do this too".
           </p>
 
-
           <p>
             some stuff above worked out.
             most of it didn't.
@@ -84,9 +83,8 @@ export default function Home() {
           </p>
 
           <p className="pb-8">
-            p.s. if you wanna contact me, i usually reply to every email under 300 characters with a clear ask. <a href="mailto:kalashvasaniya@gmail.com" target="_blank" className="text-blue-600 underline">email</a>
+            p.s. if you wanna contact me, <a href="mailto:kalashvasaniya@gmail.com" target="_blank" className="text-blue-600 underline">email</a>.
           </p>
-
 
         </div>
       </main>
