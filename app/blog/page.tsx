@@ -65,12 +65,12 @@ export default function Blog() {
         {/* Body Content */}
         <div className="text-xl leading-relaxed">
           <p className="text-gray-700">
-            i'm working on something special here. a place where i'll share my thoughts on technology, 
+            a place where i'll share my thoughts on technology, 
             travel experiences, and the journey of building products.
           </p>
 
           {/* Blog Posts List */}
-          <div className="space-y-12 my-16">
+          <div className="space-y-12 my-8">
             {[
               {
                 title: "i got 5m views in a week just by tweeting.",
@@ -80,27 +80,27 @@ export default function Blog() {
                 slug: "i-got-5m-views-in-a-week-just-by-tweeting"
               }
             ].slice(0, showAllPosts ? undefined : 2).map((post, index) => (
-              <article key={index} className="border-l-4 border-gray-300 pl-8 py-4 hover:border-gray-400 transition-colors">
-                <h2 className="text-3xl font-semibold mb-4 leading-tight">
-                  <a href={`/blog/${post.slug}`} className="text-blue-600 underline hover:text-blue-800 transition-colors">
+              <a href={`/blog/${post.slug}`} key={index} className="block border border-gray-200 p-6 hover:border-gray-500 transition-colors !no-underline hover:!no-underline" style={{textDecoration: 'none'}}>
+                <article>
+                  <h2 className="text-3xl font-semibold mb-4 leading-tight !text-gray-900">
                     {post.title}
-                  </a>
-                </h2>
-                <p className="text-gray-600 mb-4 text-lg leading-relaxed">
-                  {post.description}
-                </p>
-                <div className="flex items-center gap-4 text-sm text-gray-500 font-medium">
-                  <span>{post.date}</span>
-                  <span className="text-gray-400">•</span>
-                  <span>{post.readTime}</span>
-                </div>
-              </article>
+                  </h2>
+                  <p className="text-gray-600 mb-4 text-lg leading-relaxed">
+                    {post.description}
+                  </p>
+                  <div className="flex items-center gap-4 text-sm text-gray-500 font-medium">
+                    <span>{post.date}</span>
+                    <span className="text-gray-400">•</span>
+                    <span>{post.readTime}</span>
+                  </div>
+                </article>
+              </a>
             ))}
             {!showAllPosts && (
-              <div className="pt-8">
+              <div>
                 <button
                   onClick={() => setShowAllPosts(true)}
-                  className="px-8 py-4 bg-gray-100 text-gray-800 hover:bg-gray-200 transition-colors font-medium text-lg border border-gray-200 hover:border-gray-300"
+                  className="px-8 py-4 bg-black text-white hover:bg-gray-800 transition-colors font-medium text-lg border-2 border-black hover:border-gray-800"
                 >
                   show more posts
                 </button>
