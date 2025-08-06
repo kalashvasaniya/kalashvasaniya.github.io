@@ -188,9 +188,7 @@ export default async function BlogPost(props: Props) {
         <article className="prose prose-lg max-w-none">
           <div className="space-y-8 text-xl leading-relaxed text-gray-800">
             {post.content.split('\n\n').map((paragraph: string, index: number) => (
-              <p key={index} className="mb-8 leading-8">
-                {paragraph.trim()}
-              </p>
+              <div key={index} className="mb-8 leading-8" dangerouslySetInnerHTML={{ __html: paragraph.trim() }} />
             ))}
           </div>
         </article>

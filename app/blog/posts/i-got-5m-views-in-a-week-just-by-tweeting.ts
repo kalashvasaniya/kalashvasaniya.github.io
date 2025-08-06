@@ -7,6 +7,8 @@ export const post = {
 
     it wasn't even my best tweet. it wasn't something i spent hours crafting or strategizing. it was just a simple thought i had while walking to my favorite coffee shop in bali. something about how we're all so obsessed with optimization that we forget to just... live.
 
+    <img src="/blog/1_z43IuIWFOXqOnWeiV_GRNA.png" alt="Screenshot of the viral tweet" style="width: 100%; max-width: 600px; height: auto; margin: 20px 0; border: 1px solid #e5e7eb;" />
+
     the tweet was about 280 characters. nothing revolutionary. but somehow, it resonated with people. and not just a few people - millions of them.
 
     within 24 hours, that tweet had been viewed over 2 million times. by the end of the week, the total views across all my content had reached 5 million. my follower count went from a modest 3,000 to over 50,000 in just seven days.
@@ -28,6 +30,8 @@ export const post = {
     since then, i've been more intentional about my social media presence. not because i'm chasing another viral moment, but because i've realized the power of these platforms to connect people, share knowledge, and build communities.
 
     if you're reading this and thinking about starting your own content journey, my advice is simple: start with what you know, share what you learn, and don't overthink it. the internet has a way of finding people who are genuine about their message.
+
+    for more insights on content creation and social media growth, check out <a href="https://twitter.com/amikalash" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">my twitter</a> where i share daily thoughts and lessons learned.
 
     and remember, going viral isn't the goal. making an impact is.
 
