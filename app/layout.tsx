@@ -66,7 +66,7 @@ export const metadata: Metadata = {
     siteName: 'Kalash Vasaniya',
     images: [
       {
-        url: 'https://res.cloudinary.com/dwb211sw5/image/upload/v1754392328/linko/frdzbk94fqxbjsxupinc.jpg',
+        url: 'https://res.cloudinary.com/dwb211sw5/image/upload/v1754520877/linko/v8h7b3v7mxli7xhcbija.jpg',
         width: 1200,
         height: 630,
         alt: 'Kalash Vasaniya - Founder of SuperFast, Entrepreneur, and Creator',
@@ -81,7 +81,7 @@ export const metadata: Metadata = {
     title: "Kalash Vasaniya - Entrepreneur, Founder & Creator",
     description: "Hi, I'm Kalash. I love creating things for others. Founder of SuperFast, entrepreneur, and creator. From selling Dragon Ball Z games at 13 to building companies that impact millions of users worldwide.",
     images: [{
-      url: 'https://res.cloudinary.com/dwb211sw5/image/upload/v1754392328/linko/frdzbk94fqxbjsxupinc.jpg',
+      url: 'https://res.cloudinary.com/dwb211sw5/image/upload/v1754520877/linko/v8h7b3v7mxli7xhcbija.jpg',
       alt: 'Kalash Vasaniya - Founder of SuperFast, Entrepreneur, and Creator',
     }],
     creator: '@amikalash',
