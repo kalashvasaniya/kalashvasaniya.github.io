@@ -1,78 +1,39 @@
-import type { Metadata } from "next";
+import { Geist, Geist_Mono } from "next/font/google";
+import "../globals.css";
 
-export const metadata: Metadata = {
-  title: "Resume",
-  description: "Kalash Vasaniya's professional resume. Founder of SuperFast, entrepreneur, full-stack developer, and digital nomad. Experience in building products that impact millions of users worldwide.",
-  keywords: [
-    "resume", 
-    "CV", 
-    "Kalash Vasaniya", 
-    "entrepreneur", 
-    "founder", 
-    "SuperFast", 
-    "full-stack developer",
-    "software engineer",
-    "digital nomad",
-    "startup founder",
-    "product development",
-    "tech entrepreneur",
-    "Next.js developer",
-    "React developer",
-    "innovation",
-    "technology leadership"
-  ],
-  authors: [{ name: "Kalash Vasaniya", url: "https://kalashvasaniya.com" }],
-  creator: "Kalash Vasaniya",
-  publisher: "Kalash Vasaniya",
-  category: "Professional",
-  alternates: {
-    canonical: '/resume',
-  },
-  openGraph: {
-    title: "Resume - Kalash Vasaniya",
-    description: "Kalash Vasaniya's professional resume. Founder of SuperFast, entrepreneur, full-stack developer, and digital nomad.",
-    url: 'https://kalashvasaniya.com/resume',
-    siteName: 'Kalash Vasaniya',
-    images: [
-      {
-        url: 'https://res.cloudinary.com/dwb211sw5/image/upload/v1754520303/linko/tlzppa3rqe0omlbimksq.jpg',
-        width: 1200,
-        height: 630,
-        alt: 'Kalash Vasaniya Resume - Entrepreneur and Full-Stack Developer',
-        type: 'image/jpeg',
-      },
-    ],
-    locale: 'en_US',
-    type: 'profile',
-  },
-  twitter: {
-    card: 'summary_large_image',
-    title: "Resume - Kalash Vasaniya",
-    description: "Kalash Vasaniya's professional resume. Founder of SuperFast, entrepreneur, full-stack developer, and digital nomad.",
-    creator: '@kalashvasaniya',
-    site: '@kalashvasaniya',
-    images: [{
-      url: 'https://res.cloudinary.com/dwb211sw5/image/upload/v1754520303/linko/tlzppa3rqe0omlbimksq.jpg',
-      alt: 'Kalash Vasaniya Resume - Entrepreneur and Full-Stack Developer',
-    }],
-  },
-  robots: {
-    index: true,
-    follow: true,
-    googleBot: {
-      index: true,
-      follow: true,
-      'max-video-preview': -1,
-      'max-image-preview': 'large',
-      'max-snippet': -1,
-    },
-  },
-};
+const geistSans = Geist({
+  variable: "--font-geist-sans",
+  subsets: ["latin"],
+  display: "swap",
+});
+
+const geistMono = Geist_Mono({
+  variable: "--font-geist-mono",
+  subsets: ["latin"],
+  display: "swap",
+});
 
 export default function ResumeLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  return <>{children}</>;
+  return (
+    <html lang="en">
+      <head>
+        {/* Basic viewport and compatibility meta tags only */}
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
+        
+        {/* Basic favicon only */}
+        <link rel="icon" href="/favicon_io_white/favicon.ico" />
+      </head>
+      <body
+        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        suppressHydrationWarning={true}
+      >
+        {children}
+      </body>
+    </html>
+  );
 }

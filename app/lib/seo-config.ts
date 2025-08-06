@@ -154,12 +154,6 @@ export const seoConfig = {
       priority: 0.9,
       changeFrequency: "weekly" as const,
     },
-    resume: {
-      title: "Resume | Kalash Vasaniya",
-      description: "My professional experience, skills, and achievements. From founding SuperFast to viral content creation.",
-      priority: 0.8,
-      changeFrequency: "monthly" as const,
-    },
     bucketlist: {
       title: "Bucket List | Kalash Vasaniya",
       description: "My personal bucket list and goals. Things I want to achieve, places I want to visit, and experiences I want to have.",
