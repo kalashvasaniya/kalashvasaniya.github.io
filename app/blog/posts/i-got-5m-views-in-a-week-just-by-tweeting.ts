@@ -1,6 +1,6 @@
 export const post = {
-  title: "I reached 5 million views on Twitter in a week",
-  slug: "i-reached-5-million-views-on-twitter-in-a-week",
+  title: "i got 5m views in a week just by tweeting.",
+  slug: "i-got-5m-views-in-a-week-just-by-tweeting",
   description: "accidentally went viral and learned about social media algorithms, content creation, and authentic storytelling.",
   content: `
     last week, something unexpected happened. i woke up to find my twitter notifications completely flooded. my phone was buzzing non-stop, and when i finally checked what was going on, i discovered that one of my tweets had gone viral.

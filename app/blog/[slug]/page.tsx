@@ -157,43 +157,70 @@ export default async function BlogPost(props: Props) {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
+      
       {/* Navigation */}
       <nav className="pt-8 pl-8">
         <div className="flex gap-6 text-xl leading-relaxed">
-          <a href="/" className="text-blue-600 underline">home</a>
-          <a href="/blog" className="text-blue-600 underline">blog</a>
-          <a href="/portfolio" className="text-blue-600 underline">portfolio</a>
+          <a href="/" className="text-blue-600 underline hover:text-blue-800 transition-colors">home</a>
+          <a href="/blog" className="text-blue-600 underline hover:text-blue-800 transition-colors">blog</a>
+          <a href="/portfolio" className="text-blue-600 underline hover:text-blue-800 transition-colors">portfolio</a>
         </div>
       </nav>
+      
       {/* Main Content */}
-      <main className="pt-8 pl-8 pr-8 max-w-2xl">
+      <main className="pt-12 pl-8 pr-8 max-w-3xl">
         {/* Article Header */}
-        <header className="mb-12">
-          <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-black mb-6 leading-tight">
+        <header className="mb-8">
+          <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-black mb-8 leading-tight">
             {post.title}
           </h1>
-          <div className="flex items-center gap-4 text-gray-600 text-lg">
-            <span>{post.date}</span>
-            <span>•</span>
-            <span>{post.readTime}</span>
+          
+          <div className="flex items-center gap-6 text-gray-600 text-lg">
+            <span className="font-medium">{post.date}</span>
+            <span className="text-gray-400">•</span>
+            <span className="text-gray-500">{post.readTime}</span>
           </div>
+          
+          <hr className="my-8 border-gray-300" />
         </header>
+        
         {/* Article Content */}
         <article className="prose prose-lg max-w-none">
-          <div className="space-y-6 text-xl leading-relaxed text-gray-800">
+          <div className="space-y-8 text-xl leading-relaxed text-gray-800">
             {post.content.split('\n\n').map((paragraph: string, index: number) => (
-              <p key={index} className="mb-6">
+              <p key={index} className="mb-8 leading-8">
                 {paragraph.trim()}
               </p>
             ))}
           </div>
         </article>
-        {/* Back to Blog */}
-        <div className="mt-12 pb-8">
-          <a href="/blog" className="text-blue-600 underline text-xl">
-            ← back to blog
+        
+        {/* End of Blog */}
+        <hr className="my-8 border-gray-300" />
+        
+        {/* Share and Navigation */}
+        <div className="mt-8 pb-8 space-y-4">
+          <div className="text-xl leading-relaxed text-gray-800">
+            <p>
+              if you enjoyed this post, consider sharing it on{' '}
+              <a 
+                href={`https://twitter.com/intent/tweet?text=${encodeURIComponent(`"${post.title}" by @amikalash`)}&url=${encodeURIComponent(`https://kalashvasaniya.com/blog/${post.slug}`)}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-blue-600 underline hover:text-blue-800 transition-colors"
+              >
+                twitter
               </a>
-            </div>
+              .
+            </p>
+          </div>
+          
+          <div className="pt-4">
+            <a href="/blog" className="text-blue-600 underline hover:text-blue-800 transition-colors text-xl">
+              ← back to blog
+            </a>
+          </div>
+        </div>
       </main>
     </div>
   );

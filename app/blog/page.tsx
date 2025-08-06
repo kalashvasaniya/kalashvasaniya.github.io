@@ -73,11 +73,11 @@ export default function Blog() {
           <div className="space-y-12 my-16">
             {[
               {
-                title: "i reached 5 million views on twitter in a week",
+                title: "i got 5m views in a week just by tweeting.",
                 description: "accidentally went viral and learned about social media algorithms, content creation, and authentic storytelling.",
                 date: "august 6, 2025",
                 readTime: "3 min read",
-                slug: "i-reached-5-million-views-on-twitter-in-a-week"
+                slug: "i-got-5m-views-in-a-week-just-by-tweeting"
               }
             ].slice(0, showAllPosts ? undefined : 2).map((post, index) => (
               <article key={index} className="border-l-4 border-gray-300 pl-8 py-4 hover:border-gray-400 transition-colors">
