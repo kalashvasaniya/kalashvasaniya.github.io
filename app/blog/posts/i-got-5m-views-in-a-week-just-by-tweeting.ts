@@ -3,39 +3,47 @@ export const post = {
   slug: "i-got-5m-views-in-a-week-just-by-tweeting",
   description: "accidentally went viral and learned about social media algorithms, content creation, and authentic storytelling.",
   content: `
-    last week, something unexpected happened. i woke up to find my twitter notifications completely flooded. my phone was buzzing non-stop, and when i finally checked what was going on, i discovered that one of my tweets had gone viral.
+    something unexpected happened. i woke up to a phone full of notifications. twitter was on fire. one of my tweets had blown up.
 
-    it wasn't even my best tweet. it wasn't something i spent hours crafting or strategizing. it was just a simple thought i had while walking to my favorite coffee shop in bali. something about how we're all so obsessed with optimization that we forget to just... live.
+    it wasn’t planned. not a thread. not a hook. just a thought i had while walking. something real about how we optimize everything to death.
 
     <img src="/blog/1_z43IuIWFOXqOnWeiV_GRNA.png" alt="Screenshot of the viral tweet" style="width: 100%; max-width: 600px; height: auto; margin: 20px 0; border: 1px solid #e5e7eb;" />
 
-    the tweet was about 280 characters. nothing revolutionary. but somehow, it resonated with people. and not just a few people - millions of them.
+    280 characters. no hashtags. no hype.  
+    <a href="https://x.com/amikalash/status/1920968152881430949" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">first tweet</a> hit 1.7 million in 24 hours.  
+    <a href="https://x.com/amikalash/status/1922570039896490347" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">second tweet</a> did 3.5 million.  
+    that’s 5 million views in 1 week.
 
-    within 24 hours, that tweet had been viewed over 2 million times. by the end of the week, the total views across all my content had reached 5 million. my follower count went from a modest 3,000 to over 50,000 in just seven days.
+    here’s what i learned:
 
-    here's what i learned from this experience:
+    1. quality > quantity:  
+    tweeting 100 times a day doesn’t make you consistent. it makes you noisy. i tweeted 4-5 times max. post less. think more. keep your timeline tight.
 
-    first, algorithms are unpredictable. what works one day might not work the next. the same content that gets ignored today could go viral tomorrow. this taught me to stop trying to game the system and instead focus on creating content that genuinely matters to me.
+    2. don’t beg in replies: 
+    replying to big accounts won’t build you. it builds them. you’re here to lead. show up on your own feed. that’s where real growth starts.
 
-    second, authenticity beats optimization. my most successful posts weren't the ones where i tried to use trending hashtags or follow viral formats. they were the ones where i just shared my real thoughts, experiences, and observations.
+    3. consistency compounds: 
+    virality is luck. growth is the grind. tweet daily. even if no one cares. your breakout tweet might be number 17. don’t quit at 6.
 
-    third, virality is a double-edged sword. while the numbers were exciting, the real value came from the conversations i had with people who reached out. entrepreneurs from india asking for advice, developers from brazil sharing their projects, students from nigeria asking about my journey. these connections were worth more than any view count.
+    4. people follow people: 
+    not formats. not hacks. real thoughts from real people win. write like you talk. say something honest. that’s what connects.
 
-    fourth, content creation is about serving others, not yourself. when you focus on providing value to your audience rather than building your personal brand, the engagement follows naturally.
+    5. content should serve: 
+    stop trying to sound smart. help someone instead. share what helped you. when you stop trying to impress, people listen.
 
-    fifth, consistency matters more than virality. one viral tweet doesn't build a sustainable audience. it's the daily commitment to showing up, sharing insights, and engaging with your community that creates lasting impact.
+    i almost didn’t post it. thought it was mid. almost deleted it. but i hit send anyway. that’s the trick. post the thing. even if it feels small.
 
-    the funny thing is, i almost didn't post that tweet. i was about to delete it because i thought it was too simple, too obvious. but something told me to just hit send. and that's probably the biggest lesson of all - sometimes the best content is the stuff you're most hesitant to share.
+    i’m not here to chase virality. i’m here to build. to connect. to figure it out in public. if you’re just getting started:
 
-    since then, i've been more intentional about my social media presence. not because i'm chasing another viral moment, but because i've realized the power of these platforms to connect people, share knowledge, and build communities.
+    start with what you know  
+    share what you’ve learned  
+    don’t fake it  
+    don’t overthink it  
+    post anyway
 
-    if you're reading this and thinking about starting your own content journey, my advice is simple: start with what you know, share what you learn, and don't overthink it. the internet has a way of finding people who are genuine about their message.
+    i write more here and post daily on <a href="https://twitter.com/amikalash" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">twitter</a>. if you’re serious about building, start now.
 
-    for more insights on content creation and social media growth, check out <a href="https://twitter.com/amikalash" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">my twitter</a> where i share daily thoughts and lessons learned.
-
-    and remember, going viral isn't the goal. making an impact is.
-
-    p.s. if you're one of the people who found me through that tweet, thanks for being here. let's build something meaningful together.
+    p.s. if you found me through that tweet, thanks for sticking around. let’s build something that matters.
   `,
   date: "august 6, 2025",
   readTime: "3 min read"
