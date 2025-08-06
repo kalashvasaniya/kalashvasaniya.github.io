@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     siteName: 'Kalash Vasaniya',
     images: [
       {
-        url: 'https://res.cloudinary.com/dwb211sw5/image/upload/v1754392328/linko/frdzbk94fqxbjsxupinc.jpg',
+        url: 'https://res.cloudinary.com/dwb211sw5/image/upload/v1754520353/linko/k0xtfxwgkzcstnvij7lc.jpg',
         width: 1200,
         height: 630,
         alt: 'Kalash Vasaniya Blog - Technology, Travel, and Entrepreneurship',
@@ -42,7 +42,7 @@ export const metadata: Metadata = {
     title: "Blog - Kalash Vasaniya",
     description: "My blog where I share thoughts on technology, travel, entrepreneurship, and building products as a digital nomad.",
     images: [{
-      url: 'https://res.cloudinary.com/dwb211sw5/image/upload/v1754392328/linko/frdzbk94fqxbjsxupinc.jpg',
+      url: 'https://res.cloudinary.com/dwb211sw5/image/upload/v1754520353/linko/k0xtfxwgkzcstnvij7lc.jpg',
       alt: 'Kalash Vasaniya Blog - Technology, Travel, and Entrepreneurship',
     }],
   },

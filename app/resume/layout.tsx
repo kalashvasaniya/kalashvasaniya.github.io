@@ -35,7 +35,7 @@ export const metadata: Metadata = {
     siteName: 'Kalash Vasaniya',
     images: [
       {
-        url: 'https://res.cloudinary.com/dwb211sw5/image/upload/v1754392328/linko/frdzbk94fqxbjsxupinc.jpg',
+        url: 'https://res.cloudinary.com/dwb211sw5/image/upload/v1754520303/linko/tlzppa3rqe0omlbimksq.jpg',
         width: 1200,
         height: 630,
         alt: 'Kalash Vasaniya Resume - Entrepreneur and Full-Stack Developer',
@@ -52,7 +52,7 @@ export const metadata: Metadata = {
     creator: '@kalashvasaniya',
     site: '@kalashvasaniya',
     images: [{
-      url: 'https://res.cloudinary.com/dwb211sw5/image/upload/v1754392328/linko/frdzbk94fqxbjsxupinc.jpg',
+      url: 'https://res.cloudinary.com/dwb211sw5/image/upload/v1754520303/linko/tlzppa3rqe0omlbimksq.jpg',
       alt: 'Kalash Vasaniya Resume - Entrepreneur and Full-Stack Developer',
     }],
   },

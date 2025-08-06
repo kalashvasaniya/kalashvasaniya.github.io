@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     siteName: 'Kalash Vasaniya',
     images: [
       {
-        url: 'https://res.cloudinary.com/dwb211sw5/image/upload/v1754392328/linko/frdzbk94fqxbjsxupinc.jpg',
+        url: 'https://res.cloudinary.com/dwb211sw5/image/upload/v1754520436/linko/kxuvewrtsjtp9vksbnd6.jpg',
         width: 1200,
         height: 630,
         alt: 'Kalash Vasaniya Portfolio - Projects, Startups, and Innovations',
@@ -43,7 +43,7 @@ export const metadata: Metadata = {
     title: "Portfolio - Kalash Vasaniya",
     description: "Explore my portfolio of projects, startups, and creations. From SuperFast to innovative solutions that impact millions of users worldwide.",
     images: [{
-      url: 'https://res.cloudinary.com/dwb211sw5/image/upload/v1754392328/linko/frdzbk94fqxbjsxupinc.jpg',
+      url: 'https://res.cloudinary.com/dwb211sw5/image/upload/v1754520436/linko/kxuvewrtsjtp9vksbnd6.jpg',
       alt: 'Kalash Vasaniya Portfolio - Projects, Startups, and Innovations',
     }],
   },

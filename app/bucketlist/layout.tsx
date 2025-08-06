@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     siteName: 'Kalash Vasaniya',
     images: [
       {
-        url: 'https://res.cloudinary.com/dwb211sw5/image/upload/v1754392328/linko/frdzbk94fqxbjsxupinc.jpg',
+        url: 'https://res.cloudinary.com/dwb211sw5/image/upload/v1754520552/linko/njvxy2drypifthoidfig.jpg',
         width: 1200,
         height: 630,
         alt: 'Kalash Vasaniya Bucket List - Digital Nomad Travel Goals',
@@ -42,7 +42,7 @@ export const metadata: Metadata = {
     title: "Bucket List - Kalash Vasaniya",
     description: "My bucket list of places to visit and experiences to have while traveling the world as a digital nomad.",
     images: [{
-      url: 'https://res.cloudinary.com/dwb211sw5/image/upload/v1754392328/linko/frdzbk94fqxbjsxupinc.jpg',
+      url: 'https://res.cloudinary.com/dwb211sw5/image/upload/v1754520552/linko/njvxy2drypifthoidfig.jpg',
       alt: 'Kalash Vasaniya Bucket List - Digital Nomad Travel Goals',
     }],
   },
