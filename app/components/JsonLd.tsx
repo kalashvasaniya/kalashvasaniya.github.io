@@ -6,7 +6,7 @@ export default function JsonLd() {
         "@type": "Person",
         "@id": "https://kalashvasaniya.com/#person",
         "name": "Kalash Vasaniya",
-        "description": "Creator, entrepreneur, and founder of SuperFast. I love creating things for others. From selling Dragon Ball Z games at 13 to building companies that impact millions.",
+        "description": "Creator, entrepreneur, and founder of SuperFast. I love creating things for others.",
         "url": "https://kalashvasaniya.com",
         "image": "https://res.cloudinary.com/dwb211sw5/image/upload/v1754520877/linko/v8h7b3v7mxli7xhcbija.jpg",
         "sameAs": [
@@ -74,7 +74,7 @@ export default function JsonLd() {
         "@id": "https://kalashvasaniya.com/#website",
         "url": "https://kalashvasaniya.com",
         "name": "Kalash Vasaniya - Entrepreneur, Founder & Creator",
-        "description": "Hi, I'm Kalash. I love creating things for others. Founder of SuperFast, entrepreneur, and creator. From selling Dragon Ball Z games at 13 to building companies that impact millions.",
+        "description": "Hi, I'm Kalash. I love creating things for others. Founder of SuperFast, entrepreneur, and creator.",
         "publisher": {
           "@id": "https://kalashvasaniya.com/#person"
         },

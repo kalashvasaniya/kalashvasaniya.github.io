@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Portfolio",
-  description: "Explore my portfolio of projects, startups, and creations. From SuperFast to innovative solutions that impact millions of users worldwide. See how I've built products from Dragon Ball Z games to enterprise boilerplates.",
+  description: "Explore my portfolio of projects, startups, and creations. From SuperFast to innovative solutions that impact millions of users worldwide.",
   keywords: [
     "portfolio", 
     "projects", 
