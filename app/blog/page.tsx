@@ -73,6 +73,13 @@ export default function Blog() {
           <div className="space-y-12 my-8">
             {[
               {
+                title: "i locked myself for 35 days to build this.",
+                description: "the story of how i locked myself away for 35 days to build something meaningful. real insights on deep work, focus, and commitment.",
+                date: "january 15, 2025",
+                readTime: "4 min read",
+                slug: "i-locked-myself-for-35-days-to-build-this"
+              },
+              {
                 title: "i got 5m views in a week just by tweeting.",
                 description: "accidentally went viral and learned about social media algorithms, content creation, and authentic storytelling.",
                 date: "august 6, 2025",
