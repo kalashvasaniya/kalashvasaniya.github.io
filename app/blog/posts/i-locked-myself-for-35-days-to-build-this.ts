@@ -1,7 +1,7 @@
 export const post = {
   title: "i locked myself for 35 days to build this",
   slug: "i-locked-myself-for-35-days-to-build-this",
-  description: "The story of how I locked myself away for 35 days to build something meaningful. Real insights on deep work, focus, and what happens when you commit to building in isolation.",
+  description: "The story of how I locked myself for 35 days to build something meaningful. Real insights on deep work, focus, and what happens when you commit to building in isolation.",
   excerpt: "35 days. No distractions. No excuses. Just me, my laptop, and a vision. Here's what happened when I locked myself away to build something that mattered.",
   content: `
     35 days. no distractions. no excuses. just me, my laptop, and a vision. i locked myself away to build something that mattered.
