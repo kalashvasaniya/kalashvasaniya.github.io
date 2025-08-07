@@ -1,13 +1,5 @@
-import React from 'react';
+import { redirect } from 'next/navigation';
 
 export default function ResumePage() {
-  return (
-    <div className="w-full h-screen">
-      <iframe
-        src="/Resume-Kalash-Vasaniya.pdf"
-        className="w-full h-full"
-        title="Kalash Vasaniya Resume"
-      />
-    </div>
-  );
+  redirect('/resume.pdf');
 } 
