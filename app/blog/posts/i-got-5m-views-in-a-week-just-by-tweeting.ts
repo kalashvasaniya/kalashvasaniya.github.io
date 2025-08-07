@@ -8,7 +8,7 @@ export const post = {
 
     it wasn't planned. not a thread. not a hook. just a thought i had while walking. something real about how we optimize everything to death.
 
-    <img src="/blog/1_z43IuIWFOXqOnWeiV_GRNA.png" alt="Screenshot of the viral tweet showing 5M+ views" style="width: 100%; max-width: 600px; height: auto; margin: 20px 0; border: 1px solid #e5e7eb;" />
+    <img src="https://res.cloudinary.com/dwb211sw5/image/upload/v1754563024/linko/fj6vljkyhzi4s2o39eec.jpg" alt="Screenshot of the viral tweet showing 5M+ views" style="width: 100%; max-width: 600px; height: auto; margin: 20px 0; border: 1px solid #e5e7eb;" />
 
     280 characters. no hashtags. no hype.  
     <a href="https://x.com/amikalash/status/1920968152881430949" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">first tweet</a> hit 1.7 million in 24 hours.  

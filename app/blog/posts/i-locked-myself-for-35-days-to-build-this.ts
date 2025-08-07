@@ -8,7 +8,7 @@ export const post = {
 
     it started with frustration. too many half-finished projects. too many "i'll do it tomorrow" promises. too much noise. i needed to prove something to myself.
 
-    <img src="/blog/1_z43IuIWFOXqOnWeiV_GRNA.png" alt="Screenshot showing the 35-day building journey and results" style="width: 100%; max-width: 600px; height: auto; margin: 20px 0; border: 1px solid #e5e7eb;" />
+    <img src="https://res.cloudinary.com/dwb211sw5/image/upload/v1754563024/linko/fj6vljkyhzi4s2o39eec.jpg" alt="Screenshot showing the 35-day building journey and results" style="width: 100%; max-width: 600px; height: auto; margin: 20px 0; border: 1px solid #e5e7eb;" />
 
     day 1: excitement. day 7: doubt. day 14: questioning everything. day 21: breakthrough. day 35: something real.
 
