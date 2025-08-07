@@ -2,8 +2,8 @@ export const seoConfig = {
   // Site information
   site: {
     name: "Kalash Vasaniya",
-    title: "Kalash Vasaniya - Entrepreneur, Founder & Creator",
-    description: "Hi, I'm Kalash. I love creating things for others. Founder of SuperFast, entrepreneur, and creator.",
+    title: "Kalash Vasaniya",
+    description: "hi, i'm kalash, i build things that make your life easier and i'm the founder of superfast, shipping stupidly fast so you don't have to., entrepreneur, and creator.",
     url: "https://kalashvasaniya.com",
     image: "https://res.cloudinary.com/dwb211sw5/image/upload/v1754520877/linko/v8h7b3v7mxli7xhcbija.jpg",
     imageAlt: "Kalash Vasaniya - Founder of SuperFast, Entrepreneur, and Creator",
@@ -137,8 +137,8 @@ export const seoConfig = {
   // Page-specific SEO
   pages: {
     home: {
-      title: "Kalash Vasaniya - Entrepreneur, Founder & Creator",
-      description: "Hi, I'm Kalash. I love creating things for others. Founder of SuperFast, entrepreneur, and creator.",
+      title: "Kalash Vasaniya",
+      description: "hi, i'm kalash, i build things that make your life easier and i'm the founder of superfast, shipping stupidly fast so you don't have to., entrepreneur, and creator.",
       priority: 1.0,
       changeFrequency: "weekly" as const,
     },

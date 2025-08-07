@@ -73,8 +73,8 @@ export default function JsonLd() {
         "@type": "WebSite",
         "@id": "https://kalashvasaniya.com/#website",
         "url": "https://kalashvasaniya.com",
-        "name": "Kalash Vasaniya - Entrepreneur, Founder & Creator",
-        "description": "Hi, I'm Kalash. I love creating things for others. Founder of SuperFast, entrepreneur, and creator.",
+        "name": "Kalash Vasaniya",
+        "description": "hi, im kalash, i build things that make your life easier and i'm the founder of superfast, shipping stupidly fast so you don't have to., entrepreneur, and creator.",
         "publisher": {
           "@id": "https://kalashvasaniya.com/#person"
         },
