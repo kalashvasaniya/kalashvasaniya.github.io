@@ -50,7 +50,7 @@ export const post = {
   readTime: "3 min read",
   author: "Kalash Vasaniya",
   authorUrl: "https://kalashvasaniya.com",
-  authorImage: "https://res.cloudinary.com/dwb211sw5/image/upload/v1754520877/linko/v8h7b3v7mxli7xhcbija.jpg",
+  authorImage: "https://res.cloudinary.com/dwb211sw5/image/upload/v1754603136/linko/bq7qv9tolwefvb6fbwqq.jpg",
   tags: ["social media", "viral content", "twitter", "content creation", "growth", "authenticity", "entrepreneurship"],
   category: "Social Media",
   featuredImage: "/blog/1_z43IuIWFOXqOnWeiV_GRNA.png",

@@ -8,7 +8,7 @@ export default function JsonLd() {
         "name": "Kalash Vasaniya",
         "description": "Creator, entrepreneur, and founder of SuperFast. I love creating things for others.",
         "url": "https://kalashvasaniya.com",
-        "image": "https://res.cloudinary.com/dwb211sw5/image/upload/v1754520877/linko/v8h7b3v7mxli7xhcbija.jpg",
+        "image": "https://res.cloudinary.com/dwb211sw5/image/upload/v1754603136/linko/bq7qv9tolwefvb6fbwqq.jpg",
         "sameAs": [
           "https://bento.me/kalashvasaniya",
           "https://twitter.com/amikalash",

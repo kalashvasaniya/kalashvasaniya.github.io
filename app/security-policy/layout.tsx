@@ -31,7 +31,7 @@ export const metadata: Metadata = {
     siteName: 'Kalash Vasaniya',
     images: [
       {
-        url: 'https://res.cloudinary.com/dwb211sw5/image/upload/v1754520877/linko/v8h7b3v7mxli7xhcbija.jpg',
+        url: 'https://res.cloudinary.com/dwb211sw5/image/upload/v1754603136/linko/bq7qv9tolwefvb6fbwqq.jpg',
         width: 1200,
         height: 630,
         alt: 'Kalash Vasaniya Security Policy',
@@ -48,7 +48,7 @@ export const metadata: Metadata = {
     creator: '@kalashvasaniya',
     site: '@kalashvasaniya',
     images: [{
-      url: 'https://res.cloudinary.com/dwb211sw5/image/upload/v1754520877/linko/v8h7b3v7mxli7xhcbija.jpg',
+      url: 'https://res.cloudinary.com/dwb211sw5/image/upload/v1754603136/linko/bq7qv9tolwefvb6fbwqq.jpg',
       alt: 'Kalash Vasaniya Security Policy',
     }],
   },

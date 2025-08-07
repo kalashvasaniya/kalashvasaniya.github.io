@@ -64,7 +64,7 @@ export async function generateMetadata(props: Props): Promise<Metadata> {
       siteName: 'Kalash Vasaniya',
       images: [
         {
-          url: 'https://res.cloudinary.com/dwb211sw5/image/upload/v1754520877/linko/v8h7b3v7mxli7xhcbija.jpg',
+          url: 'https://res.cloudinary.com/dwb211sw5/image/upload/v1754603136/linko/bq7qv9tolwefvb6fbwqq.jpg',
           width: 1200,
           height: 630,
           alt: post.title,
@@ -82,7 +82,7 @@ export async function generateMetadata(props: Props): Promise<Metadata> {
       creator: '@amikalash',
       site: '@amikalash',
       images: [{
-        url: 'https://res.cloudinary.com/dwb211sw5/image/upload/v1754520877/linko/v8h7b3v7mxli7xhcbija.jpg',
+        url: 'https://res.cloudinary.com/dwb211sw5/image/upload/v1754603136/linko/bq7qv9tolwefvb6fbwqq.jpg',
         alt: post.title,
       }],
     },
@@ -113,7 +113,7 @@ export default async function BlogPost(props: Props) {
     "@type": "BlogPosting",
     "headline": post.title,
     "description": post.description,
-    "image": "https://res.cloudinary.com/dwb211sw5/image/upload/v1754520877/linko/v8h7b3v7mxli7xhcbija.jpg",
+    "image": "https://res.cloudinary.com/dwb211sw5/image/upload/v1754603136/linko/bq7qv9tolwefvb6fbwqq.jpg",
     "author": {
       "@type": "Person",
       "@id": "https://kalashvasaniya.com/#person",
@@ -131,7 +131,7 @@ export default async function BlogPost(props: Props) {
       "name": "Kalash Vasaniya",
       "logo": {
         "@type": "ImageObject",
-        "url": "https://res.cloudinary.com/dwb211sw5/image/upload/v1754520877/linko/v8h7b3v7mxli7xhcbija.jpg"
+        "url": "https://res.cloudinary.com/dwb211sw5/image/upload/v1754603136/linko/bq7qv9tolwefvb6fbwqq.jpg"
       }
     },
     "datePublished": post.date,
