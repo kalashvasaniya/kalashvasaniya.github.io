@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import React, { useState } from "react";
 
 export default function Blog() {
   const [email, setEmail] = useState("");
@@ -70,7 +70,7 @@ export default function Blog() {
           </p>
 
           {/* Blog Posts List */}
-          <div className="space-y-12 my-8">
+          <div className="space-y-8 my-8">
             {[
               {
                 title: "i locked myself for 35 days to build this.",
@@ -87,12 +87,12 @@ export default function Blog() {
                 slug: "i-got-5m-views-in-a-week-just-by-tweeting"
               }
             ].slice(0, showAllPosts ? undefined : 2).map((post, index) => (
-              <a href={`/blog/${post.slug}`} key={index} className="block border border-gray-200 p-6 hover:border-gray-500 transition-colors !no-underline hover:!no-underline" style={{textDecoration: 'none'}}>
+              <a href={`/blog/${post.slug}`} key={index} className="block border border-gray-200 p-5 hover:border-gray-500 transition-colors !no-underline hover:!no-underline" style={{textDecoration: 'none'}}>
                 <article>
-                  <h2 className="text-3xl font-semibold mb-4 leading-tight !text-gray-900">
+                  <h2 className="text-2xl font-semibold mb-3 leading-tight !text-gray-900">
                     {post.title}
                   </h2>
-                  <p className="text-gray-600 mb-4 text-lg leading-relaxed">
+                  <p className="text-gray-600 mb-3 text-lg leading-relaxed">
                     {post.description}
                   </p>
                   <div className="flex items-center gap-4 text-sm text-gray-500 font-medium">
