@@ -3,7 +3,7 @@ export const seoConfig = {
   site: {
     name: "Kalash Vasaniya",
     title: "Kalash Vasaniya",
-    description: "hi, i'm kalash, i build things that make your life easier and i'm the founder of superfast, shipping stupidly fast so you don't have to., entrepreneur, and creator.",
+    description: "hi, i'm kalash, i build things that make your life easier and i'm the founder of superfast, shipping stupidly fast so you don't have to.",
     url: "https://kalashvasaniya.com",
     image: "https://res.cloudinary.com/dwb211sw5/image/upload/v1754520877/linko/v8h7b3v7mxli7xhcbija.jpg",
     imageAlt: "Kalash Vasaniya - Founder of SuperFast, Entrepreneur, and Creator",
@@ -138,7 +138,7 @@ export const seoConfig = {
   pages: {
     home: {
       title: "Kalash Vasaniya",
-      description: "hi, i'm kalash, i build things that make your life easier and i'm the founder of superfast, shipping stupidly fast so you don't have to., entrepreneur, and creator.",
+      description: "hi, i'm kalash, i build things that make your life easier and i'm the founder of superfast, shipping stupidly fast so you don't have to.",
       priority: 1.0,
       changeFrequency: "weekly" as const,
     },

@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     default: "Kalash Vasaniya",
     template: "%s | Kalash Vasaniya"
   },
-  description: "hi, i'm kalash, i build things that make your life easier and i'm the founder of superfast, shipping stupidly fast so you don't have to., entrepreneur, and creator.",
+  description: "hi, i'm kalash, i build things that make your life easier and i'm the founder of superfast, shipping stupidly fast so you don't have to.",
   keywords: [
     "Kalash Vasaniya", 
     "SuperFast", 
@@ -61,7 +61,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: "Kalash Vasaniya",
-    description: "hi, i'm kalash, i build things that make your life easier and i'm the founder of superfast, shipping stupidly fast so you don't have to., entrepreneur, and creator.",
+    description: "hi, i'm kalash, i build things that make your life easier and i'm the founder of superfast, shipping stupidly fast so you don't have to.",
     url: 'https://kalashvasaniya.com',
     siteName: 'Kalash Vasaniya',
     images: [
@@ -79,7 +79,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: "Kalash Vasaniya",
-    description: "hi, i'm kalash, i build things that make your life easier and i'm the founder of superfast, shipping stupidly fast so you don't have to., entrepreneur, and creator.",
+    description: "hi, i'm kalash, i build things that make your life easier and i'm the founder of superfast, shipping stupidly fast so you don't have to.",
     images: [{
       url: 'https://res.cloudinary.com/dwb211sw5/image/upload/v1754520877/linko/v8h7b3v7mxli7xhcbija.jpg',
       alt: 'Kalash Vasaniya - Founder of SuperFast, Entrepreneur, and Creator',
