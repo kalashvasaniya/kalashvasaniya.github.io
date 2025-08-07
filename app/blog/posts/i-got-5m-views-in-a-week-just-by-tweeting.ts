@@ -46,7 +46,7 @@ export const post = {
 
     p.s. if you found me through that tweet, thanks for sticking around. let's build something that matters.
   `,
-  date: "2025-08-06",
+  date: "august 6, 2025",
   readTime: "3 min read",
   author: "Kalash Vasaniya",
   authorUrl: "https://kalashvasaniya.com",

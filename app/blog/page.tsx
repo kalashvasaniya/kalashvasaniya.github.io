@@ -75,7 +75,7 @@ export default function Blog() {
               {
                 title: "i locked myself for 35 days to build this.",
                 description: "the story of how i locked myself away for 35 days to build something meaningful. real insights on deep work, focus, and commitment.",
-                date: "january 15, 2025",
+                date: "august 7, 2025",
                 readTime: "4 min read",
                 slug: "i-locked-myself-for-35-days-to-build-this"
               },

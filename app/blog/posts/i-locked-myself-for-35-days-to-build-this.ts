@@ -64,7 +64,7 @@ export const post = {
 
     p.s. if you're reading this and thinking "i could never do that" - you're right. you can't. not yet. but you can start with 1 hour of focused work today. that's how it begins.
   `,
-  date: "2025-01-15",
+  date: "august 7, 2025",
   readTime: "4 min read",
   author: "Kalash Vasaniya",
   authorUrl: "https://kalashvasaniya.com",

@@ -168,10 +168,10 @@ export default async function BlogPost(props: Props) {
       </nav>
       
       {/* Main Content */}
-      <main className="pt-12 pl-8 pr-8 max-w-3xl">
+      <main className="pt-8 pl-8 pr-8 max-w-3xl">
         {/* Article Header */}
         <header className="mb-8">
-          <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-black mb-8 leading-tight">
+          <h1 className="text-5xl sm:text-5xl md:text-6xl font-bold text-black mb-8 leading-tight">
             {post.title}
           </h1>
           
