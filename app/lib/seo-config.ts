@@ -95,9 +95,9 @@ export const seoConfig = {
         'max-snippet': -1,
       },
     },
-    verification: {
-      google: 'your-google-verification-code', // Replace when available
-    },
+    // verification: {
+    //   google: 'your-google-verification-code', // Add when Google Search Console is set up
+    // },
     performance: {
       viewport: 'width=device-width, initial-scale=1, maximum-scale=5',
       referrer: 'origin-when-cross-origin',
