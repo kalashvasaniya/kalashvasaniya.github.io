@@ -154,6 +154,12 @@ export const seoConfig = {
       priority: 0.9,
       changeFrequency: "weekly" as const,
     },
+    services: {
+      title: "Services | Kalash Vasaniya",
+      description: "Writer + Developer services. I help startups promote their products and take on gig work. Hire me for content writing, development, and startup promotion.",
+      priority: 0.8,
+      changeFrequency: "monthly" as const,
+    },
     bucketlist: {
       title: "Bucket List | Kalash Vasaniya",
       description: "My personal bucket list and goals. Things I want to achieve, places I want to visit, and experiences I want to have.",

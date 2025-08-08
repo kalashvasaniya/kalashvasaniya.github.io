@@ -39,7 +39,31 @@ export const metadata: Metadata = {
     "social media",
     "content creator",
     "viral content",
-    "building in public"
+    "building in public",
+    "full-stack developer",
+    "indie hacker",
+    "SaaS founder",
+    "React developer",
+    "TypeScript",
+    "web development",
+    "startup promotion",
+    "content writing",
+    "technical writing",
+    "freelance developer",
+    "remote work",
+    "business automation",
+    "MVP development",
+    "landing page optimization",
+    "growth hacking",
+    "social media marketing",
+    "Twitter monetization",
+    "viral marketing",
+    "personal branding",
+    "developer tools",
+    "productivity tools",
+    "Bangalore developer",
+    "Indian entrepreneur",
+    "tech blogger"
   ],
   authors: [{ name: "Kalash Vasaniya", url: "https://kalashvasaniya.com" }],
   creator: "Kalash Vasaniya",
@@ -100,9 +124,9 @@ export const metadata: Metadata = {
       'max-snippet': -1,
     },
   },
-  verification: {
-    google: 'your-google-verification-code', // Replace with actual verification code when available
-  },
+  // verification: {
+  //   google: 'your-google-verification-code', // Add when Google Search Console is set up
+  // },
   icons: {
     icon: [
       { url: '/favicon_io_white/favicon-16x16.png', sizes: '16x16', type: 'image/png' },

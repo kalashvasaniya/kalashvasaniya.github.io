@@ -81,9 +81,32 @@ export default function robots(): MetadataRoute.Robots {
           'archive.org_bot',
           'Baiduspider',
           'YandexBot',
-          'DuckDuckBot'
+          'DuckDuckBot',
+          'CCBot',
+          'GPTBot',
+          'ChatGPT-User',
+          'Claude-Web',
+          'anthropic-ai',
+          'PerplexityBot',
+          'Applebot-Extended',
+          'ScrapeBot',
+          'MegaBot',
+          'DataBot',
+          'ScrapingBot',
+          'WebReaper',
+          'ExtractorPro',
+          'HTTrack',
+          'wget',
+          'curl',
+          'python-requests'
         ],
         disallow: '/',
+      },
+      // Allow specific AI bots that respect robots.txt
+      {
+        userAgent: 'ChatGPT-User',
+        allow: '/',
+        disallow: ['/private/', '/admin/', '/api/', '/.env'],
       }
     ],
     sitemap: 'https://kalashvasaniya.com/sitemap.xml',

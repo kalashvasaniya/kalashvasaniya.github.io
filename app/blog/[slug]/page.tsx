@@ -48,14 +48,30 @@ export async function generateMetadata(props: Props): Promise<Metadata> {
       "content creation",
       "viral content",
       "Twitter growth",
-      "personal branding"
+      "personal branding",
+      "indie hacker",
+      "SaaS founder",
+      "startup building",
+      "business growth",
+      "content marketing",
+      "social media strategy",
+      "online business",
+      "remote work",
+      "digital marketing",
+      "startup advice",
+      "entrepreneurship blog",
+      "tech insights",
+      "business development",
+      "growth hacking",
+      "marketing strategy",
+      ...(post.tags || [])
     ],
     authors: [{ name: "Kalash Vasaniya", url: "https://kalashvasaniya.com" }],
     creator: "Kalash Vasaniya",
     publisher: "Kalash Vasaniya",
     category: "Technology",
     alternates: {
-      canonical: `/blog/${post.slug}`,
+      canonical: `https://kalashvasaniya.com/blog/${post.slug}`,
     },
     openGraph: {
       title: `${post.title} - Kalash Vasaniya`,
@@ -113,14 +129,20 @@ export default async function BlogPost(props: Props) {
     "@type": "BlogPosting",
     "headline": post.title,
     "description": post.description,
-    "image": "https://res.cloudinary.com/dwb211sw5/image/upload/v1754603136/linko/bq7qv9tolwefvb6fbwqq.jpg",
+    "image": {
+      "@type": "ImageObject",
+      "url": post.featuredImage ? `https://kalashvasaniya.com${post.featuredImage}` : "https://res.cloudinary.com/dwb211sw5/image/upload/v1754603136/linko/bq7qv9tolwefvb6fbwqq.jpg",
+      "width": 1200,
+      "height": 630,
+      "alt": post.featuredImageAlt || post.title
+    },
     "author": {
       "@type": "Person",
       "@id": "https://kalashvasaniya.com/#person",
       "name": "Kalash Vasaniya",
       "url": "https://kalashvasaniya.com",
       "sameAs": [
-        "https://twitter.com/kalashvasaniya",
+        "https://twitter.com/amikalash",
         "https://github.com/kalashvasaniya",
         "https://linkedin.com/in/kalashvasaniya"
       ]
@@ -147,7 +169,25 @@ export default async function BlogPost(props: Props) {
     },
     "wordCount": post.content.split(' ').length,
     "genre": ["Technology", "Entrepreneurship", "Personal Development"],
-    "keywords": "entrepreneur, startup, technology, digital nomad, SuperFast, social media, content creation"
+    "keywords": post.tags ? post.tags.join(', ') : "entrepreneur, startup, technology, digital nomad, SuperFast, social media, content creation",
+    "about": post.category || "Technology",
+    "inLanguage": "en-US",
+    "audience": {
+      "@type": "Audience",
+      "audienceType": "Entrepreneurs, Developers, Startup Founders"
+    },
+    "copyrightHolder": {
+      "@type": "Person",
+      "name": "Kalash Vasaniya"
+    },
+    "copyrightYear": post.date ? (isNaN(Date.parse(post.date)) ? 2025 : new Date(post.date).getFullYear()) : 2025,
+    "license": "https://creativecommons.org/licenses/by/4.0/",
+    "isAccessibleForFree": true,
+    "discussionUrl": `https://twitter.com/intent/tweet?text=${encodeURIComponent(`"${post.title}" by @amikalash`)}&url=${encodeURIComponent(`https://kalashvasaniya.com/blog/${post.slug}`)}`,
+    "commentCount": 0,
+    "timeRequired": post.readTime,
+    "educationalLevel": "Intermediate",
+    "learningResourceType": "Article"
   };
 
   return (

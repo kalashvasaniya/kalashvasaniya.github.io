@@ -1,0 +1,10 @@
+---
+alwaysApply: true
+---
+never change title & description: title: {
+    default: "Kalash Vasaniya",
+    template: "%s | Kalash Vasaniya"
+  },
+  description: "hi, i'm kalash, i build things that make your life easier and i'm the founder of superfast, shipping stupidly fast so you don't have to.",
+
+never add anything realted to resume, resume is not a page.

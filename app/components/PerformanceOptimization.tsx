@@ -18,6 +18,13 @@ export default function PerformanceOptimization() {
       <link rel="dns-prefetch" href="//medium.com" />
       <link rel="dns-prefetch" href="//fonts.googleapis.com" />
       <link rel="dns-prefetch" href="//fonts.gstatic.com" />
+      <link rel="dns-prefetch" href="//contra.com" />
+      <link rel="dns-prefetch" href="//superfa.st" />
+      <link rel="dns-prefetch" href="//thepairup.in" />
+      <link rel="dns-prefetch" href="//youtube.com" />
+      <link rel="dns-prefetch" href="//docs.superfa.st" />
+      <link rel="dns-prefetch" href="//bento.me" />
+      <link rel="dns-prefetch" href="//college.thepairup.in" />
       
       {/* Preconnect for critical third-party resources */}
       <link rel="preconnect" href="https://res.cloudinary.com" crossOrigin="anonymous" />
@@ -42,11 +49,24 @@ export default function PerformanceOptimization() {
       <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)" />
       <meta name="color-scheme" content="light dark" />
       
-      {/* Security headers for better performance */}
+      {/* Security headers for better performance and SEO */}
       <meta name="referrer" content="strict-origin-when-cross-origin" />
+      <meta httpEquiv="X-Content-Type-Options" content="nosniff" />
+      <meta httpEquiv="X-Frame-Options" content="DENY" />
+      <meta httpEquiv="X-XSS-Protection" content="1; mode=block" />
+      <meta httpEquiv="Permissions-Policy" content="geolocation=(), microphone=(), camera=()" />
       
       {/* Cache control hints */}
       <meta name="cache-control" content="public, max-age=31536000, immutable" />
+      
+      {/* SEO-friendly performance hints */}
+      <meta name="format-detection" content="telephone=no, date=no, address=no" />
+      <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+      <meta name="googlebot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+      
+      {/* Loading optimization */}
+      <meta name="loading" content="lazy" />
+      <meta name="fetchpriority" content="high" />
     </>
   );
 } 

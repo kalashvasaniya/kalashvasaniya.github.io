@@ -67,7 +67,18 @@ export default function JsonLd() {
         "alumniOf": {
           "@type": "EducationalOrganization",
           "name": "Computer Science Student"
-        }
+        },
+        "memberOf": [
+          {
+            "@type": "Organization",
+            "@id": "https://kalashvasaniya.com/#organization"
+          }
+        ],
+        "award": [
+          "5M+ social media views",
+          "Successful product launch of SuperFast",
+          "Monetized Twitter account"
+        ]
       },
       {
         "@type": "WebSite",
@@ -78,11 +89,12 @@ export default function JsonLd() {
         "publisher": {
           "@id": "https://kalashvasaniya.com/#person"
         },
-        "potentialAction": {
-          "@type": "SearchAction",
-          "target": "https://kalashvasaniya.com/search?q={search_term_string}",
-          "query-input": "required name=search_term_string"
-        },
+        "potentialAction": [
+          {
+            "@type": "ReadAction",
+            "target": "https://kalashvasaniya.com"
+          }
+        ],
         "datePublished": "2025-08-07",
         "dateModified": "2025-08-07"
       },
@@ -151,6 +163,99 @@ export default function JsonLd() {
               "keywords": ["viral tweet", "social media", "content creation", "twitter", "growth", "authenticity"]
             }
           ]
+        }
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://kalashvasaniya.com/#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Who is Kalash Vasaniya?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Kalash Vasaniya is a full-stack developer, entrepreneur, and founder of SuperFast - a Next.js boilerplate that helps developers go from idea to revenue in just days. He's also a content creator with 5M+ social media views."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is SuperFast?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "SuperFast is a Next.js boilerplate created by Kalash Vasaniya that provides developers with everything they need to launch fast - no complex setup, no endless config, just powerful tools that work out of the box."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What services does Kalash Vasaniya offer?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Kalash offers content writing, startup promotion, web development, and technical writing services. He helps startups promote their products and takes on gig work through platforms like Contra."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How can I contact Kalash Vasaniya?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "You can contact Kalash via email at kalashvasaniya@gmail.com, through Contra for gig work, or find him on social media platforms like Twitter (@amikalash), GitHub, and LinkedIn."
+            }
+          }
+        ]
+      },
+      {
+        "@type": "Service",
+        "@id": "https://kalashvasaniya.com/services/#services",
+        "serviceType": "Professional Services",
+        "provider": {
+          "@id": "https://kalashvasaniya.com/#person"
+        },
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "Kalash Vasaniya Services",
+          "itemListElement": [
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Content Writing",
+                "description": "High-engagement articles that actually convert, covering tech, startups, and entrepreneurship."
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Startup Promotion",
+                "description": "Content creation that drives traffic and conversions, from social media to blog posts to landing page copy."
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Web Development",
+                "description": "Fast, scalable web applications using Next.js and modern tech stack. MVPs, landing pages, and full-stack applications."
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Technical Writing",
+                "description": "Documentation, tutorials, and technical blog posts that break down complex concepts into actionable content."
+              }
+            }
+          ]
+        },
+        "areaServed": "Worldwide",
+        "availableChannel": {
+          "@type": "ServiceChannel",
+          "serviceUrl": "https://contra.com/kalashvasaniya",
+          "serviceLocation": {
+            "@type": "Place",
+            "name": "Remote/Global"
+          }
         }
       }
     ]
