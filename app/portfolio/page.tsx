@@ -25,6 +25,10 @@ const page = () => {
             coming soon.
           </p>
 
+          <p>
+            in the meantime check <a href="/services" className="text-blue-600 underline">services</a> i offer.
+          </p>
+
           <p className="pb-8">
             <a href="/" className="text-blue-600 underline">← back home</a>
           </p>

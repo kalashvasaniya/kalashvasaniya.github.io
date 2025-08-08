@@ -26,7 +26,7 @@ export default function Services() {
           </p>
 
           <p>
-            i'm also open for gig work. hire me: <a href="https://contra.com/kalashvasaniya?referralExperimentNid=SOCIAL_REFERRAL_PROGRAM&referrerUsername=kalashvasaniya" target="_blank" className="text-blue-600 underline">@contra</a>
+            i'm also open for gig work. hire me: <a href="https://contra.com/kalashvasaniya" target="_blank" className="text-blue-600 underline">@contra</a>
           </p>
 
           <hr className="my-8 border-gray-300" />
@@ -39,7 +39,7 @@ export default function Services() {
               <p>
                 i write high-engagement articles that actually convert. my <a href="https://medium.com/@kalashvasaniya1" target="_blank" className="text-blue-600 underline">medium</a> articles have helped me build a following and generate passive income.
               </p>
-              <p>
+              <p className="mt-4">
                 i can write about tech, startups, entrepreneurship, or anything that needs compelling copy.
               </p>
             </div>
@@ -49,7 +49,7 @@ export default function Services() {
               <p>
                 want to get your startup noticed? i can help you create content that actually drives traffic and conversions. i've built products that failed and succeeded, so i know what works.
               </p>
-              <p>
+              <p className="mt-4">
                 from social media content to blog posts to landing page copy - i'll help you get your message out there.
               </p>
             </div>
@@ -59,14 +59,14 @@ export default function Services() {
               <p>
                 i build fast, scalable web applications using next.js and modern tech stack. check out <a href="https://www.superfa.st/" target="_blank" className="text-blue-600 underline">superfast</a> - my next.js boilerplate that helps developers ship faster.
               </p>
-              <p>
+              <p className="mt-4">
                 i can help you build mvp's, landing pages, or full-stack applications.
               </p>
             </div>
 
             <div>
               <h3 className="text-2xl font-semibold text-black mb-2">technical writing</h3>
-              <p>
+              <p className="mt-4">
                 need documentation, tutorials, or technical blog posts? i can break down complex concepts into simple, actionable content.
               </p>
             </div>
@@ -93,7 +93,7 @@ export default function Services() {
           <h2 className="text-3xl font-bold text-black mb-4">ready to work together?</h2>
 
           <p>
-            the best way to get started is through <a href="https://contra.com/kalashvasaniya?referralExperimentNid=SOCIAL_REFERRAL_PROGRAM&referrerUsername=kalashvasaniya" target="_blank" className="text-blue-600 underline">contra</a>. it's where i handle most of my gig work.
+            the best way to get started is through <a href="https://contra.com/kalashvasaniya" target="_blank" className="text-blue-600 underline">contra</a>. it's where i handle most of my gig work.
           </p>
 
           <p>
