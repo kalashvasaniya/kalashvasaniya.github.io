@@ -48,7 +48,7 @@ export default function Home() {
           <p>check out the <a href="https://youtu.be/24O-ncDicHk?si=lwPjYdYBdTIjCGuv" target="_blank" className="text-blue-600 underline">promo</a>.</p>
 
           <p>
-            superfast gives you everything you need to launch fast. no complex setup, no endless config, just powerful tools that work out of the box. focus on your product while we handle the heavy lifting. learn more <a href="https://www.superfa.st/about" target="_blank" className="text-blue-600 underline">here</a>.
+            superfast gives you everything you need to launch fast. no complex setup, no endless config, just powerful tools that work out of the box. focus on your product while we handle the heavy lifting. <a href="https://www.superfa.st/about" target="_blank" className="text-blue-600 underline">learn more about superfast</a>.
           </p>
 
           <p>
