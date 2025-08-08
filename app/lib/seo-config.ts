@@ -167,6 +167,94 @@ export const seoConfig = {
       changeFrequency: "monthly" as const,
     },
   },
+
+  // Enhanced structured data for rich snippets
+  structuredData: {
+    // Breadcrumb schema for better navigation understanding
+    breadcrumb: {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://kalashvasaniya.com"
+        },
+        {
+          "@type": "ListItem", 
+          "position": 2,
+          "name": "Blog",
+          "item": "https://kalashvasaniya.com/blog"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Portfolio", 
+          "item": "https://kalashvasaniya.com/portfolio"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "Services",
+          "item": "https://kalashvasaniya.com/services"
+        }
+      ]
+    },
+
+    // FAQ schema for common questions
+    faq: {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What does Kalash Vasaniya do?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Kalash Vasaniya is a founder, entrepreneur, and creator who builds things that make life easier. He's the founder of SuperFast, a Next.js boilerplate that helps developers ship faster."
+          }
+        },
+        {
+          "@type": "Question", 
+          "name": "What is SuperFast?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "SuperFast is a Next.js boilerplate that helps developers go from idea to revenue in just days. It's designed to ship stupidly fast so you don't have to."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What services does Kalash offer?",
+          "acceptedAnswer": {
+            "@type": "Answer", 
+            "text": "Kalash offers writer + developer services, helping startups promote their products and taking on gig work for content writing, development, and startup promotion."
+          }
+        }
+      ]
+    },
+
+    // Organization schema for better business understanding
+    organization: {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Kalash Vasaniya",
+      "url": "https://kalashvasaniya.com",
+      "logo": "https://res.cloudinary.com/dwb211sw5/image/upload/v1754603136/linko/bq7qv9tolwefvb6fbwqq.jpg",
+      "description": "Founder, entrepreneur, and creator building things that make life easier",
+      "founder": {
+        "@type": "Person",
+        "name": "Kalash Vasaniya"
+      },
+      "sameAs": [
+        "https://twitter.com/amikalash",
+        "https://github.com/kalashvasaniya",
+        "https://linkedin.com/in/kalashvasaniya",
+        "https://medium.com/@kalashvasaniya1",
+        "https://bento.me/kalashvasaniya"
+      ]
+    }
+  }
 };
 
 // Helper functions for SEO
