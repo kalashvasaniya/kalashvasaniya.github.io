@@ -6,11 +6,17 @@ export const post = {
   content: `
     all started when i found about <a href="https://www.x.com/marc_louvion" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">marc lou</a> and his journey of building.
 
-    <img src="https://res.cloudinary.com/dwb211sw5/image/upload/v1754843725/linko/cmjgqlwjwyxf8egsord6.jpg" alt="Screenshot showing the 35-day building journey and results" style="width: 100%; max-width: 600px; height: auto; margin: 20px 0; border: 1px solid #e5e7eb;" />
+    <a href="https://x.com/amikalash/status/1954535174093299985" target="_blank" rel="noopener noreferrer">
+      <img src="https://res.cloudinary.com/dwb211sw5/image/upload/v1754843725/linko/cmjgqlwjwyxf8egsord6.jpg" alt="Screenshot showing the 35-day building journey and results" style="width: 100%; max-width: 600px; height: auto; margin: 20px 0; border: 1px solid #e5e7eb;" />
+    </a>
 
     i was inspired by his journey and decided to do the same. i wanted to build something that mattered to me. i wanted to prove something to myself.
 
-    i started with a simple idea: 
+    i started with a simple idea: build a tool that helps any founder, developer or indie-hacker to build their product faster. even if they're not a developer.
+
+    so i built <a href="https://superfa.st" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">superfa.st</a> 
+
+
 
     what did i build? something that matters to me. something that solves a real problem. something that i'm proud of. the details don't matter as much as the process.
 
