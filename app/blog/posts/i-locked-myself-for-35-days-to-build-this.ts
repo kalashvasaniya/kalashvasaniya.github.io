@@ -4,45 +4,13 @@ export const post = {
   description: "The story of how I locked myself for 35 days to build something meaningful. Real insights on deep work, focus, and what happens when you commit to building in isolation.",
   excerpt: "35 days. No distractions. No excuses. Just me, my laptop, and a vision. Here's what happened when I locked myself away to build something that mattered.",
   content: `
-    35 days. no distractions. no excuses. just me, my laptop, and a vision. i locked myself away to build something that mattered.
+    all started when i found about <a href="https://www.x.com/marc_louvion" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">marc lou</a> and his journey of building.
 
-    it started with frustration. too many half-finished projects. too many "i'll do it tomorrow" promises. too much noise. i needed to prove something to myself.
+    <img src="https://res.cloudinary.com/dwb211sw5/image/upload/v1754843725/linko/cmjgqlwjwyxf8egsord6.jpg" alt="Screenshot showing the 35-day building journey and results" style="width: 100%; max-width: 600px; height: auto; margin: 20px 0; border: 1px solid #e5e7eb;" />
 
-    <img src="https://res.cloudinary.com/dwb211sw5/image/upload/v1754563024/linko/fj6vljkyhzi4s2o39eec.jpg" alt="Screenshot showing the 35-day building journey and results" style="width: 100%; max-width: 600px; height: auto; margin: 20px 0; border: 1px solid #e5e7eb;" />
+    i was inspired by his journey and decided to do the same. i wanted to build something that mattered to me. i wanted to prove something to myself.
 
-    day 1: excitement. day 7: doubt. day 14: questioning everything. day 21: breakthrough. day 35: something real.
-
-    here's what i learned about deep work and building in isolation:
-
-    1. environment matters more than motivation:
-    i cleared my space. removed every distraction. no social media. no news. no unnecessary apps. when your environment supports your goals, motivation becomes irrelevant.
-
-    2. small wins compound:
-    day 1: 100 lines of code. day 2: 150 lines. day 3: 200 lines. by day 30, i was writing 500+ lines daily. consistency beats intensity every time.
-
-    3. isolation reveals your true priorities:
-    when you remove all the noise, you see what actually matters. i thought i needed to check twitter every hour. turns out, i didn't. i thought i needed to respond to every message immediately. i didn't.
-
-    4. progress is invisible until it's not:
-    days 1-10 felt like i was going nowhere. same routine. same struggles. same doubts. then day 11 hit and everything clicked. trust the process.
-
-    5. building in public is overrated:
-    sometimes you need to build in private. to fail in private. to figure things out without an audience. not everything needs to be shared immediately.
-
-    6. time blocking is everything:
-    6am-8am: deep work. 8am-9am: break. 9am-12pm: deep work. 12pm-1pm: lunch. 1pm-5pm: deep work. 5pm-6pm: planning tomorrow. rinse. repeat.
-
-    7. your brain adapts to focus:
-    first week: mind wandering every 20 minutes. second week: 45 minutes of focus. third week: 2-hour deep work sessions. fourth week: 4-hour sessions. your brain learns what you teach it.
-
-    8. physical health affects mental output:
-    i exercised daily. ate clean. slept 8 hours. your body is your machine. treat it well and it will perform.
-
-    9. documentation is crucial:
-    i wrote down every breakthrough, every failure, every lesson. when you're in the zone, you think you'll remember everything. you won't.
-
-    10. the real work happens in the middle:
-    beginnings are exciting. endings are satisfying. the middle is where most people quit. day 15-25 was brutal. that's where champions are made.
+    i started with a simple idea: 
 
     what did i build? something that matters to me. something that solves a real problem. something that i'm proud of. the details don't matter as much as the process.
 
