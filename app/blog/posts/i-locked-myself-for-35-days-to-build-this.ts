@@ -14,9 +14,19 @@ export const post = {
 
     i started with a simple idea: build a tool that helps any founder, developer or indie-hacker to build their product faster. even if they're not a developer.
 
-    so i built <a href="https://superfa.st" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">superfa.st</a> 
+    so i built <a href="https://superfa.st" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">superfa.st</a>.
 
+    i started in late march. built it completely solo. took me 35 days to build and launched it on may 4, 2025.
 
+    this is my day look like:
+
+    <a href="https://x.com/amikalash/status/1947984439075823816" target="_blank" rel="noopener noreferrer">
+      <img src="https://res.cloudinary.com/dwb211sw5/image/upload/v1754865127/linko/aqpbx4d5xpnkuk33rzaa.jpg" alt="Screenshot showing the 35-day building journey and results" style="width: 100%; max-width: 600px; height: auto; margin: 20px 0; border: 1px solid #e5e7eb;" />
+    </a>
+
+    i was so focused on building that i didn't even notice the time passing by.
+
+    im in the college that time. continue
 
     what did i build? something that matters to me. something that solves a real problem. something that i'm proud of. the details don't matter as much as the process.
 
