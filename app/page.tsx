@@ -22,7 +22,7 @@ export default function Home() {
         {/* Body Content */}
         <div className="space-y-6 text-xl leading-relaxed">
           <p>
-            i'm just a guy who builds stuff. <a target="_blank" href="https://bento.me/kalashvasaniya" className="text-blue-600 underline">find me</a>.
+            i'm just a guy who builds stuff. <a target="_blank" rel="noopener noreferrer" href="https://bento.me/kalashvasaniya" className="text-blue-600 underline">find me</a>.
           </p>
 
           <p>
@@ -30,7 +30,7 @@ export default function Home() {
           </p>
 
           <p>
-            when i was 17, i had an idea to build a social media platform for college students. i wanted it anonymous, so i built <a href="https://www.thepairup.in/" target="_blank" className="text-blue-600 underline">thepairup</a>.
+            when i was 17, i had an idea to build a social media platform for college students. i wanted it anonymous, so i built <a href="https://www.thepairup.in/" target="_blank" rel="noopener noreferrer" className="text-blue-600 underline">thepairup</a>.
           </p>
 
           <p>
@@ -42,18 +42,18 @@ export default function Home() {
           </p>
 
           <p>
-            back to the present, i'm the founder of <a href="https://www.superfa.st/" target="_blank" className="text-blue-600 underline">superfast</a>, a next.js boilerplate that helps developers go from idea to revenue in just days.
+            back to the present, i'm the founder of <a href="https://www.superfa.st/" target="_blank" rel="noopener noreferrer" className="text-blue-600 underline">superfast</a>, a next.js boilerplate that helps developers go from idea to revenue in just days.
           </p>
 
-          <p>check out the <a href="https://youtu.be/24O-ncDicHk?si=lwPjYdYBdTIjCGuv" target="_blank" className="text-blue-600 underline">promo</a>.</p>
+          <p>check out the <a href="https://youtu.be/24O-ncDicHk?si=lwPjYdYBdTIjCGuv" target="_blank" rel="noopener noreferrer" className="text-blue-600 underline">promo</a>.</p>
 
           <p>
-            superfast gives you everything you need to launch fast. no complex setup, no endless config, just powerful tools that work out of the box. focus on your product while we handle the heavy lifting. <a href="https://www.superfa.st/about" target="_blank" className="text-blue-600 underline">learn more about superfast</a>.
+            superfast gives you everything you need to launch fast. no complex setup, no endless config, just powerful tools that work out of the box. focus on your product while we handle the heavy lifting. <a href="https://www.superfa.st/about" target="_blank" rel="noopener noreferrer" className="text-blue-600 underline">learn more about superfast</a>.
           </p>
 
           <p>
             superfast is special. really special.
-            if you're a developer trying to ship faster, read the <a href="https://docs.superfa.st/" target="_blank" className="text-blue-600 underline">docs</a> and see what you can build.
+            if you're a developer trying to ship faster, read the <a href="https://docs.superfa.st/" target="_blank" rel="noopener noreferrer" className="text-blue-600 underline">docs</a> and see what you can build.
           </p>
 
           <p>
@@ -71,7 +71,7 @@ export default function Home() {
           </p>
 
           <p>
-            and i found out about <a href="https://x.com/marc_louvion" target="_blank" className="text-blue-600 underline">marc lou</a>, the legend.
+            and i found out about <a href="https://x.com/marc_louvion" target="_blank" rel="noopener noreferrer" className="text-blue-600 underline">marc lou</a>, the legend.
           </p>
 
           <p>
@@ -91,7 +91,7 @@ export default function Home() {
           </p>
 
           <p>
-            check out the new <a href="https://college.thepairup.in/" target="_blank" className="text-blue-600 underline">thepairup</a>.
+            check out the new <a href="https://college.thepairup.in/" target="_blank" rel="noopener noreferrer" className="text-blue-600 underline">thepairup</a>.
           </p>
 
           <p>
@@ -99,16 +99,16 @@ export default function Home() {
           </p>
 
           <p>
-            in the meantime, i also started adding some passive income. i began writing on <a href="https://medium.com/@kalashvasaniya1" target="_blank" className="text-blue-600 underline">medium</a>.
+            in the meantime, i also started adding some passive income. i began writing on <a href="https://medium.com/@kalashvasaniya1" target="_blank" rel="noopener noreferrer" className="text-blue-600 underline">medium</a>.
           </p>
 
           <p>
-            and i started posting on <a href="https://x.com/amikalash" target="_blank" className="text-blue-600 underline">twitter</a>. i shared my journey, my learnings, and some shitposts. on june 8, 2025, i got <a href="https://x.com/amikalash/status/1931717627766005993" target="_blank" className="text-blue-600 underline">monetized</a> on twitter.
+            and i started posting on <a href="https://x.com/amikalash" target="_blank" rel="noopener noreferrer" className="text-blue-600 underline">twitter</a>. i shared my journey, my learnings, and some shitposts. on june 8, 2025, i got <a href="https://x.com/amikalash/status/1931717627766005993" target="_blank" rel="noopener noreferrer" className="text-blue-600 underline">monetized</a> on twitter.
           </p>
 
           <p>
-            extra: got my first <a href="https://x.com/amikalash/status/1949156484010697171" target="_blank" className="text-blue-600 underline">affiliate</a> sale on july 26, 2025.
-            got my first <a href="https://x.com/amikalash/status/1950795622761574857" target="_blank" className="text-blue-600 underline">superfast</a> user on july 30, 2025.
+            extra: got my first <a href="https://x.com/amikalash/status/1949156484010697171" target="_blank" rel="noopener noreferrer" className="text-blue-600 underline">affiliate</a> sale on july 26, 2025.
+            got my first <a href="https://x.com/amikalash/status/1950795622761574857" target="_blank" rel="noopener noreferrer" className="text-blue-600 underline">superfast</a> user on july 30, 2025.
           </p>
 
           <p>
@@ -124,7 +124,7 @@ export default function Home() {
           </p>
 
           <p>
-            sometimes i write about my fuck ups building stuff, or those rare times when things actually went right. if you want me to hit you up when i write, follow me on <a href="https://x.com/amikalash" target="_blank" className="text-blue-600 underline">twitter</a>.
+            sometimes i write about my fuck ups building stuff, or those rare times when things actually went right. if you want me to hit you up when i write, follow me on <a href="https://x.com/amikalash" target="_blank" rel="noopener noreferrer" className="text-blue-600 underline">twitter</a>.
           </p>
 
           <p>
@@ -132,7 +132,7 @@ export default function Home() {
           </p>
 
           <p className="pb-8">
-            p.s. if you wanna contact me, <a href="mailto:kalashvasaniya@gmail.com" target="_blank" className="text-blue-600 underline">email</a>.
+            p.s. if you wanna contact me, <a href="mailto:kalashvasaniya@gmail.com" target="_blank" rel="noopener noreferrer" className="text-blue-600 underline">email</a>.
           </p>
 
         </div>

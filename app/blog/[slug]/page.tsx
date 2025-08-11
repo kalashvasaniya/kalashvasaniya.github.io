@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { generateBlogMetadata, generateBlogStructuredData } from "../../components/BlogSeo";
+import BreadcrumbSchema from "../../components/BreadcrumbSchema";
 
 // Helper to dynamically import the post file
 async function getPost(slug: string) {
@@ -40,6 +41,14 @@ export default async function BlogPost(props: Props) {
 
   return (
     <div className="min-h-screen bg-white text-gray-800 font-sans p-0 md:p-3">
+      {/* Breadcrumbs for this post */}
+      <BreadcrumbSchema
+        items={[
+          { name: "Home", url: "https://kalashvasaniya.com" },
+          { name: "Blog", url: "https://kalashvasaniya.com/blog" },
+          { name: post.title, url: `https://kalashvasaniya.com/blog/${post.slug}` },
+        ]}
+      />
       {/* Structured Data */}
       {generateBlogStructuredData(post)}
       

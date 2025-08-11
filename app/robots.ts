@@ -7,11 +7,12 @@ export default function robots(): MetadataRoute.Robots {
         userAgent: '*',
         allow: '/',
         disallow: [
-          '/private/', 
+          '/private/',
           '/api/', 
           '/_next/', 
           '/admin/', 
-          '*.json',
+          // block sensitive JSON endpoints but allow public JSON like manifest
+          '/*.env',
           '/tmp/',
           '/cache/',
           '/_vercel/',

@@ -32,9 +32,9 @@ i was totally locked in.
 
 superfast is special. really special. 
 
-superfast gives you everything you need to launch fast. no complex setup, no endless config, just powerful tools that work out of the box. focus on your product while we handle the heavy lifting. <a href="https://www.superfa.st/about" target="_blank" style="color: #2563eb; text-decoration: underline;">learn more about superfast</a>.
+superfast gives you everything you need to launch fast. no complex setup, no endless config, just powerful tools that work out of the box. focus on your product while we handle the heavy lifting. <a href="https://www.superfa.st/about" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">learn more about superfast</a>.
 
-if you're a developer trying to ship faster, read the <a href="https://docs.superfa.st/" target="_blank" style="color: #2563eb; text-decoration: underline;">docs</a> and see what you can build.
+if you're a developer trying to ship faster, read the <a href="https://docs.superfa.st/" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">docs</a> and see what you can build.
 
 and i finally made money out of it. first sale is always special.
 

@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import BreadcrumbSchema from "../components/BreadcrumbSchema";
 
 export const metadata: Metadata = {
   title: "Bucket List",
@@ -64,5 +65,15 @@ export default function BucketListLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  return <>{children}</>;
+  return (
+    <>
+      <BreadcrumbSchema
+        items={[
+          { name: "Home", url: "https://kalashvasaniya.com" },
+          { name: "Bucket List", url: "https://kalashvasaniya.com/bucketlist" },
+        ]}
+      />
+      {children}
+    </>
+  );
 } 

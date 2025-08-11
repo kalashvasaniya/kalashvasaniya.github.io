@@ -1,4 +1,7 @@
 import type { Metadata } from "next";
+import AdvancedSEO from "../components/AdvancedSEO";
+import RichSnippetSEO from "../components/RichSnippetSEO";
+import BreadcrumbSchema from "../components/BreadcrumbSchema";
 
 export const metadata: Metadata = {
   title: "Services",
@@ -53,5 +56,17 @@ export default function ServicesLayout({
 }: {
   children: React.ReactNode;
 }) {
-  return <>{children}</>;
+  return (
+    <>
+      <AdvancedSEO page="services" />
+      <RichSnippetSEO page="services" />
+      <BreadcrumbSchema
+        items={[
+          { name: "Home", url: "https://kalashvasaniya.com" },
+          { name: "Services", url: "https://kalashvasaniya.com/services" },
+        ]}
+      />
+      {children}
+    </>
+  );
 }

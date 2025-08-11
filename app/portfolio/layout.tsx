@@ -1,4 +1,7 @@
 import type { Metadata } from "next";
+import AdvancedSEO from "../components/AdvancedSEO";
+import RichSnippetSEO from "../components/RichSnippetSEO";
+import BreadcrumbSchema from "../components/BreadcrumbSchema";
 
 export const metadata: Metadata = {
   title: "Portfolio",
@@ -67,6 +70,14 @@ export default function PortfolioLayout({
 }>) {
   return (
     <>
+      <AdvancedSEO page="portfolio" />
+      <RichSnippetSEO page="portfolio" />
+      <BreadcrumbSchema
+        items={[
+          { name: "Home", url: "https://kalashvasaniya.com" },
+          { name: "Portfolio", url: "https://kalashvasaniya.com/portfolio" },
+        ]}
+      />
       {children}
     </>
   );

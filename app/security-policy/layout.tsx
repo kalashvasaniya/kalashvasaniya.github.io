@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import BreadcrumbSchema from "../components/BreadcrumbSchema";
 
 export const metadata: Metadata = {
   title: "Security Policy",
@@ -70,5 +71,15 @@ export default function SecurityPolicyLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  return <>{children}</>;
+  return (
+    <>
+      <BreadcrumbSchema
+        items={[
+          { name: "Home", url: "https://kalashvasaniya.com" },
+          { name: "Security Policy", url: "https://kalashvasaniya.com/security-policy" },
+        ]}
+      />
+      {children}
+    </>
+  );
 }

@@ -26,7 +26,7 @@ export default function Services() {
                     </p>
 
                     <p>
-                        i'm also open for gig work. hire me: <a href="https://contra.com/kalashvasaniya" target="_blank" className="text-blue-600 underline">contra</a>
+                        i'm also open for gig work. hire me: <a href="https://contra.com/kalashvasaniya" target="_blank" rel="noopener noreferrer" className="text-blue-600 underline">contra</a>
                     </p>
 
                     <hr className="my-8 border-gray-300" />
@@ -37,7 +37,7 @@ export default function Services() {
                         <div>
                             <h3 className="text-2xl font-semibold text-black mb-2">content writing</h3>
                             <p>
-                                i write high-engagement articles that actually convert. my <a href="https://medium.com/@kalashvasaniya1" target="_blank" className="text-blue-600 underline">medium</a> articles have helped me build a following and generate passive income.
+                                i write high-engagement articles that actually convert. my <a href="https://medium.com/@kalashvasaniya1" target="_blank" rel="noopener noreferrer" className="text-blue-600 underline">medium</a> articles have helped me build a following and generate passive income.
                             </p>
                             <p className="mt-4">
                                 i can write about tech, startups, entrepreneurship, or anything that needs compelling copy.
@@ -57,7 +57,7 @@ export default function Services() {
                         <div>
                             <h3 className="text-2xl font-semibold text-black mb-2">web development</h3>
                             <p>
-                                i build fast, scalable web applications using next.js and modern tech stack. check out <a href="https://www.superfa.st/" target="_blank" className="text-blue-600 underline">superfast</a> - my next.js boilerplate that helps developers ship faster.
+                                i build fast, scalable web applications using next.js and modern tech stack. check out <a href="https://www.superfa.st/" target="_blank" rel="noopener noreferrer" className="text-blue-600 underline">superfast</a> - my next.js boilerplate that helps developers ship faster.
                             </p>
                             <p className="mt-4">
                                 i can help you build mvp's, landing pages, or full-stack applications.
@@ -93,11 +93,11 @@ export default function Services() {
                     <h2 className="text-3xl font-bold text-black mb-4">ready to work together?</h2>
 
                     <p>
-                        the best way to get started is through <a href="https://contra.com/kalashvasaniya" target="_blank" className="text-blue-600 underline">contra</a>. it's where i handle most of my gig work.
+                        the best way to get started is through <a href="https://contra.com/kalashvasaniya" target="_blank" rel="noopener noreferrer" className="text-blue-600 underline">contra</a>. it's where i handle most of my gig work.
                     </p>
 
                     <p>
-                        or if you prefer, you can <a href="mailto:kalashvasaniya@gmail.com" target="_blank" className="text-blue-600 underline">email me</a> directly.
+                        or if you prefer, you can <a href="mailto:kalashvasaniya@gmail.com" target="_blank" rel="noopener noreferrer" className="text-blue-600 underline">email me</a> directly.
                     </p>
 
                     <p>

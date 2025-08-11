@@ -128,7 +128,7 @@ export default function Blog() {
                 thanks! you'll be notified when the blog launches.
               </div>
             ) : (
-              <form onSubmit={handleSubscribe} className="space-y-6">
+              <form onSubmit={handleSubscribe} className="space-y-6" aria-label="subscribe to blog updates">
                 <div>
                   <input
                     type="email"
@@ -137,6 +137,7 @@ export default function Blog() {
                     placeholder="your email address"
                     className="w-full px-6 py-4 border-2 border-gray-300 focus:outline-none focus:border-gray-600 text-lg font-medium transition-colors"
                     required
+                    aria-label="Email address"
                   />
                 </div>
                 <button
