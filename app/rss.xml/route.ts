@@ -42,35 +42,18 @@ export async function GET(request: Request) {
   const posts = await getPosts()
 
   const items = posts
-    .map((p) => {
-      let thumbnailUrl: string | undefined
-      if (p.slug === 'i-locked-myself-for-35-days-to-build-this') {
-        thumbnailUrl = 'https://res.cloudinary.com/dwb211sw5/image/upload/v1754900549/linko/onlilihkqg7mlofpuch0.jpg'
-      } else if (p.slug === 'i-got-5m-views-in-a-week-just-by-tweeting') {
-        thumbnailUrl = 'https://res.cloudinary.com/dwb211sw5/image/upload/v1754563024/linko/fj6vljkyhzi4s2o39eec.jpg'
-      } else if (p.featuredImage) {
-        thumbnailUrl = p.featuredImage.startsWith('http')
-          ? p.featuredImage
-          : `${site}${p.featuredImage}`
-      }
-
-      const mediaTags = thumbnailUrl
-        ? `\n      <enclosure url="${thumbnailUrl}" type="image/jpeg" />\n      <media:thumbnail url="${thumbnailUrl}" />\n      <media:content url="${thumbnailUrl}" medium="image" />`
-        : ''
-
-      return `
+    .map((p) => `
     <item>
       <title><![CDATA[${p.title}]]></title>
       <link>${site}/blog/${p.slug}</link>
       <guid>${site}/blog/${p.slug}</guid>
       <pubDate>${new Date(p.date).toUTCString()}</pubDate>
-      <description><![CDATA[${p.description}]]></description>${mediaTags}
-    </item>`
-    })
+      <description><![CDATA[${p.description}]]></description>
+    </item>`)
     .join('\n')
 
   const rss = `<?xml version="1.0" encoding="UTF-8" ?>
-  <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/">
+  <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
       <title>Kalash Vasaniya</title>
       <link>${site}</link>
