@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
+import { generateBlogMetadata, generateBlogStructuredData } from "../../components/BlogSeo";
 
 // Helper to dynamically import the post file
 async function getPost(slug: string) {
@@ -26,94 +27,7 @@ export async function generateMetadata(props: Props): Promise<Metadata> {
       title: "Post Not Found",
     };
   }
-  return {
-    title: `${post.title} - Kalash Vasaniya`,
-    description: post.description,
-    keywords: [
-      "blog",
-      "Kalash Vasaniya",
-      "entrepreneur",
-      "founder",
-      "SuperFast",
-      "startup",
-      "technology",
-      "digital nomad",
-      "product development",
-      "business insights",
-      "tech entrepreneur",
-      "innovation",
-      "startup journey",
-      "entrepreneurship tips",
-      "social media",
-      "content creation",
-      "viral content",
-      "Twitter growth",
-      "personal branding",
-      "indie hacker",
-      "SaaS founder",
-      "startup building",
-      "business growth",
-      "content marketing",
-      "social media strategy",
-      "online business",
-      "remote work",
-      "digital marketing",
-      "startup advice",
-      "entrepreneurship blog",
-      "tech insights",
-      "business development",
-      "growth hacking",
-      "marketing strategy",
-      ...(post.tags || [])
-    ],
-    authors: [{ name: "Kalash Vasaniya", url: "https://kalashvasaniya.com" }],
-    creator: "Kalash Vasaniya",
-    publisher: "Kalash Vasaniya",
-    category: "Technology",
-    alternates: {
-      canonical: `https://kalashvasaniya.com/blog/${post.slug}`,
-    },
-    openGraph: {
-      title: `${post.title} - Kalash Vasaniya`,
-      description: post.description,
-      url: `https://kalashvasaniya.com/blog/${post.slug}`,
-      siteName: 'Kalash Vasaniya',
-      images: [
-        {
-          url: 'https://res.cloudinary.com/dwb211sw5/image/upload/v1754603136/linko/bq7qv9tolwefvb6fbwqq.jpg',
-          width: 1200,
-          height: 630,
-          alt: post.title,
-          type: 'image/jpeg',
-        },
-      ],
-      locale: 'en_US',
-      type: 'article',
-      publishedTime: post.date,
-    },
-    twitter: {
-      card: 'summary_large_image',
-      title: `${post.title} - Kalash Vasaniya`,
-      description: post.description,
-      creator: '@amikalash',
-      site: '@amikalash',
-      images: [{
-        url: 'https://res.cloudinary.com/dwb211sw5/image/upload/v1754603136/linko/bq7qv9tolwefvb6fbwqq.jpg',
-        alt: post.title,
-      }],
-    },
-    robots: {
-      index: true,
-      follow: true,
-      googleBot: {
-        index: true,
-        follow: true,
-        'max-video-preview': -1,
-        'max-image-preview': 'large',
-        'max-snippet': -1,
-      },
-    },
-  };
+  return generateBlogMetadata(post);
 }
 
 export default async function BlogPost(props: Props) {
@@ -123,80 +37,11 @@ export default async function BlogPost(props: Props) {
   if (!post) {
     notFound();
   }
-  // Structured data for the blog post
-  const jsonLd = {
-    "@context": "https://schema.org",
-    "@type": "BlogPosting",
-    "headline": post.title,
-    "description": post.description,
-    "image": {
-      "@type": "ImageObject",
-      "url": post.featuredImage ? `https://kalashvasaniya.com${post.featuredImage}` : "https://res.cloudinary.com/dwb211sw5/image/upload/v1754603136/linko/bq7qv9tolwefvb6fbwqq.jpg",
-      "width": 1200,
-      "height": 630,
-      "alt": post.featuredImageAlt || post.title
-    },
-    "author": {
-      "@type": "Person",
-      "@id": "https://kalashvasaniya.com/#person",
-      "name": "Kalash Vasaniya",
-      "url": "https://kalashvasaniya.com",
-      "sameAs": [
-        "https://twitter.com/amikalash",
-        "https://github.com/kalashvasaniya",
-        "https://linkedin.com/in/kalashvasaniya"
-      ]
-    },
-    "publisher": {
-      "@type": "Organization",
-      "@id": "https://kalashvasaniya.com/#organization",
-      "name": "Kalash Vasaniya",
-      "logo": {
-        "@type": "ImageObject",
-        "url": "https://res.cloudinary.com/dwb211sw5/image/upload/v1754603136/linko/bq7qv9tolwefvb6fbwqq.jpg"
-      }
-    },
-    "datePublished": post.date,
-    "dateModified": post.date,
-    "mainEntityOfPage": {
-      "@type": "WebPage",
-      "@id": `https://kalashvasaniya.com/blog/${post.slug}`
-    },
-    "url": `https://kalashvasaniya.com/blog/${post.slug}`,
-    "isPartOf": {
-      "@type": "Blog",
-      "@id": "https://kalashvasaniya.com/blog/#blog"
-    },
-    "wordCount": post.content.split(' ').length,
-    "genre": ["Technology", "Entrepreneurship", "Personal Development"],
-    "keywords": post.tags ? post.tags.join(', ') : "entrepreneur, startup, technology, digital nomad, SuperFast, social media, content creation",
-    "about": post.category || "Technology",
-    "inLanguage": "en-US",
-    "audience": {
-      "@type": "Audience",
-      "audienceType": "Entrepreneurs, Developers, Startup Founders"
-    },
-    "copyrightHolder": {
-      "@type": "Person",
-      "name": "Kalash Vasaniya"
-    },
-    "copyrightYear": post.date ? (isNaN(Date.parse(post.date)) ? 2025 : new Date(post.date).getFullYear()) : 2025,
-    "license": "https://creativecommons.org/licenses/by/4.0/",
-    "isAccessibleForFree": true,
-    "discussionUrl": `https://twitter.com/intent/tweet?text=${encodeURIComponent(`"${post.title}" by @amikalash`)}&url=${encodeURIComponent(`https://kalashvasaniya.com/blog/${post.slug}`)}`,
-    "commentCount": 0,
-    "timeRequired": post.readTime,
-    "educationalLevel": "Intermediate",
-    "learningResourceType": "Article"
-  };
 
   return (
     <div className="min-h-screen bg-white text-gray-800 font-sans p-0 md:p-3">
       {/* Structured Data */}
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-      />
+      {generateBlogStructuredData(post)}
       
       {/* Navigation */}
       <nav className="pt-8 pl-8">

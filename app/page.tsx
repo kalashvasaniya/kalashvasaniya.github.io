@@ -60,7 +60,9 @@ export default function Home() {
             and i finally made money out of it. first sale is always special.
           </p>
 
-          <img src="/img/0708A321-F5BA-4C89-AD06-8C8D9C4681E0_1_105_c.jpeg" alt="first sale screenshot" className="mt-4" />
+          <a href="https://x.com/amikalash/status/1950795622761574857" target="_blank" rel="noopener noreferrer">
+            <img src="https://res.cloudinary.com/dwb211sw5/image/upload/v1754900549/linko/onlilihkqg7mlofpuch0.jpg" alt="first sale screenshot" className="mt-4" />
+          </a>
 
           <p>2025 is my year.</p>
 

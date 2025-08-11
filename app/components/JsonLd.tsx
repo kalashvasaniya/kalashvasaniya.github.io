@@ -123,48 +123,7 @@ export default function JsonLd() {
           }
         ]
       },
-      {
-        "@type": "CollectionPage",
-        "@id": "https://kalashvasaniya.com/blog/#collection",
-        "name": "Blog",
-        "description": "Thoughts on technology, travel, entrepreneurship, and building products as a digital nomad",
-        "url": "https://kalashvasaniya.com/blog",
-        "mainEntity": {
-          "@type": "Blog",
-          "@id": "https://kalashvasaniya.com/blog/#blog",
-          "name": "Kalash Vasaniya's Blog",
-          "description": "Insights from founding SuperFast and creating impactful solutions",
-          "author": {
-            "@id": "https://kalashvasaniya.com/#person"
-          },
-          "publisher": {
-            "@id": "https://kalashvasaniya.com/#person"
-          },
-          "blogPost": [
-            {
-              "@type": "BlogPosting",
-              "headline": "I got 5m views in a week just by tweeting",
-              "description": "Accidentally went viral and learned about social media algorithms, content creation, and authentic storytelling.",
-              "author": {
-                "@id": "https://kalashvasaniya.com/#person"
-              },
-              "publisher": {
-                "@id": "https://kalashvasaniya.com/#person"
-              },
-              "datePublished": "2025-08-06",
-              "dateModified": "2025-08-06",
-              "url": "https://kalashvasaniya.com/blog/i-got-5m-views-in-a-week-just-by-tweeting",
-              "mainEntityOfPage": {
-                "@type": "WebPage",
-                "@id": "https://kalashvasaniya.com/blog/i-got-5m-views-in-a-week-just-by-tweeting"
-              },
-              "image": "https://kalashvasaniya.com/blog/1_z43IuIWFOXqOnWeiV_GRNA.png",
-              "articleSection": "Social Media",
-              "keywords": ["viral tweet", "social media", "content creation", "twitter", "growth", "authenticity"]
-            }
-          ]
-        }
-      },
+      
       {
         "@type": "FAQPage",
         "@id": "https://kalashvasaniya.com/#faq",
@@ -209,53 +168,6 @@ export default function JsonLd() {
         "serviceType": "Professional Services",
         "provider": {
           "@id": "https://kalashvasaniya.com/#person"
-        },
-        "hasOfferCatalog": {
-          "@type": "OfferCatalog",
-          "name": "Kalash Vasaniya Services",
-          "itemListElement": [
-            {
-              "@type": "Offer",
-              "itemOffered": {
-                "@type": "Service",
-                "name": "Content Writing",
-                "description": "High-engagement articles that actually convert, covering tech, startups, and entrepreneurship."
-              }
-            },
-            {
-              "@type": "Offer",
-              "itemOffered": {
-                "@type": "Service",
-                "name": "Startup Promotion",
-                "description": "Content creation that drives traffic and conversions, from social media to blog posts to landing page copy."
-              }
-            },
-            {
-              "@type": "Offer",
-              "itemOffered": {
-                "@type": "Service",
-                "name": "Web Development",
-                "description": "Fast, scalable web applications using Next.js and modern tech stack. MVPs, landing pages, and full-stack applications."
-              }
-            },
-            {
-              "@type": "Offer",
-              "itemOffered": {
-                "@type": "Service",
-                "name": "Technical Writing",
-                "description": "Documentation, tutorials, and technical blog posts that break down complex concepts into actionable content."
-              }
-            }
-          ]
-        },
-        "areaServed": "Worldwide",
-        "availableChannel": {
-          "@type": "ServiceChannel",
-          "serviceUrl": "https://contra.com/kalashvasaniya",
-          "serviceLocation": {
-            "@type": "Place",
-            "name": "Remote/Global"
-          }
         }
       }
     ]

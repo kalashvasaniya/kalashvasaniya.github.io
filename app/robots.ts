@@ -68,7 +68,7 @@ export default function robots(): MetadataRoute.Robots {
         allow: '/',
         disallow: ['/private/', '/admin/', '/api/'],
       },
-      // Block bad bots and scrapers
+      // Block aggressive crawlers and scrapers (allow major search engines)
       {
         userAgent: [
           'AhrefsBot', 
@@ -81,13 +81,7 @@ export default function robots(): MetadataRoute.Robots {
           'archive.org_bot',
           'Baiduspider',
           'YandexBot',
-          'DuckDuckBot',
           'CCBot',
-          'GPTBot',
-          'ChatGPT-User',
-          'Claude-Web',
-          'anthropic-ai',
-          'PerplexityBot',
           'Applebot-Extended',
           'ScrapeBot',
           'MegaBot',
@@ -102,12 +96,7 @@ export default function robots(): MetadataRoute.Robots {
         ],
         disallow: '/',
       },
-      // Allow specific AI bots that respect robots.txt
-      {
-        userAgent: 'ChatGPT-User',
-        allow: '/',
-        disallow: ['/private/', '/admin/', '/api/', '/.env'],
-      }
+      // Allow DuckDuckGo and other mainstream bots via the default rule above
     ],
     sitemap: 'https://kalashvasaniya.com/sitemap.xml',
     host: 'https://kalashvasaniya.com',

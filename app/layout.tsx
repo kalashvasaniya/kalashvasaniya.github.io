@@ -206,6 +206,8 @@ export default function RootLayout({
         
         {/* Web manifest */}
         <link rel="manifest" href="/favicon_io_white/site.webmanifest" />
+        {/* RSS feed */}
+        <link rel="alternate" type="application/rss+xml" title="Kalash Vasaniya RSS" href="/rss.xml" />
         
         {/* JSON-LD Structured Data */}
         <JsonLd />

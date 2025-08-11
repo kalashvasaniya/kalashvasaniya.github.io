@@ -15,6 +15,9 @@ export const metadata: Metadata = {
     "technical writing",
     "web development"
   ],
+  alternates: {
+    canonical: '/services',
+  },
   openGraph: {
     title: "Services | Kalash Vasaniya",
     description: "Writer + Developer services. I help startups promote their products and take on gig work.",
