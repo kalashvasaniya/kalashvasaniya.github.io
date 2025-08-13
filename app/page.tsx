@@ -22,11 +22,15 @@ export default function Home() {
         {/* Body Content */}
         <div className="space-y-6 text-xl leading-relaxed">
           <p>
-            i'm just a guy who builds stuff. <a target="_blank" rel="noopener noreferrer" href="https://bento.me/kalashvasaniya" className="text-blue-600 underline">find me</a>.
+            i'm just a guy who builds stuff.
           </p>
 
           <p>
             full-stack developer, indie hacker, and occasional writer. i build products that help people ship faster.
+          </p>
+
+          <p>
+            you can <a target="_blank" rel="noopener noreferrer" href="https://bento.me/kalashvasaniya" className="text-blue-600 underline">find me</a>.
           </p>
 
           <p>
