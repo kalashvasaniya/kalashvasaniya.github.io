@@ -46,8 +46,8 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: "Security Policy - Kalash Vasaniya",
     description: "Security policy and responsible disclosure guidelines for Kalash Vasaniya's website and projects.",
-    creator: '@kalashvasaniya',
-    site: '@kalashvasaniya',
+    creator: '@amikalash',
+    site: '@amikalash',
     images: [{
       url: 'https://res.cloudinary.com/dwb211sw5/image/upload/v1754603136/linko/bq7qv9tolwefvb6fbwqq.jpg',
       alt: 'Kalash Vasaniya Security Policy',

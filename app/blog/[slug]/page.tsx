@@ -57,7 +57,7 @@ export default async function BlogPost(props: Props) {
         <div className="flex gap-6 text-xl leading-relaxed">
           <a href="/" className="text-blue-600 underline hover:text-blue-800 transition-colors">home</a>
           <a href="/blog" className="text-blue-600 underline hover:text-blue-800 transition-colors">blog</a>
-          <a href="/portfolio" className="text-blue-600 underline hover:text-blue-800 transition-colors">portfolio</a>
+          <a href="/collections" className="text-blue-600 underline hover:text-blue-800 transition-colors">collections</a>
         </div>
       </nav>
       

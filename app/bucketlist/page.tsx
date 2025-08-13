@@ -8,7 +8,7 @@ export default function BucketList() {
         <div className="flex gap-6 text-xl leading-relaxed">
           <a href="/" className="text-blue-600 underline">home</a>
           <a href="/blog" className="text-blue-600 underline">blog</a>
-          <a href="/portfolio" className="text-blue-600 underline">portfolio</a>
+          <a href="/collections" className="text-blue-600 underline">collections</a>
         </div>
       </nav>
 

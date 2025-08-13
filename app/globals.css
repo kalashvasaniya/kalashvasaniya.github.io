@@ -32,7 +32,7 @@ a:not(.underline):hover {
   text-decoration: underline;
 }
 
-/* For links with underline class, just set the color */
+/* For links with underline class, don't override color */
 a.underline {
-  color: var(--link-color);
+  text-decoration: underline;
 }

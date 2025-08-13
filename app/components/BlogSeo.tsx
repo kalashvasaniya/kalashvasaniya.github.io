@@ -62,7 +62,6 @@ export function generateBlogMetadata(post: BlogSeoProps['post']): Metadata {
           width: 1200,
           height: 630,
           alt: seo.openGraph?.imageAlt || post.featuredImageAlt,
-          type: 'image/png',
         },
       ],
       locale: 'en_US',

@@ -7,7 +7,8 @@ type Post = {
   slug: string
   description: string
   date: string
-  featuredImage?: string
+  category?: string
+  canonicalUrl?: string
 }
 
 async function getPosts(): Promise<Post[]> {
@@ -17,18 +18,23 @@ async function getPosts(): Promise<Post[]> {
     const posts: Post[] = []
     for (const file of files) {
       if (!file.endsWith('.ts')) continue
-      const mod = await import(`../blog/posts/${file.replace('.ts', '')}`)
-      if (mod?.post) {
-        posts.push({
-          title: mod.post.title,
-          slug: mod.post.slug,
-          description: mod.post.description,
-          date: mod.post.date,
-          featuredImage: mod.post.featuredImage,
-        })
+      const slug = file.replace('.ts', '')
+      try {
+        const mod = await import(`../blog/posts/${slug}`)
+        if (mod?.post) {
+          posts.push({
+            title: mod.post.title,
+            slug: mod.post.slug,
+            description: mod.post.description,
+            date: mod.post.date,
+            category: mod.post.category,
+            canonicalUrl: mod.post.canonicalUrl,
+          })
+        }
+      } catch {
+        // ignore import errors
       }
     }
-    // Newest first
     return posts.sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())
   } catch {
     return []
@@ -42,22 +48,26 @@ export async function GET(request: Request) {
   const posts = await getPosts()
 
   const items = posts
-    .map((p) => `
+    .map((p) => {
+      const url = p.canonicalUrl || `${site}/blog/${p.slug}`
+      return `
     <item>
       <title><![CDATA[${p.title}]]></title>
-      <link>${site}/blog/${p.slug}</link>
-      <guid>${site}/blog/${p.slug}</guid>
+      <link>${url}</link>
+      <guid isPermaLink="true">${url}</guid>
       <pubDate>${new Date(p.date).toUTCString()}</pubDate>
       <description><![CDATA[${p.description}]]></description>
-    </item>`)
+      ${p.category ? `<category>${p.category}</category>` : ''}
+    </item>`
+    })
     .join('\n')
 
   const rss = `<?xml version="1.0" encoding="UTF-8" ?>
   <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
-      <title>Kalash Vasaniya</title>
-      <link>${site}</link>
-      <description>Blog feed</description>
+      <title>Kalash Vasaniya - Blog</title>
+      <link>${site}/blog</link>
+      <description>Thoughts on technology, travel, entrepreneurship, and building products as a digital nomad.</description>
       <language>en-us</language>
       <atom:link href="${selfHref}" rel="self" type="application/rss+xml" />
       ${items}

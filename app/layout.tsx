@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import JsonLd from "./components/JsonLd";
 import { Analytics } from "@vercel/analytics/next"
+import RichSnippetSEO from "./components/RichSnippetSEO";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -149,7 +150,6 @@ export const metadata: Metadata = {
     'apple-mobile-web-app-title': 'Kalash Vasaniya',
     'application-name': 'Kalash Vasaniya',
     'msapplication-TileColor': '#ffffff',
-    'msapplication-config': '/favicon_io_white/browserconfig.xml',
     'viewport': 'width=device-width, initial-scale=1, maximum-scale=5',
     'referrer': 'origin-when-cross-origin',
     'X-UA-Compatible': 'IE=edge',
@@ -164,10 +164,6 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        {/* Performance optimization meta tags */}
-        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
-        <meta name="referrer" content="origin-when-cross-origin" />
-        <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
         
         {/* Preload critical resources */}
         <link rel="preload" href="/favicon_io_white/favicon.ico" as="image" />
@@ -213,6 +209,7 @@ export default function RootLayout({
         
         {/* JSON-LD Structured Data */}
         <JsonLd />
+        <RichSnippetSEO />
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}

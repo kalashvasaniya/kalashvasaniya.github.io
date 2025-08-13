@@ -90,8 +90,8 @@ p.s. if you're reading this and thinking “i could never do that” - you're ri
   authorImage: "https://res.cloudinary.com/dwb211sw5/image/upload/v1754603136/linko/bq7qv9tolwefvb6fbwqq.jpg",
   tags: ["deep work", "productivity", "focus", "building", "isolation", "commitment", "personal development", "entrepreneurship"],
   category: "Productivity",
-  featuredImage: "/blog/1_z43IuIWFOXqOnWeiV_GRNA.png",
-  featuredImageAlt: "Screenshot showing the 35-day building journey and results",
+  featuredImage: "https://res.cloudinary.com/dwb211sw5/image/upload/v1754865127/linko/aqpbx4d5xpnkuk33rzaa.jpg",
+  featuredImageAlt: "Screenshot showing the 35-day building journey and results (Cloudinary)",
   canonicalUrl: "https://kalashvasaniya.com/blog/i-locked-myself-for-35-days-to-build-this",
   seo: {
     title: "I locked myself for 35 days to build this - Kalash Vasaniya",
@@ -100,11 +100,11 @@ p.s. if you're reading this and thinking “i could never do that” - you're ri
     openGraph: {
       title: "I locked myself for 35 days to build this",
       description: "The story of how I locked myself away for 35 days to build something meaningful. Real insights on deep work, focus, and commitment.",
-      image: "/blog/1_z43IuIWFOXqOnWeiV_GRNA.png",
-      imageAlt: "Screenshot showing the 35-day building journey and results",
+      image: "https://res.cloudinary.com/dwb211sw5/image/upload/v1754865127/linko/aqpbx4d5xpnkuk33rzaa.jpg",
+      imageAlt: "Screenshot showing the 35-day building journey and results (Cloudinary)",
       type: "article",
-      publishedTime: "2025-01-15T00:00:00.000Z",
-      modifiedTime: "2025-01-15T00:00:00.000Z",
+      publishedTime: "2025-08-07T00:00:00.000Z",
+      modifiedTime: "2025-08-07T00:00:00.000Z",
       author: "Kalash Vasaniya",
       section: "Productivity"
     },
@@ -112,8 +112,8 @@ p.s. if you're reading this and thinking “i could never do that” - you're ri
       card: "summary_large_image",
       title: "I locked myself for 35 days to build this",
       description: "The story of how I locked myself away for 35 days to build something meaningful. Real insights on deep work, focus, and commitment.",
-      image: "/blog/1_z43IuIWFOXqOnWeiV_GRNA.png",
-      imageAlt: "Screenshot showing the 35-day building journey and results",
+      image: "https://res.cloudinary.com/dwb211sw5/image/upload/v1754865127/linko/aqpbx4d5xpnkuk33rzaa.jpg",
+      imageAlt: "Screenshot showing the 35-day building journey and results (Cloudinary)",
       creator: "@amikalash",
       site: "@amikalash"
     }

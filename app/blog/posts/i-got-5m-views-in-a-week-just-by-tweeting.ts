@@ -53,8 +53,8 @@ export const post = {
   authorImage: "https://res.cloudinary.com/dwb211sw5/image/upload/v1754603136/linko/bq7qv9tolwefvb6fbwqq.jpg",
   tags: ["social media", "viral content", "twitter", "content creation", "growth", "authenticity", "entrepreneurship"],
   category: "Social Media",
-  featuredImage: "/blog/1_z43IuIWFOXqOnWeiV_GRNA.png",
-  featuredImageAlt: "Screenshot of the viral tweet showing 5M+ views",
+  featuredImage: "https://res.cloudinary.com/dwb211sw5/image/upload/v1754563024/linko/fj6vljkyhzi4s2o39eec.jpg",
+  featuredImageAlt: "Screenshot of the viral tweet showing 5M+ views (Cloudinary)",
   canonicalUrl: "https://kalashvasaniya.com/blog/i-got-5m-views-in-a-week-just-by-tweeting",
   seo: {
     title: "I got 5m views in a week just by tweeting - Kalash Vasaniya",
@@ -63,8 +63,8 @@ export const post = {
     openGraph: {
       title: "I got 5m views in a week just by tweeting",
       description: "Accidentally went viral and learned about social media algorithms, content creation, and authentic storytelling.",
-      image: "/blog/1_z43IuIWFOXqOnWeiV_GRNA.png",
-      imageAlt: "Screenshot of the viral tweet showing 5M+ views",
+      image: "https://res.cloudinary.com/dwb211sw5/image/upload/v1754563024/linko/fj6vljkyhzi4s2o39eec.jpg",
+      imageAlt: "Screenshot of the viral tweet showing 5M+ views (Cloudinary)",
       type: "article",
       publishedTime: "2025-08-06T00:00:00.000Z",
       modifiedTime: "2025-08-06T00:00:00.000Z",
@@ -75,8 +75,8 @@ export const post = {
       card: "summary_large_image",
       title: "I got 5m views in a week just by tweeting",
       description: "Accidentally went viral and learned about social media algorithms, content creation, and authentic storytelling.",
-      image: "/blog/1_z43IuIWFOXqOnWeiV_GRNA.png",
-      imageAlt: "Screenshot of the viral tweet showing 5M+ views",
+      image: "https://res.cloudinary.com/dwb211sw5/image/upload/v1754563024/linko/fj6vljkyhzi4s2o39eec.jpg",
+      imageAlt: "Screenshot of the viral tweet showing 5M+ views (Cloudinary)",
       creator: "@amikalash",
       site: "@amikalash"
     }

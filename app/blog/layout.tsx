@@ -5,49 +5,45 @@ import BreadcrumbSchema from "../components/BreadcrumbSchema";
 
 export const metadata: Metadata = {
   title: "Blog",
-  description: "My blog where I share thoughts on technology, travel, entrepreneurship, and building products as a digital nomad. Insights from founding SuperFast and creating impactful solutions.",
+  description: "Thoughts on technology, travel, entrepreneurship, and building products as a digital nomad.",
   keywords: [
-    "blog", 
-    "technology", 
-    "travel", 
-    "digital nomad", 
-    "product development", 
+    "blog",
+    "technology",
     "entrepreneurship",
-    "startup",
-    "SuperFast",
-    "founder insights",
-    "tech blog",
-    "business strategy",
-    "innovation"
+    "product development",
+    "digital nomad",
+    "content creation",
   ],
   alternates: {
-    canonical: '/blog',
+    canonical: "/blog",
   },
   openGraph: {
     title: "Blog - Kalash Vasaniya",
-    description: "My blog where I share thoughts on technology, travel, entrepreneurship, and building products as a digital nomad. Insights from founding SuperFast and creating impactful solutions.",
-    url: 'https://kalashvasaniya.com/blog',
-    siteName: 'Kalash Vasaniya',
+    description: "Thoughts on technology, travel, entrepreneurship, and building products as a digital nomad.",
+    url: "https://kalashvasaniya.com/blog",
+    siteName: "Kalash Vasaniya",
     images: [
       {
-        url: 'https://res.cloudinary.com/dwb211sw5/image/upload/v1754520353/linko/k0xtfxwgkzcstnvij7lc.jpg',
+        url: "https://res.cloudinary.com/dwb211sw5/image/upload/v1754603136/linko/bq7qv9tolwefvb6fbwqq.jpg",
         width: 1200,
         height: 630,
-        alt: 'Kalash Vasaniya Blog - Technology, Travel, and Entrepreneurship',
-        type: 'image/jpeg',
+        alt: "Blog - Technology, Entrepreneurship, and Building",
+        type: "image/jpeg",
       },
     ],
-    locale: 'en_US',
-    type: 'website',
+    locale: "en_US",
+    type: "website",
   },
   twitter: {
-    card: 'summary_large_image',
+    card: "summary_large_image",
     title: "Blog - Kalash Vasaniya",
-    description: "My blog where I share thoughts on technology, travel, entrepreneurship, and building products as a digital nomad.",
-    images: [{
-      url: 'https://res.cloudinary.com/dwb211sw5/image/upload/v1754520353/linko/k0xtfxwgkzcstnvij7lc.jpg',
-      alt: 'Kalash Vasaniya Blog - Technology, Travel, and Entrepreneurship',
-    }],
+    description: "Thoughts on technology, travel, entrepreneurship, and building products as a digital nomad.",
+    images: [
+      {
+        url: "https://res.cloudinary.com/dwb211sw5/image/upload/v1754603136/linko/bq7qv9tolwefvb6fbwqq.jpg",
+        alt: "Blog - Technology, Entrepreneurship, and Building",
+      },
+    ],
   },
   robots: {
     index: true,
@@ -80,4 +76,4 @@ export default function BlogLayout({
       {children}
     </>
   );
-} 
+}
