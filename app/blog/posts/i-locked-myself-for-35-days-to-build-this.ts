@@ -14,7 +14,7 @@ i was inspired by his journey and decided to do the same. i wanted to build some
 
 i started with a simple idea: build a tool that helps any founder, developer, or indie hacker build their product faster - even if they're not a developer.
 
-so i built <a href="https://superfa.st" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">superfa.st</a>.
+so i built <a href="https://superfa.st" target="_blank" rel="noopener noreferrer" style="color: #2563eb; text-decoration: underline;">superfast</a>.
 
 i started in late march. built it completely solo. took me 35 days to build and launched it on may 4, 2025.
 
