@@ -1,4 +1,20 @@
 import Link from "next/link";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  robots: {
+    index: false,
+    follow: false,
+    googleBot: {
+      index: false,
+      follow: false,
+      noimageindex: true,
+      'max-video-preview': 0,
+      'max-image-preview': 'none',
+      'max-snippet': 0,
+    },
+  },
+};
 
 export default function NotFound() {
   return (

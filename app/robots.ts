@@ -11,6 +11,8 @@ export default function robots(): MetadataRoute.Robots {
           '/api/', 
           '/_next/', 
           '/admin/', 
+          '/resume',
+          '/resume.pdf',
           // block sensitive JSON endpoints but allow public JSON like manifest
           '/*.env',
           '/tmp/',
@@ -25,49 +27,49 @@ export default function robots(): MetadataRoute.Robots {
       {
         userAgent: 'Googlebot',
         allow: '/',
-        disallow: ['/private/', '/admin/', '/api/'],
+        disallow: ['/private/', '/admin/', '/api/', '/resume', '/resume.pdf'],
         crawlDelay: 0,
       },
       {
         userAgent: 'Bingbot',
         allow: '/',
-        disallow: ['/private/', '/admin/', '/api/'],
+        disallow: ['/private/', '/admin/', '/api/', '/resume', '/resume.pdf'],
         crawlDelay: 0,
       },
       {
         userAgent: 'facebookexternalhit',
         allow: '/',
-        disallow: ['/private/', '/admin/', '/api/'],
+        disallow: ['/private/', '/admin/', '/api/', '/resume', '/resume.pdf'],
       },
       {
         userAgent: 'Twitterbot',
         allow: '/',
-        disallow: ['/private/', '/admin/', '/api/'],
+        disallow: ['/private/', '/admin/', '/api/', '/resume', '/resume.pdf'],
       },
       {
         userAgent: 'LinkedInBot',
         allow: '/',
-        disallow: ['/private/', '/admin/', '/api/'],
+        disallow: ['/private/', '/admin/', '/api/', '/resume', '/resume.pdf'],
       },
       {
         userAgent: 'WhatsApp',
         allow: '/',
-        disallow: ['/private/', '/admin/', '/api/'],
+        disallow: ['/private/', '/admin/', '/api/', '/resume', '/resume.pdf'],
       },
       {
         userAgent: 'Slackbot-LinkExpanding',
         allow: '/',
-        disallow: ['/private/', '/admin/', '/api/'],
+        disallow: ['/private/', '/admin/', '/api/', '/resume', '/resume.pdf'],
       },
       {
         userAgent: 'Discordbot',
         allow: '/',
-        disallow: ['/private/', '/admin/', '/api/'],
+        disallow: ['/private/', '/admin/', '/api/', '/resume', '/resume.pdf'],
       },
       {
         userAgent: 'TelegramBot',
         allow: '/',
-        disallow: ['/private/', '/admin/', '/api/'],
+        disallow: ['/private/', '/admin/', '/api/', '/resume', '/resume.pdf'],
       },
       // Block aggressive crawlers and scrapers (allow major search engines)
       {

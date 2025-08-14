@@ -1,0 +1,41 @@
+User-agent: *
+Disallow: /resume.pdf
+
+User-agent: Googlebot
+Disallow: /resume.pdf
+
+User-agent: Bingbot
+Disallow: /resume.pdf
+
+User-agent: Slurp
+Disallow: /resume.pdf
+
+User-agent: DuckDuckBot
+Disallow: /resume.pdf
+
+User-agent: Baiduspider
+Disallow: /resume.pdf
+
+User-agent: YandexBot
+Disallow: /resume.pdf
+
+User-agent: facebookexternalhit
+Disallow: /resume.pdf
+
+User-agent: Twitterbot
+Disallow: /resume.pdf
+
+User-agent: LinkedInBot
+Disallow: /resume.pdf
+
+User-agent: WhatsApp
+Disallow: /resume.pdf
+
+User-agent: Slackbot-LinkExpanding
+Disallow: /resume.pdf
+
+User-agent: Discordbot
+Disallow: /resume.pdf
+
+User-agent: TelegramBot
+Disallow: /resume.pdf

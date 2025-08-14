@@ -166,6 +166,12 @@ export default function RootLayout({
       <head>
         <meta name="description" content="hi, i'm kalash, i build things that make your life easier and i'm the founder of superfast, shipping stupidly fast so you don't have to." />
         
+        {/* Preconnects for critical third-party origins */}
+        <link rel="preconnect" href="https://res.cloudinary.com" crossOrigin="anonymous" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" crossOrigin="anonymous" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link rel="preconnect" href="https://cdn.jsdelivr.net" crossOrigin="anonymous" />
+
         {/* Preload critical resources */}
         <link rel="preload" href="/favicon_io_white/favicon.ico" as="image" />
         <link rel="preload" href="/favicon_io_black/favicon.ico" as="image" />

@@ -17,6 +17,18 @@ const nextConfig: NextConfig = {
   async headers() {
     return [
       {
+        source: '/resume',
+        headers: [
+          { key: 'X-Robots-Tag', value: 'noindex, nofollow, noarchive, nosnippet, noimageindex' },
+        ],
+      },
+      {
+        source: '/resume.pdf',
+        headers: [
+          { key: 'X-Robots-Tag', value: 'noindex, nofollow, noarchive, nosnippet, noimageindex' },
+        ],
+      },
+      {
         source: '/(.*)',
         headers: [
           {

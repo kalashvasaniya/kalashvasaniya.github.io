@@ -21,6 +21,11 @@ export default function ResumeLayout({
   return (
     <html lang="en">
       <head>
+        {/* Prevent search engine indexing */}
+        <meta name="robots" content="noindex, nofollow, noarchive, nosnippet, noimageindex" />
+        <meta name="googlebot" content="noindex, nofollow, noarchive, nosnippet, noimageindex" />
+        <meta name="bingbot" content="noindex, nofollow, noarchive, nosnippet, noimageindex" />
+        
         {/* Basic viewport and compatibility meta tags only */}
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
