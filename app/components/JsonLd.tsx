@@ -1,4 +1,5 @@
 export default function JsonLd() {
+  const nowIso = new Date().toISOString();
   const jsonLd = {
     "@context": "https://schema.org",
     "@graph": [
@@ -95,8 +96,8 @@ export default function JsonLd() {
             "target": "https://kalashvasaniya.com"
           }
         ],
-        "datePublished": "2025-08-07",
-        "dateModified": "2025-08-07"
+        "datePublished": nowIso,
+        "dateModified": nowIso
       },
       {
         "@type": "Organization",

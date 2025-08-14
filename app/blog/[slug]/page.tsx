@@ -117,3 +117,12 @@ export default async function BlogPost(props: Props) {
     </div>
   );
 } 
+
+export async function generateStaticParams() {
+  // Pre-render all posts for better SEO and performance
+  const posts = [
+    'i-locked-myself-for-35-days-to-build-this',
+    'i-got-5m-views-in-a-week-just-by-tweeting',
+  ];
+  return posts.map((slug) => ({ slug }));
+}

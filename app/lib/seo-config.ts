@@ -142,6 +142,12 @@ export const seoConfig = {
       priority: 1.0,
       changeFrequency: "weekly" as const,
     },
+      'security-policy': {
+        title: "Security Policy | Kalash Vasaniya",
+        description: "Security policy and responsible disclosure guidelines for Kalash Vasaniya's website and projects.",
+        priority: 0.3,
+        changeFrequency: "yearly" as const,
+      },
     portfolio: {
       title: "Portfolio | Kalash Vasaniya",
       description: "Explore my projects, startups, and creations. From SuperFast to viral content, see what I've built and what I'm working on next.",
@@ -267,15 +273,17 @@ export const seoConfig = {
       ]
     }
   }
-};
+} as const;
 
 // Helper functions for SEO
-export function generatePageMetadata(page: keyof typeof seoConfig.pages) {
+import type { Metadata } from 'next';
+
+export function generatePageMetadata(page: keyof typeof seoConfig.pages): Metadata {
   const pageConfig = seoConfig.pages[page];
   return {
     title: pageConfig.title,
     description: pageConfig.description,
-    keywords: seoConfig.keywords,
+    keywords: [...seoConfig.keywords],
     openGraph: {
       title: pageConfig.title,
       description: pageConfig.description,
@@ -291,10 +299,10 @@ export function generatePageMetadata(page: keyof typeof seoConfig.pages) {
         },
       ],
       locale: seoConfig.site.locale,
-      type: seoConfig.openGraph.type,
+      type: 'website',
     },
     twitter: {
-      card: seoConfig.twitter.card,
+      card: 'summary_large_image',
       title: pageConfig.title,
       description: pageConfig.description,
       images: [{
@@ -307,7 +315,19 @@ export function generatePageMetadata(page: keyof typeof seoConfig.pages) {
     alternates: {
       canonical: `${seoConfig.site.url}/${page === 'home' ? '' : page}`,
     },
-    robots: seoConfig.technical.robots,
+    robots: {
+      index: seoConfig.technical.robots.index,
+      follow: seoConfig.technical.robots.follow,
+      nocache: seoConfig.technical.robots.nocache,
+      googleBot: {
+        index: seoConfig.technical.robots.googleBot.index,
+        follow: seoConfig.technical.robots.googleBot.follow,
+        noimageindex: seoConfig.technical.robots.googleBot.noimageindex,
+        'max-video-preview': seoConfig.technical.robots.googleBot['max-video-preview'],
+        'max-image-preview': 'large',
+        'max-snippet': seoConfig.technical.robots.googleBot['max-snippet'],
+      }
+    },
   };
 }
 
