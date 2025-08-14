@@ -23,7 +23,7 @@ export default function Collections() {
                     <a href="/bucketlist" className="text-blue-600 underline ml-1">my bucket list</a>.
                 </p>
                 <p className="mb-6 text-xl leading-relaxed">the pieces of content in <span className="text-red-600">red</span> either hit me hard or are things i really want so badly.</p>
-                <hr className="my-8 border-gray-300" /> 
+                <hr className="my-8 border-gray-300" />
 
                 {/* Body Content */}
                 <div className="space-y-10 text-xl leading-relaxed">
@@ -86,7 +86,7 @@ export default function Collections() {
                     <section id="songs">
                         <h2 className="text-3xl font-bold text-black mb-4">songs i like</h2>
                         <div className="space-y-2">
-                            <iframe data-testid="embed-iframe" style={{borderRadius: "12px"}} src="https://open.spotify.com/embed/playlist/28sMFPjXvuKx0zVkHlkBud?utm_source=generator&theme=0" width="100%" height="352" frameBorder="0" allowFullScreen={true} allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                            <iframe data-testid="embed-iframe" style={{ borderRadius: "12px" }} src="https://open.spotify.com/embed/playlist/28sMFPjXvuKx0zVkHlkBud?utm_source=generator&theme=0" width="100%" height="352" frameBorder="0" allowFullScreen={true} allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
                         </div>
                     </section>
 
@@ -95,30 +95,30 @@ export default function Collections() {
                     <section id="movies">
                         <h2 className="text-3xl font-bold text-black mb-4">movies i love</h2>
                         <div className="space-y-2">
-              <div>
-                <a href="https://en.wikipedia.org/wiki/Rockstar_(2011_film)" target="_blank" rel="noopener noreferrer" className="text-red-600 underline">rockstar</a> imtiaz ali
-                <span className="text-gray-500 ml-2 text-lg">(159m)</span>
-              </div>
-              <div>
-                <a href="https://en.wikipedia.org/wiki/The_Social_Network" target="_blank" rel="noopener noreferrer" className="text-red-600 underline">the social network</a> david fincher
-                <span className="text-gray-500 ml-2 text-lg">(120m)</span>
-              </div>
-              <div>
-                <a href="https://en.wikipedia.org/wiki/Tamasha_(2015_film)" target="_blank" rel="noopener noreferrer" className="text-red-600 underline">tamasha</a> imtiaz ali
-                <span className="text-gray-500 ml-2 text-lg">(139m)</span>
-              </div>
-              <div>
-                <a href="https://en.wikipedia.org/wiki/Dear_Zindagi" target="_blank" rel="noopener noreferrer" className="text-blue-600 underline">dear zindagi</a> gauri shinde
-                <span className="text-gray-500 ml-2 text-lg">(151m)</span>
-              </div>
-              <div>
-                <a href="https://en.wikipedia.org/wiki/Yeh_Jawaani_Hai_Deewani" target="_blank" rel="noopener noreferrer" className="text-blue-600 underline">yeh jawaani hai deewani</a> ayan mukerji
-                <span className="text-gray-500 ml-2 text-lg">(160m)</span>
-              </div>
-              <div>
-                <a href="https://en.wikipedia.org/wiki/Zindagi_Na_Milegi_Dobara" target="_blank" rel="noopener noreferrer" className="text-blue-600 underline">zindagi na milegi dobara</a> zoya akhtar
-                <span className="text-gray-500 ml-2 text-lg">(153m)</span>
-              </div>
+                            <div>
+                                <a href="https://en.wikipedia.org/wiki/Rockstar_(2011_film)" target="_blank" rel="noopener noreferrer" className="text-red-600 underline">rockstar</a> imtiaz ali
+                                <span className="text-gray-500 ml-2 text-lg">(159m)</span>
+                            </div>
+                            <div>
+                                <a href="https://en.wikipedia.org/wiki/The_Social_Network" target="_blank" rel="noopener noreferrer" className="text-red-600 underline">the social network</a> david fincher
+                                <span className="text-gray-500 ml-2 text-lg">(120m)</span>
+                            </div>
+                            <div>
+                                <a href="https://en.wikipedia.org/wiki/Tamasha_(2015_film)" target="_blank" rel="noopener noreferrer" className="text-red-600 underline">tamasha</a> imtiaz ali
+                                <span className="text-gray-500 ml-2 text-lg">(139m)</span>
+                            </div>
+                            <div>
+                                <a href="https://en.wikipedia.org/wiki/Dear_Zindagi" target="_blank" rel="noopener noreferrer" className="text-blue-600 underline">dear zindagi</a> gauri shinde
+                                <span className="text-gray-500 ml-2 text-lg">(151m)</span>
+                            </div>
+                            <div>
+                                <a href="https://en.wikipedia.org/wiki/Yeh_Jawaani_Hai_Deewani" target="_blank" rel="noopener noreferrer" className="text-blue-600 underline">yeh jawaani hai deewani</a> ayan mukerji
+                                <span className="text-gray-500 ml-2 text-lg">(160m)</span>
+                            </div>
+                            <div>
+                                <a href="https://en.wikipedia.org/wiki/Zindagi_Na_Milegi_Dobara" target="_blank" rel="noopener noreferrer" className="text-blue-600 underline">zindagi na milegi dobara</a> zoya akhtar
+                                <span className="text-gray-500 ml-2 text-lg">(153m)</span>
+                            </div>
                         </div>
                     </section>
 
