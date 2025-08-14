@@ -164,6 +164,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+        <meta name="description" content="hi, i'm kalash, i build things that make your life easier and i'm the founder of superfast, shipping stupidly fast so you don't have to." />
         
         {/* Preload critical resources */}
         <link rel="preload" href="/favicon_io_white/favicon.ico" as="image" />
