@@ -1,6 +1,6 @@
 "use client";
 
-export default function Services() {
+export default function Service() {
     return (
         <div className="min-h-screen bg-white text-gray-800 font-sans p-0 md:p-3">
             {/* Navigation */}
@@ -16,7 +16,7 @@ export default function Services() {
             <main className="pt-8 pl-8 pr-8 max-w-2xl">
                 {/* Main Heading */}
                 <h1 className="text-5xl sm:text-5xl md:text-6xl font-bold text-black mb-8">
-                    services.
+                    service.
                 </h1>
 
                 {/* Body Content */}

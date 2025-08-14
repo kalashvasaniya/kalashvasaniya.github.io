@@ -1,7 +1,7 @@
 // No imports required; this component emits page-specific JSON-LD only
 
 interface RichSnippetSEOProps {
-  page?: 'portfolio' | 'blog' | 'services' | 'collection';
+  page?: 'portfolio' | 'blog' | 'service' | 'collection';
   customData?: Record<string, unknown> | Record<string, unknown>[];
 }
 
@@ -55,18 +55,18 @@ export default function RichSnippetSEO({ page, customData }: RichSnippetSEOProps
           ]
         });
         break;
-      case 'services':
+      case 'service':
         graph.push({
           "@context": "https://schema.org",
           "@type": "ProfessionalService",
-          "@id": `${baseUrl}/services#service`,
-          "name": "Kalash Vasaniya - Professional Services",
-          "description": "Writer + Developer services. Content writing, startup promotion, web development",
+          "@id": `${baseUrl}/service#service`,
+          "name": "Kalash Vasaniya - Professional Service",
+          "description": "Writer + Developer service. Content writing, startup promotion, web development",
           "provider": { "@type": "Person", "@id": `${baseUrl}#person` },
           "areaServed": "Worldwide",
-          "serviceType": "Professional Services",
-          "url": `${baseUrl}/services`,
-          "mainEntityOfPage": `${baseUrl}/services`,
+          "serviceType": "Professional Service",
+          "url": `${baseUrl}/service`,
+          "mainEntityOfPage": `${baseUrl}/service`,
           "hasOfferCatalog": {
             "@type": "OfferCatalog",
             "name": "Service Offerings",

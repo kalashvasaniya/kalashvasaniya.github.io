@@ -26,7 +26,7 @@ const page = () => {
           </p>
 
           <p>
-            in the meantime check <a href="/services" className="text-blue-600 underline">services</a> i offer.
+            in the meantime check <a href="/service" className="text-blue-600 underline">service</a> i offer.
           </p>
 
           <p className="pb-8">

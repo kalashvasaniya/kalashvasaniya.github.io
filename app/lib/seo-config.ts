@@ -160,9 +160,9 @@ export const seoConfig = {
       priority: 0.9,
       changeFrequency: "weekly" as const,
     },
-    services: {
-      title: "Services | Kalash Vasaniya",
-      description: "Writer + Developer services. I help startups promote their products and take on gig work. Hire me for content writing, development, and startup promotion.",
+    service: {
+      title: "Service | Kalash Vasaniya",
+      description: "Writer + Developer service. I help startups promote their products and take on gig work. Hire me for content writing, development, and startup promotion.",
       priority: 0.8,
       changeFrequency: "monthly" as const,
     },
@@ -208,8 +208,8 @@ export const seoConfig = {
         {
           "@type": "ListItem",
           "position": 4,
-          "name": "Services",
-          "item": "https://kalashvasaniya.com/services"
+          "name": "Service",
+          "item": "https://kalashvasaniya.com/service"
         },
         {
           "@type": "ListItem",
@@ -243,10 +243,10 @@ export const seoConfig = {
         },
         {
           "@type": "Question",
-          "name": "What services does Kalash offer?",
+          "name": "What service does Kalash offer?",
           "acceptedAnswer": {
             "@type": "Answer", 
-            "text": "Kalash offers writer + developer services, helping startups promote their products and taking on gig work for content writing, development, and startup promotion."
+            "text": "Kalash offers writer + developer service, helping startups promote their products and taking on gig work for content writing, development, and startup promotion."
           }
         }
       ]
