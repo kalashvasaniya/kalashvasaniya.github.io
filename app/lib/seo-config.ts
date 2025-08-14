@@ -145,7 +145,7 @@ export const seoConfig = {
     portfolio: {
       title: "Portfolio | Kalash Vasaniya",
       description: "Explore my projects, startups, and creations. From SuperFast to viral content, see what I've built and what I'm working on next.",
-      priority: 0.9,
+      priority: 0.7,
       changeFrequency: "monthly" as const,
     },
     blog: {
