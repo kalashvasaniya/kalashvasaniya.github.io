@@ -36,6 +36,12 @@ export default function Collections() {
                             <p>
                                 <a href="https://www.goodreads.com/book/show/18050143-zero-to-one" target="_blank" rel="noopener noreferrer" className="text-red-600 underline">zero to one</a> peter thiel
                             </p>
+                            <p>
+                                <a href="https://www.goodreads.com/book/show/28257707-the-subtle-art-of-not-giving-a-f-ck" target="_blank" rel="noopener noreferrer" className="text-red-600 underline">the subtle art of not giving a f*ck</a> mark manson
+                            </p>
+                            <p>
+                                <a href="https://www.goodreads.com/book/show/4865-how-to-win-friends-and-influence-people" target="_blank" rel="noopener noreferrer" className="text-blue-600 underline">how to win friends and influence people</a> dale carnegie
+                            </p>
                         </div>
                     </section>
 
@@ -64,6 +70,23 @@ export default function Collections() {
                                 <a href="https://youtu.be/RnK9wokdySM?feature=shared" target="_blank" rel="noopener noreferrer" className="text-blue-600 underline">mein udna chahta hoon</a>
                                 <span className="text-gray-500 ml-2 text-lg">(01:25)</span>
                             </div>
+                            <div>
+                                <a href="https://youtu.be/x5ug-5o-ROo?feature=shared" target="_blank" rel="noopener noreferrer" className="text-red-600 underline">the founder ending</a>
+                                <span className="text-gray-500 ml-2 text-lg">(05:37)</span>
+                            </div>
+                            <div>
+                                <a href="https://youtu.be/4VxdufqB9zg?feature=shared" target="_blank" rel="noopener noreferrer" className="text-blue-600 underline">something in the way</a>
+                                <span className="text-gray-500 ml-2 text-lg">(03:51)</span>
+                            </div>
+                        </div>
+                    </section>
+
+                    <hr className="my-8 border-gray-300" />
+
+                    <section id="songs">
+                        <h2 className="text-3xl font-bold text-black mb-4">songs i like</h2>
+                        <div className="space-y-2">
+                            <iframe data-testid="embed-iframe" style={{borderRadius: "12px"}} src="https://open.spotify.com/embed/playlist/28sMFPjXvuKx0zVkHlkBud?utm_source=generator&theme=0" width="100%" height="352" frameBorder="0" allowFullScreen={true} allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
                         </div>
                     </section>
 
@@ -111,6 +134,14 @@ export default function Collections() {
                                 <a href="https://shop.avicii.com/" target="_blank" rel="noopener noreferrer" className="text-red-600 underline">avicii official merchandise</a>
                             </div>
                         </div>
+                    </section>
+
+                    <hr className="my-8 border-gray-300" />
+
+                    <section>
+                        <p className="text-xl leading-relaxed mt-2">
+                            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" rel="noopener noreferrer" className="text-blue-600 underline">never gonna give you up</a>
+                        </p>
                     </section>
 
 
