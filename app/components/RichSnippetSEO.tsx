@@ -1,7 +1,7 @@
 // No imports required; this component emits page-specific JSON-LD only
 
 interface RichSnippetSEOProps {
-  page?: 'portfolio' | 'blog' | 'services' | 'collections';
+  page?: 'portfolio' | 'blog' | 'services' | 'collection';
   customData?: Record<string, unknown> | Record<string, unknown>[];
 }
 
@@ -83,19 +83,19 @@ export default function RichSnippetSEO({ page, customData }: RichSnippetSEOProps
           }
         });
         break;
-      case 'collections':
+      case 'collection':
         graph.push({
           "@context": "https://schema.org",
           "@type": "CollectionPage",
-          "@id": `${baseUrl}/collections#collections`,
-          "name": "Collections",
-          "description": "Curated collections of books, must-watch videos, and resources",
-          "url": `${baseUrl}/collections`,
+                      "@id": `${baseUrl}/collection#collection`,
+            "name": "Collection",
+            "description": "Curated collection of books, must-watch videos, and resources",
+            "url": `${baseUrl}/collection`,
           "mainEntity": {
             "@type": "ItemList",
             "itemListElement": [
-              { "@type": "ListItem", "position": 1, "name": "Books", "url": `${baseUrl}/collections#books` },
-              { "@type": "ListItem", "position": 2, "name": "Must Watch Videos", "url": `${baseUrl}/collections#videos` }
+              { "@type": "ListItem", "position": 1, "name": "Books", "url": `${baseUrl}/collection#books` },
+              { "@type": "ListItem", "position": 2, "name": "Must Watch Videos", "url": `${baseUrl}/collection#videos` }
             ]
           }
         });

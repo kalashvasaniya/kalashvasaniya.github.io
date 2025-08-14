@@ -1,6 +1,6 @@
 "use client";
 
-export default function Collections() {
+export default function Collection() {
     return (
         <div className="min-h-screen bg-white text-gray-800 font-sans p-0 md:p-3">
             {/* Navigation */}
@@ -8,7 +8,7 @@ export default function Collections() {
                 <div className="flex gap-6 text-xl leading-relaxed">
                     <a href="/" className="text-blue-600 underline">home</a>
                     <a href="/blog" className="text-blue-600 underline">blog</a>
-                    <a href="/collections" className="text-blue-600 underline">collections</a>
+                    <a href="/collection" className="text-blue-600 underline">collection</a>
                 </div>
             </nav>
 
@@ -16,7 +16,7 @@ export default function Collections() {
             <main className="pt-8 pl-8 pr-8 max-w-2xl">
                 {/* Main Heading */}
                 <h1 className="text-5xl sm:text-5xl md:text-6xl font-bold text-black mb-8">
-                    my collections.
+                    my collection.
                 </h1>
                 <p className="text-gray-700 mb-6 text-xl leading-relaxed">
                     this is a living library of books i’ve read, must-watch videos, and movies i love. i add new things over time. if you’re curious about what i want to experience next, check out

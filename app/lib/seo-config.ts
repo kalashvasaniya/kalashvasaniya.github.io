@@ -166,9 +166,9 @@ export const seoConfig = {
       priority: 0.7,
       changeFrequency: "monthly" as const,
     },
-      collections: {
-        title: "Collections | Kalash Vasaniya",
-        description: "Curated collections: books, must-watch videos, and resources I recommend.",
+          collection: {
+      title: "Collection | Kalash Vasaniya",
+      description: "Curated collection: books, must-watch videos, and resources I recommend.",
         priority: 0.9,
         changeFrequency: "weekly" as const,
       },
@@ -196,8 +196,8 @@ export const seoConfig = {
         {
           "@type": "ListItem",
           "position": 3,
-          "name": "Collections", 
-          "item": "https://kalashvasaniya.com/collections"
+                  "name": "Collection",
+        "item": "https://kalashvasaniya.com/collection"
         },
         {
           "@type": "ListItem",

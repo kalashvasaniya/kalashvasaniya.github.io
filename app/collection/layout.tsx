@@ -4,10 +4,10 @@ import RichSnippetSEO from "../components/RichSnippetSEO";
 import BreadcrumbSchema from "../components/BreadcrumbSchema";
 
 export const metadata: Metadata = {
-  title: "Collections",
-  description: "Curated collections of books, must-watch videos, and resources I recommend.",
-  keywords: [
-    "collections",
+      title: "Collection",
+    description: "Curated collection of books, must-watch videos, and resources I recommend.",
+    keywords: [
+        "collection",
     "books",
     "reading list",
     "must watch videos",
@@ -15,19 +15,19 @@ export const metadata: Metadata = {
     "recommendations",
   ],
   alternates: {
-    canonical: '/collections',
+    canonical: '/collection',
   },
   openGraph: {
-    title: "Collections - Kalash Vasaniya",
-    description: "Curated collections of books, must-watch videos, and resources I recommend.",
-    url: 'https://kalashvasaniya.com/collections',
+          title: "Collection - Kalash Vasaniya",
+      description: "Curated collection of books, must-watch videos, and resources I recommend.",
+      url: 'https://kalashvasaniya.com/collection',
     siteName: 'Kalash Vasaniya',
     images: [
       {
         url: 'https://res.cloudinary.com/dwb211sw5/image/upload/v1755127247/linko/wuanl2gm9rvseaunain8.jpg',
         width: 1200,
         height: 630,
-        alt: 'Collections - Books, Videos, and Resources',
+        alt: 'Collection - Books, Videos, and Resources',
         type: 'image/jpeg',
       },
     ],
@@ -36,11 +36,11 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: "Collections - Kalash Vasaniya",
-    description: "Curated collections of books, must-watch videos, and resources I recommend.",
+          title: "Collection - Kalash Vasaniya",
+      description: "Curated collection of books, must-watch videos, and resources I recommend.",
     images: [{
       url: 'https://res.cloudinary.com/dwb211sw5/image/upload/v1755127247/linko/wuanl2gm9rvseaunain8.jpg',
-      alt: 'Collections - Books, Videos, and Resources',
+              alt: 'Collection - Books, Videos, and Resources',
     }],
   },
   robots: {
@@ -56,19 +56,19 @@ export const metadata: Metadata = {
   },
 };
 
-export default function CollectionsLayout({
+export default function CollectionLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
   return (
     <>
-      <AdvancedSEO page="collections" />
-      <RichSnippetSEO page="collections" />
+              <AdvancedSEO page="collection" />
+        <RichSnippetSEO page="collection" />
       <BreadcrumbSchema
         items={[
           { name: "Home", url: "https://kalashvasaniya.com" },
-          { name: "Collections", url: "https://kalashvasaniya.com/collections" },
+                      { name: "Collection", url: "https://kalashvasaniya.com/collection" },
         ]}
       />
       {children}
