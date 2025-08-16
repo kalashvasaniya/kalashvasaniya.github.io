@@ -13,7 +13,7 @@ export default function Blog() {
     if (!email) return;
 
     setIsLoading(true);
-    
+
     try {
       const response = await fetch('/api/subscribe', {
         method: 'POST',
@@ -51,7 +51,7 @@ export default function Blog() {
         <div className="flex gap-6 text-xl leading-relaxed">
           <a href="/" className="text-blue-600 underline">home</a>
           <a href="/blog" className="text-blue-600 underline">blog</a>
-                              <a href="/collection" className="text-blue-600 underline">collection</a>
+          <a href="/collection" className="text-blue-600 underline">collection</a>
         </div>
       </nav>
 
@@ -65,8 +65,15 @@ export default function Blog() {
         {/* Body Content */}
         <div className="text-xl leading-relaxed">
           <p className="text-gray-700">
-            a place where i'll share my thoughts on technology, 
+            a place where i'll share my thoughts on technology,
             travel experiences, and the journey of building products.
+          </p>
+
+          <p className="text-gray-700 mt-4">
+            wanna read my technical blog? check out my{" "}
+            <a href="https://medium.com/@kalashvasaniya1" target="_blank" rel="noopener noreferrer" className="text-blue-600 underline hover:text-blue-800">
+              medium
+            </a>.
           </p>
 
           {/* Blog Posts List */}
@@ -87,7 +94,7 @@ export default function Blog() {
                 slug: "i-got-5m-views-in-a-week-just-by-tweeting"
               }
             ].slice(0, showAllPosts ? undefined : 2).map((post, index) => (
-              <a href={`/blog/${post.slug}`} key={index} className="block border border-gray-200 p-5 hover:border-gray-500 transition-colors !no-underline hover:!no-underline" style={{textDecoration: 'none'}}>
+              <a href={`/blog/${post.slug}`} key={index} className="block border border-gray-200 p-5 hover:border-gray-500 transition-colors !no-underline hover:!no-underline" style={{ textDecoration: 'none' }}>
                 <article>
                   <h2 className="text-2xl font-semibold mb-3 leading-tight !text-gray-900">
                     {post.title}
@@ -119,10 +126,10 @@ export default function Blog() {
           <div className="space-y-6 py-8 border-t border-gray-200">
             <h2 className="text-3xl font-semibold text-black">get notified</h2>
             <p className="text-gray-700">
-              want to be the first to know when i post? drop your email below and i'll 
+              want to be the first to know when i post? drop your email below and i'll
               let you know when the blog goes live.
             </p>
-            
+
             {isSubscribed ? (
               <div className="text-green-600 text-lg font-medium">
                 thanks! you'll be notified when the blog launches.
